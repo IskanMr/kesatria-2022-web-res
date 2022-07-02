@@ -1,0 +1,14 @@
+{
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "css.validate": false,
+    "scss.validate": false,
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "editor.tabSize": 4,
+    "tailwindCSS.rootFontSize": 14,
+    "tailwindCSS.experimental.classRegex": ["cnJoin\\(.*\\)", "'|\"(.+)'|\""]
+}
