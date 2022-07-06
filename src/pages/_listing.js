@@ -4,3 +4,5 @@ export * from './agenda';
 export * from './penugasan';
 export * from './jalan-teknik';
 export * from './dokumentasi';
+export * from './teknik-store';
+export * from './qna';

@@ -52,6 +52,11 @@ function Main() {
                             path='/dokumentasi'
                             component={pages.Dokumentasi}
                         />
+                        <Route
+                            path='/teknik-store'
+                            component={pages.TeknikStore}
+                        />
+                        <Route path='/qna' component={pages.QNA} />
 
                         {/* The 404 page */}
                         <Route component={pages.NotFound} />

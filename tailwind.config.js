@@ -5,34 +5,38 @@ module.exports = {
     purge: ['./src/**/*.{js,jsx,ts,tsx}'],
     darkMode: false, // or 'media' or 'class'
     theme: {
-        colors: {
-            transparent: 'transparent',
-            current: 'currentColor',
-            black: '#0D181D',
-            pureblack: colors.black,
-            blue: {
-                light: '#0D181A',
-                dark: '#0D181D',
-            },
-            white: '#FFFFFF',
-            gray: {
-                lighter: '#F1F1F1',
-                darker: '#D9D8D3',
-            },
-            accent: {
-                yellow: {
-                    dark: '#F4A606',
-                    DEFAULT: '#FFDE51',
-                    light: '#FFEFA9',
-                },
-                red: '#DC3647',
-                blue: {
-                    dark: '#1B323B',
-                    DEFAULT: '#348AC5',
-                },
-            },
-        },
         extend: {
+            colors: {
+                transparent: 'transparent',
+                current: 'currentColor',
+                main: { white: '#F1F1F1', blue: '#132B3B' },
+                orange: { default: '#F26628', light: '#F8A36C' },
+                green: '#95DACB',
+                black: '#0D181D',
+                pureblack: colors.black,
+                blue: {
+                    light: '#305D7A',
+                    default: '#224860',
+                    dark: '#132B3B',
+                },
+                white: '#F1F1F1',
+                gray: {
+                    lighter: '#F1F1F1',
+                    darker: '#D9D8D3',
+                },
+                accent: {
+                    yellow: {
+                        dark: '#F4A606',
+                        DEFAULT: '#FFDE51',
+                        light: '#FFEFA9',
+                    },
+                    red: '#DC3647',
+                    blue: {
+                        dark: '#1B323B',
+                        DEFAULT: '#348AC5',
+                    },
+                },
+            },
             screens: {
                 portrait: {
                     raw: '(orientation: portrait)',
