@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "Baju",
+        "link": "https://www.tokopedia.com/",
+        "img": "baju",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "large"
+    },
+    {
+        "id": "2",
+        "name": "Celana",
+        "link": "https://www.tokopedia.com/",
+        "img": "baju",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "normal"
+    },
+    {
+        "id": "3",
+        "name": "Topi",
+        "link": "https://www.tokopedia.com/",
+        "img": "baju",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "normal"
+    },
+    {
+        "id": "4",
+        "name": "Ganci",
+        "link": "https://www.tokopedia.com/",
+        "img": "baju",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "normal"
+    }
+]
