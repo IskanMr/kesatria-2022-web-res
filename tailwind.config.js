@@ -19,7 +19,8 @@ module.exports = {
                     default: '#224860',
                     dark: '#132B3B',
                 },
-                white: '#F1F1F1',
+                white_bone: '#F1F1F1', //sebelumnya milih white, diubah menjadi milik white_bone
+                white: '#FFFFFF',
                 gray: {
                     lighter: '#F1F1F1',
                     darker: '#D9D8D3',
@@ -55,6 +56,8 @@ module.exports = {
             fontFamily: {
                 display: ['Mont', 'system-ui', 'sans-serif'],
                 body: ['Lato', 'system-ui', 'sans-serif'],
+                samarkan : ['Samarkan', 'sans-serif'],
+                Mont : ['Mont', 'sans-serif'],
             },
             boxShadow: {
                 buttonLg: `0 0.6rem 0.65rem rgb(42 42 42 / 0.5)`,
