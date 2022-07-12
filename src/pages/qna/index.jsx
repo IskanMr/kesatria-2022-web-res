@@ -1,15 +1,18 @@
 import { GenericPage } from '../../components/GenericPage';
 import { HtmlHead } from '../../components/HtmlHead';
-import { SearchBar } from '../../components/QNA/SearchBar';
 import { PageTitle } from '../../components/PageTitle';
+import { Question } from '../../components/QNA/Question';
+import Questions from '../../resources/questions.json';
 
 export function QNA() {
     return (
         <>
-            <HtmlHead title='QNA' decription='Yes' />
+            <HtmlHead title='Pertanyaan Umum' decription='Yes' />
             <GenericPage>
-                <PageTitle title='QNA' />
-                <SearchBar />
+                <PageTitle title='Pertanyaan Umum' />
+                {Questions.map((item) => (
+                    <Question item={item} />
+                ))}
             </GenericPage>
         </>
     );
