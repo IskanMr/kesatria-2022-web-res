@@ -6,15 +6,3 @@ export function GenericPage({ customComponent, className, children }) {
         </Component>
     );
 }
-
-export function PageTitle({ className, noMB, text }) {
-    return (
-        <h1
-            className={`text-center font-display text-4xl font-bold ${
-                !noMB ? 'mb-4 ' : ''
-            }${className}`}
-        >
-            {text}
-        </h1>
-    );
-}

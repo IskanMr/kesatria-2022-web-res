@@ -1,18 +1,18 @@
 [
     {
         "id": "1",
-        "name": "Baju",
+        "name": "Kaos Satu",
         "link": "https://www.tokopedia.com/",
-        "img": "baju",
+        "img": "shirtOne",
         "price": "40.000,00",
         "desc": "lorem ipsum",
         "size": "large"
     },
     {
         "id": "2",
-        "name": "Celana",
+        "name": "Kaos Dua",
         "link": "https://www.tokopedia.com/",
-        "img": "baju",
+        "img": "shirtTwo",
         "price": "40.000,00",
         "desc": "lorem ipsum",
         "size": "normal"
@@ -21,16 +21,88 @@
         "id": "3",
         "name": "Topi",
         "link": "https://www.tokopedia.com/",
-        "img": "baju",
+        "img": "cap",
         "price": "40.000,00",
         "desc": "lorem ipsum",
         "size": "normal"
     },
     {
         "id": "4",
-        "name": "Ganci",
+        "name": "Tote Bag",
         "link": "https://www.tokopedia.com/",
-        "img": "baju",
+        "img": "totebag",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "normal"
+    },
+    {
+        "id": "1",
+        "name": "Kaos Satu",
+        "link": "https://www.tokopedia.com/",
+        "img": "shirtOne",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "large"
+    },
+    {
+        "id": "2",
+        "name": "Kaos Dua",
+        "link": "https://www.tokopedia.com/",
+        "img": "shirtTwo",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "normal"
+    },
+    {
+        "id": "3",
+        "name": "Topi",
+        "link": "https://www.tokopedia.com/",
+        "img": "cap",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "normal"
+    },
+    {
+        "id": "4",
+        "name": "Tote Bag",
+        "link": "https://www.tokopedia.com/",
+        "img": "totebag",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "normal"
+    },
+    {
+        "id": "1",
+        "name": "Kaos Satu",
+        "link": "https://www.tokopedia.com/",
+        "img": "shirtOne",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "large"
+    },
+    {
+        "id": "2",
+        "name": "Kaos Dua",
+        "link": "https://www.tokopedia.com/",
+        "img": "shirtTwo",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "normal"
+    },
+    {
+        "id": "3",
+        "name": "Topi",
+        "link": "https://www.tokopedia.com/",
+        "img": "cap",
+        "price": "40.000,00",
+        "desc": "lorem ipsum",
+        "size": "normal"
+    },
+    {
+        "id": "4",
+        "name": "Tote Bag",
+        "link": "https://www.tokopedia.com/",
+        "img": "totebag",
         "price": "40.000,00",
         "desc": "lorem ipsum",
         "size": "normal"
