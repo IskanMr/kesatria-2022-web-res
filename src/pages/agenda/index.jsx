@@ -1,6 +1,6 @@
 import { HtmlHead } from '../../components/HtmlHead';
 import { PageTitle } from '../../components/PageTitle';
-import Go from '../../assets/icons/go.svg';
+import Go from '../../assets/icons/Agenda-go.svg';
 
 export function Agenda() {
     return (
@@ -17,21 +17,21 @@ export function Agenda() {
                     </div>
                 </div>
                 <div id="list-jadwal-hari1" className='pt-10'>
-                    <div className="container w-full border-4 border-orange-default flex flex-row rounded-3xl ">
+                    <div className="group container w-full border-4 border-orange-default flex flex-row rounded-3xl hover:bg-orange-default">
                         <div className="flex flex-row py-6 flex-wrap">
-                            <div className="w-32 h-14 my-auto flex place-content-center bg-blue-default text-white font-gill font-bold text-3xl py-2 rounded-2xl mx-9">
+                            <div className="w-32 h-14 my-auto flex place-content-center bg-orange-default text-white font-gill font-bold text-3xl py-2 rounded-2xl mx-9 group-hover:bg-blue-default">
                                 00.00
                             </div>
-                            <div className="sm:w-5/6 flex flex-col max-w-screen-xl">
-                                <div className='font-gill text-4xl text-judul font-bold'>
+                            <div className="sm:w-5/6 flex flex-col max-w-screen-xl ">
+                                <div className='font-gill text-4xl font-bold text-orange-default group-hover:text-white'>
                                     Upacara Pembukaan PPSMB Kesatria 2022
                                 </div>
-                                <div className='font-gill text-3xl text-judul'>
+                                <div className='font-gill text-3xl text-judul text-orange-default group-hover:text-white'>
                                     Kesatria Muda menyaksikan prolog sebelum melakukan moving dari area Tugu Teknik menuju Halaman Depan Smart Green Learning Center (SGLC).
                                 </div>
                             </div>
                         </div>
-                        <div className='w-21 h-full my-auto mx-auto'>
+                        <div className='w-21 h-full my-auto mx-auto bg-orange-default opacity-0'>
                                 <img src={Go} alt="Go" className='h-full w-16' />
                         </div>
                     </div>
