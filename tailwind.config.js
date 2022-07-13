@@ -11,7 +11,7 @@ module.exports = {
                 transparent: 'transparent',
                 current: 'currentColor',
                 main: { white: '#F1F1F1', blue: '#132B3B' },
-                orange: { default: '#F26628', light: '#F8A36C' },
+                oranges: { default: '#F26628', light: '#F8A36C' },
                 green: '#95DACB',
                 black: '#0D181D',
                 pureblack: colors.black,
@@ -59,12 +59,6 @@ module.exports = {
                 body: ['Lato', 'system-ui', 'sans-serif'],
                 samarkan: ['Samarkan', 'sans-serif'],
                 Mont: ['Mont', 'sans-serif'],
-            },
-            boxShadow: {
-                buttonLg: `0 0.6rem 0.65rem rgb(42 42 42 / 0.5)`,
-                buttonSm: `0 0.45rem 0.5rem rgb(42 42 42 / 0.5)`,
-                displayLg: '0 1.25rem 1rem rgb(42 42 42 / 0.4)',
-                displaySm: '0 1rem 0.75rem rgb(42 42 42 / 0.4)',
             },
             dropShadow: {
                 blue: '0 8px 0 #224860',
