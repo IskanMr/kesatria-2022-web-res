@@ -57,7 +57,8 @@ module.exports = {
                 display: ['Mont', 'system-ui', 'sans-serif'],
                 body: ['Lato', 'system-ui', 'sans-serif'],
                 samarkan : ['Samarkan', 'sans-serif'],
-                Mont : ['Mont', 'sans-serif'],
+                mont : ['Mont', 'sans-serif'],
+                gill : ['Gill', 'sans-serif']
             },
             boxShadow: {
                 buttonLg: `0 0.6rem 0.65rem rgb(42 42 42 / 0.5)`,
@@ -67,6 +68,9 @@ module.exports = {
             },
             fontWeight: {
                 semilight: 350,
+            },
+            width:{
+                '21' : '85px',
             },
         },
     },
