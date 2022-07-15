@@ -1,8 +1,9 @@
 {
-    "name": "kesatria-2021-web-res",
+    "name": "kesatria-2022-web-res",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@coreui/react": "^4.3.0",
         "@craco/craco": "^6.2.0",
         "@headlessui/react": "^1.6.6",
         "@heroicons/react": "^1.0.6",
@@ -13,12 +14,16 @@
         "react-helmet": "^6.1.0",
         "react-router-dom": "^5.2.0",
         "react-scripts": "4.0.3",
+        "react-slick": "^0.29.0",
         "sass": "^1.37.0",
+        "slick-carousel": "^1.8.1",
         "sweetalert2": "^11.0.19"
     },
     "scripts": {
-        "start": "craco start",
-        "build": "craco build",
+        "start": "craco start & npm run watch:css",
+        "build": "craco build && npm run build:css",
+        "build:css": "postcss -i src/styles/main.scss -o output.css",
+        "watch:css": "postcss -i src/styles/main.scss -o output.css -w",
         "lint": "eslint --ext .js --ext .jsx src/",
         "lint:fix": "eslint --fix --ext .js --ext .jsx src/"
     },
@@ -28,7 +33,8 @@
         "not op_mini all"
     ],
     "devDependencies": {
-        "autoprefixer": "^9.8.6",
+        "autoprefixer": "^9.8.8",
+        "autoresponsive-react": "^1.2.2",
         "eslint": "^7.30.0",
         "eslint-config-airbnb": "^18.2.1",
         "eslint-config-prettier": "^8.3.0",
@@ -39,10 +45,10 @@
         "eslint-plugin-react-hooks": "^4.2.0",
         "jsdom": "^16.6.0",
         "netlify-cli": "^4",
-        "postcss": "^7.0.36",
+        "postcss": "^7.0.39",
         "prettier": "^2.3.2",
         "puppeteer": "^10.1.0",
-        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
         "vercel": "^23.0.1"
     }
 }
