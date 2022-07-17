@@ -56,10 +56,10 @@ module.exports = {
             },
             fontFamily: {
                 display: ['Mont', 'system-ui', 'sans-serif'],
-                body: ['Lato', 'system-ui', 'sans-serif'],
-                samarkan : ['Samarkan', 'sans-serif'],
-                mont : ['Mont', 'sans-serif'],
-                gill : ['Gill', 'sans-serif']
+                body: ['Gill', 'sans-serif'],
+                samarkan: ['Samarkan', 'sans-serif'],
+                mont: ['Mont', 'sans-serif'],
+                gill: ['Gill', 'sans-serif'],
             },
             dropShadow: {
                 blue: '0 8px 0 #224860',
@@ -67,11 +67,11 @@ module.exports = {
             fontWeight: {
                 semilight: 350,
             },
-            width:{
-                '21' : '85px',
+            width: {
+                21: '85px',
             },
-            borderWidth:{
-                '6' : '6px'
+            borderWidth: {
+                6: '6px',
             },
         },
     },

@@ -45,7 +45,7 @@ export function QNA() {
                             ))}
                         </div>
                     </div>
-                    <div className='flex justify-center mt-2 md:mt-4'>
+                    <div className='flex justify-center mt-4 md:mt-8'>
                         Pertanyaan kamu tidak ada di laman ini? Silahkan hubungi
                         <a href='/pertanyaan-umum' className='ml-1'>
                             {' '}

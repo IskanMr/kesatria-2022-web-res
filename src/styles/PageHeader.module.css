@@ -6,7 +6,7 @@
 
     --diagonal-offset: 4rem;
 
-    z-index: 99999;
+    z-index: 9999;
 }
 @screen md {
     .headerContainer {
@@ -32,7 +32,9 @@ For the moment, we can "cheat" by appling a negative margin in the main page div
     );
     /* padding-right: 2rem; */
     margin-right: calc(-1 * var(--diagonal-offset));
-    padding-right: var(--diagonal-offset) !important; /* The `important` is highly temporary! */
+    padding-right: var(
+        --diagonal-offset
+    ) !important; /* The `important` is highly temporary! */
 }
 
 .navContainer {

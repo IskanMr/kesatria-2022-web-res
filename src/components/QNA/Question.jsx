@@ -26,7 +26,7 @@ export function Question({ item }) {
                             }
                         >
                             <div className='flex items-center'>
-                                <span className='text-xl md:text-2xl mr-3 text-oranges-default'>
+                                <span className='text-xl md:text-2xl mr-3 text-oranges-default font-bold'>
                                     Q
                                 </span>
                                 <span className='flex-grow'>
@@ -46,7 +46,7 @@ export function Question({ item }) {
                                 className={disclosurePanelCSS}
                             >
                                 <div className='flex items-center'>
-                                    <span className=' text-xl md:text-2xl mr-3 text-main-blue'>
+                                    <span className=' text-xl md:text-2xl mr-3 text-main-blue font-bold'>
                                         A
                                     </span>
                                     <span className='flex-grow'>

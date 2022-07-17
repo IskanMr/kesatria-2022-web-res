@@ -1,110 +1,90 @@
 [
     {
         "id": "1",
-        "name": "Kaos Satu",
-        "link": "https://www.tokopedia.com/",
-        "img": "shirtOne",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "large"
+        "name": "T-Shirt Kesatria",
+        "link": "https://shopee.co.id/T-Shirt-Kesatria-i.813548554.21922266210?sp_atk=853a1a35-f1c9-4d23-bc12-9bc4c65732c3&xptdk=853a1a35-f1c9-4d23-bc12-9bc4c65732c3",
+        "imgs": ["kk1", "kk2", "kk3"],
+        "price": "Rp85.000 - Rp108.000",
+        "desc": "T-Shirt berbahan Cotton combed 24s\nMemiliki tiga macam desain yang berbeda yaitu :\n1. T-shirt Kesatria dengan logo Nala berwarna kuning dibagian belakang dan tulisan \"Building The Future\" dibagian depan\n2. T-shirt Kesatria dengan logo Nala berwarna tosca dibagian belakang dan tulisan \"Building The Future\" dibagian depan\n3. T-shirt Engineering dengan logo Kubik dibagian depan dan belakang\n\nSemua design berwarna dasar hitam"
     },
     {
         "id": "2",
-        "name": "Kaos Dua",
-        "link": "https://www.tokopedia.com/",
-        "img": "shirtTwo",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "normal"
+        "name": "Topi Teknik",
+        "link": "https://shopee.co.id/Topi-Kesatria-i.813548554.21422257965?sp_atk=675c458f-f7a8-49eb-905d-919ffa20ce0c&xptdk=675c458f-f7a8-49eb-905d-919ffa20ce0c",
+        "imgs": ["t1", "t2", "t3"],
+        "price": "Rp55.000",
+        "desc": "Topi ini adalah salah satu product merchandise yang kami jual di kesatria store.\nJenis topi adalah polycap/baseball dengan beberapa desain menarik untuk para sobat teknik dan juga semua gamada yang tertarik. Hope you like it guys!"
     },
     {
         "id": "3",
-        "name": "Topi",
-        "link": "https://www.tokopedia.com/",
-        "img": "cap",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "normal"
+        "name": "Totebag Kesatria",
+        "link": "https://shopee.co.id/Totebag-Kesatria-i.813548554.11597078581?sp_atk=4d22d917-1734-4502-a2be-7cc53cdaff9d&xptdk=4d22d917-1734-4502-a2be-7cc53cdaff9d",
+        "imgs": ["tb1", "tb2", "tb3"],
+        "price": "Rp45.000",
+        "desc": "Totebag berbahan canvas\nukuran 30cmx40cm\nMemiliki empat macam design yang berbeda yaitu :\n1) tulisan engineering di tengah serta gambar tugu teknik dengan logo kesatria di atasnya, warna dasar totebag putih\n2) tulisan engineering di samping serta gambar tugu teknik, warna dasar totebag putih\n3) nala dengan beberapa awan, warna dasar totebag biru tua\n4) nala dengan bulan dan awan, warna dasar totebag biru tua"
     },
     {
         "id": "4",
-        "name": "Tote Bag",
-        "link": "https://www.tokopedia.com/",
-        "img": "totebag",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "normal"
+        "name": "Gantungan Kunci Kesatria",
+        "link": "https://shopee.co.id/Gantungan-Kunci-Kesatria-i.813548554.20022729975?sp_atk=a21b8b4d-702b-473c-85c4-5c35d877e4ea&xptdk=a21b8b4d-702b-473c-85c4-5c35d877e4ea",
+        "imgs": ["gc1", "gc2"],
+        "price": "Rp10.000",
+        "desc": "Gantungan Kunci ini juga merupakan salah satu product merchandise yang kami jual dengan ukuran 16 cm x 16 cm dan dalam berbagai desain yang menarik untuk para sobat teknik dan semua gamada. Hope you like it guys!"
     },
     {
-        "id": "1",
-        "name": "Kaos Satu",
-        "link": "https://www.tokopedia.com/",
-        "img": "shirtOne",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "large"
+        "id": "5",
+        "name": "Sticker Kesatria",
+        "link": "https://shopee.co.id/Sticker-Kesatria-i.813548554.19922266145?sp_atk=60c98a04-0d05-404f-a130-031c7cb5716f&xptdk=60c98a04-0d05-404f-a130-031c7cb5716f",
+        "imgs": ["st1", "st2", "st3"],
+        "price": "Rp500",
+        "desc": "Sticker ini juga merupakan salah satu product merchandise yang kami jual dengan ukuran 4cmx4cm dan dalam berbagai desain yang menarik untuk para sobat teknik dan semua gamada. Hope you like it guys!"
     },
     {
-        "id": "2",
-        "name": "Kaos Dua",
-        "link": "https://www.tokopedia.com/",
-        "img": "shirtTwo",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "normal"
+        "id": "6",
+        "name": "Boneka Kesatria",
+        "link": "https://shopee.co.id/Boneka-Kesatria-i.813548554.16679093915?sp_atk=40e2b8cb-2137-4af8-9407-7c25de103296&xptdk=40e2b8cb-2137-4af8-9407-7c25de103296",
+        "imgs": ["b1", "b2", "b2"],
+        "price": "Rp65.000",
+        "desc": "Boneka ini adalah salah satu product merchandise yang kami jual di kesatria store.\nBoneka ini adalah maskot kesatria yaitu NALA yang sangat gemas untuk para sobat teknik dan juga semua gamada yang tertarik. Boneka NALA ini memiliki tinggi +- 20 cm dengan bahan lembut dan isi yang empuk. Hope you like it guys!\n\n**dikarenakan pengerjaan boneka ini memakan waktu yang cukup lama, mohon maaf jika terjadi keterlambatan dalam pengiriman barang."
     },
     {
-        "id": "3",
-        "name": "Topi",
-        "link": "https://www.tokopedia.com/",
-        "img": "cap",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "normal"
+        "id": "7",
+        "name": "Paket 1",
+        "link": "https://shopee.co.id/Paket-1-i.813548554.19823150270?sp_atk=87763903-94d6-4104-a9c1-cb283bef0279&xptdk=87763903-94d6-4104-a9c1-cb283bef0279",
+        "imgs": ["paket1"],
+        "price": "Rp230.000 - Rp245.000",
+        "desc": "Paket 1 yang kami jual di Kesatria Store ini terdiri dari semua product, yaitu : tshirt, totebag, topi, gantungan kunci, boneka, dan sticker.\n1) Paket Biasa : merupakan paketan products merchandise yang jenis/macam/desain nyaa bisa temen-temen pilih sesuai keinginan kalian, jadi untuk jenis tshirt, totebag, topi, gantungan kunci, boneka, dan sticker mana yang kalian mau bisa ditulis di notes yaa...\n2) Paket nala : merupakan paketan products merchandise yang semuanya terdapat desain nala, kecuali pada topi yaa.\nUntuk sizechart tshirt bisa dilihat di \"Tshirt Kesatria\" yang kami jual secara satuan.\nUntuk desain yang akan temen-temen pilih bisa juga diliat di masing-masing product merch yang kami jual secara satuan."
     },
     {
-        "id": "4",
-        "name": "Tote Bag",
-        "link": "https://www.tokopedia.com/",
-        "img": "totebag",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "normal"
+        "id": "8",
+        "name": "Paket 2",
+        "link": "https://shopee.co.id/Paket-2-i.813548554.18723185783?sp_atk=2099b007-5685-48cd-880b-325e92970089&xptdk=2099b007-5685-48cd-880b-325e92970089",
+        "imgs": ["paket2"],
+        "price": "Rp160.000",
+        "desc": "Paket 2 yang kami jual di Kesatria Store ini terdiri dari\n-Tshirt\n-Totebag\n-Topi\nUntuk desain yang akan temen-temen pilih bisa juga dilihat di masing-masing product merchendise yang kami jual secara satuan. Dan jangan lupa pilihan desain totebag dan topi bisa ditulis di catatan yaa.."
     },
     {
-        "id": "1",
-        "name": "Kaos Satu",
-        "link": "https://www.tokopedia.com/",
-        "img": "shirtOne",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "large"
+        "id": "9",
+        "name": "Paket 3",
+        "link": "https://shopee.co.id/Paket-3-i.813548554.18023250484?sp_atk=0e1e1b0f-e09d-4321-ad0a-a240280392a7&xptdk=0e1e1b0f-e09d-4321-ad0a-a240280392a7",
+        "imgs": ["paket3"],
+        "price": "Rp175.000",
+        "desc": "Paket 3 yang kami jual di Kesatria Store ini terdiri dari\n-Tshirt\n-Totebag\n-Sticker\n-Boneka\nUntuk desain yang akan temen-temen pilih bisa juga dilihat di masing-masing product merchendise yang kami jual secara satuan. Dan jangan lupa pilihan desain t-shirt, totebag, dan sticker bisa ditulis di catatan yaa.."
     },
     {
-        "id": "2",
-        "name": "Kaos Dua",
-        "link": "https://www.tokopedia.com/",
-        "img": "shirtTwo",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "normal"
+        "id": "10",
+        "name": "Paket 4",
+        "link": "https://shopee.co.id/Paket-4-i.813548554.20223248526?sp_atk=6e249387-fe8f-4384-99b9-c05e9f063dfa&xptdk=6e249387-fe8f-4384-99b9-c05e9f063dfa",
+        "imgs": ["paket4"],
+        "price": "Rp110.000",
+        "desc": "Paket 4 yang kami jual di Kesatria Store ini terdiri dari semua product, yaitu : topi, gantungan kunci, dan boneka\n1) Paket Biasa : merupakan paketan products merchandise yang jenis/macam/desain nyaa bisa temen-temen pilih sesuai keinginan kalian, jadi untuk jenis topi, gantungan kunci dan boneka mana yang kalian mau bisa ditulis di notes yaa...\n2) Paket nala : merupakan paketan products merchandise yang semuanya terdapat desain nala, kecuali pada topi yaa."
     },
     {
-        "id": "3",
-        "name": "Topi",
-        "link": "https://www.tokopedia.com/",
-        "img": "cap",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "normal"
-    },
-    {
-        "id": "4",
-        "name": "Tote Bag",
-        "link": "https://www.tokopedia.com/",
-        "img": "totebag",
-        "price": "40.000,00",
-        "desc": "lorem ipsum",
-        "size": "normal"
+        "id": "11",
+        "name": "Paket 5",
+        "link": "https://shopee.co.id/Paket-5-i.813548554.8199556038?sp_atk=795fe847-c94d-491b-9dd4-39f45b1e4361&xptdk=795fe847-c94d-491b-9dd4-39f45b1e4361",
+        "imgs": ["paket5"],
+        "price": "Rp70.000",
+        "desc": "Paket 5 terdiri dari Boneka, Gantungan Kunci, dan Stiker.\n1) Paket Biasa : merupakan paketan products merchandise yang jenis/macam/desain nyaa bisa temen-temen pilih sesuai keinginan kalian, jadi untuk gantungan kunci, boneka, dan sticker mana yang kalian mau bisa ditulis di notes yaa...\n2) Paket nala : merupakan paketan products merchandise yang semuanya terdapat desain nala"
     }
 ]
