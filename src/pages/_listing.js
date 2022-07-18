@@ -6,3 +6,4 @@ export * from './jalan-teknik';
 export * from './dokumentasi';
 export * from './teknik-store';
 export * from './qna';
+export * from './materi';
