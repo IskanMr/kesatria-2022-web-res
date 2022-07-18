@@ -45,6 +45,7 @@ function Main() {
                         <Route exact path='/penugasan'component={pages.Penugasan} />
                         <Route exact path='/jalan-teknik' component={pages.JelajahTeknik} />
                         <Route path='/agenda' component={pages.Agenda} />
+                        <Route exact path='/materi' component={pages.Materi1} />
                         <Route path='/dokumentasi' component={pages.Dokumentasi} />
                         <Route path='/teknik-store' component={pages.TeknikStore} />
                         <Route path='/pertanyaan-umum' component={pages.QNA} />
