@@ -36,9 +36,6 @@ export function TeknikStore() {
                                 }}
                             >
                                 <ItemCard item={item} />
-                                {/* <span style={{ whiteSpace: 'pre-line' }}>
-                                {item.desc}
-                            </span> */}
                             </button>
                         ))}
                     </div>
