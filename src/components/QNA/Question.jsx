@@ -1,4 +1,4 @@
-import { Disclosure } from '@headlessui/react';
+import { Disclosure, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 
 export function Question({ item }) {
@@ -40,21 +40,30 @@ export function Question({ item }) {
                                 } ${ChevronIconCSS}`}
                             />
                         </Disclosure.Button>
-                        {open && (
-                            <Disclosure.Panel
-                                static
-                                className={disclosurePanelCSS}
-                            >
-                                <div className='flex items-center'>
-                                    <span className=' text-xl md:text-2xl mr-3 text-main-blue font-bold'>
-                                        A
-                                    </span>
-                                    <span className='flex-grow'>
-                                        {item.answer}
-                                    </span>
-                                </div>
-                            </Disclosure.Panel>
-                        )}
+                        <Transition
+                            enter='transition duration-100 ease-out'
+                            enterFrom='transform scale-95 opacity-0'
+                            enterTo='transform scale-100 opacity-100'
+                            leave='transition duration-75 ease-out'
+                            leaveFrom='transform scale-100 opacity-100'
+                            leaveTo='transform scale-95 opacity-0'
+                        >
+                            {open && (
+                                <Disclosure.Panel
+                                    static
+                                    className={disclosurePanelCSS}
+                                >
+                                    <div className='flex items-center'>
+                                        <span className=' text-xl md:text-2xl mr-3 text-main-blue font-bold'>
+                                            A
+                                        </span>
+                                        <span className='flex-grow'>
+                                            {item.answer}
+                                        </span>
+                                    </div>
+                                </Disclosure.Panel>
+                            )}
+                        </Transition>
                     </>
                 )}
             </Disclosure>

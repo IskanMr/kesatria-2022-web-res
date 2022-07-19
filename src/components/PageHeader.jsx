@@ -3,7 +3,7 @@ import { NavLink as NavLinkStock } from 'react-router-dom';
 
 import styles from '../styles/PageHeader.module.css';
 
-import { ReactComponent as HeaderLogo } from '../assets/images/main-header-logo.svg';
+import { ReactComponent as HeaderLogo } from '../assets/icons/kesatriaLogo.svg';
 import { ReactComponent as HamburgerIcon } from '../assets/icons/list.svg';
 import { ReactComponent as RetractUpIcon } from '../assets/icons/chevron-up.svg';
 
@@ -46,10 +46,10 @@ export function PageHeader({ className }) {
                 </div>
             </NavLinkStock>
             <div
-                className={`${styles.navContainer} flex-grow text-sm md:text-lg`}
+                className={`${styles.navContainer} flex-grow text-base md:text-lg`}
             >
                 <nav
-                    className={`fixed w-full md:w-auto left-0 top-0 md:static bg-white md:bg-transparent flex flex-col md:flex-row md:h-full justify-center md:justify-end text-center py-8 pt-24 md:p-0 -z-1 ${
+                    className={`fixed w-full md:w-auto left-0 top-0 md:static bg-white md:bg-transparent flex flex-col md:flex-row md:h-full justify-center md:justify-end text-center py-3 pt-16 shadow-lg md:shadow-none md:p-0 -z-1 ${
                         !isMobileMenuOpen ? 'transform -translate-y-full' : ''
                     } transition-transform duration-300 md:transform-none md:transition-none`}
                 >

@@ -24,6 +24,7 @@ module.exports = {
                 white: '#FFFFFF',
                 gray: {
                     lighter: '#F1F1F1',
+                    default: '#B3B3B3',
                     darker: '#D9D8D3',
                 },
                 accent: {
