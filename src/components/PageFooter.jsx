@@ -42,13 +42,13 @@ export function PageFooter({ className }) {
         >
             {/* TODO: Group the latter text-containing parts (with <div>s) instead of the current approach, to allow similar/uniform left-aligning in mobile viewports */}
             <div className='flex flex-row items-center w-auto md:w-2/5 mb-8 md:mb-0'>
-                <FooterLogo className='block fill-gray-lighter text-gray-lighter h-28 w-auto mr-4' />
-                <div className='text-xs'>
-                    <p className=' font-bold uppercase text-xl mb-4'>
+                <FooterLogo className='block h-44 md:h-56 w-auto mr-4' />
+                <div>
+                    <p className=' font-bold uppercase text-lg md:text-xl mb-2 md:mb-4'>
                         PPSMB Kesatria 2022
                     </p>
                     <button
-                        className='mb-4 text-sm md:text-base hover:text-oranges-default text-left'
+                        className='mb-2 md:mb-4 text-sm md:text-base hover:text-oranges-default text-left'
                         type='button'
                         onClick={() =>
                             openInNewTab(
@@ -74,9 +74,11 @@ export function PageFooter({ className }) {
                     </p>
                 </div>
             </div>
-            <div className='flex flex-col flex-grow md:items-center'>
+            <div className='flex flex-col flex-grow md:items-center justify-center'>
                 <div className='flex flex-col'>
-                    <p className=' font-bold text-xl mb-4'>Official Account:</p>{' '}
+                    <p className=' font-bold text-lg md:text-xl mb-2 md:mb-4'>
+                        Official Account:
+                    </p>{' '}
                     <div className='flex'>
                         <div className='flex flex-col mr-12'>
                             <SocialItem
