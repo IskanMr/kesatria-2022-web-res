@@ -1,12 +1,14 @@
 import { useState } from 'react';
+
 import { GenericPage } from '../../components/GenericPage';
 import { HtmlHead } from '../../components/HtmlHead';
 import { PageTitle } from '../../components/PageTitle';
 import { Question } from '../../components/QNA/Question';
-import Questions from '../../resources/questions.json';
 
 import { ReactComponent as Search } from '../../assets/icons/search.svg';
 import background from '../../assets/images/pattern-light.png';
+
+import Questions from '../../resources/questions.json';
 
 export function QNA() {
     const [list, setList] = useState(Questions);
@@ -47,7 +49,10 @@ export function QNA() {
                     </div>
                     <div className='flex justify-center mt-4 md:mt-8'>
                         Pertanyaan kamu tidak ada di laman ini? Silahkan hubungi
-                        <a href='/pertanyaan-umum' className='ml-1'>
+                        <a
+                            href='mailto:ppsmb-kesatria.ft@ugm.ac.id?subject=FAQ%20Kesatria%202022'
+                            className='ml-1'
+                        >
                             {' '}
                             sini
                         </a>

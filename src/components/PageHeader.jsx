@@ -49,8 +49,10 @@ export function PageHeader({ className }) {
                 className={`${styles.navContainer} flex-grow text-base md:text-lg`}
             >
                 <nav
-                    className={`fixed w-full md:w-auto left-0 top-0 md:static bg-white md:bg-transparent flex flex-col md:flex-row md:h-full justify-center md:justify-end text-center py-3 pt-16 shadow-lg md:shadow-none md:p-0 -z-1 ${
-                        !isMobileMenuOpen ? 'transform -translate-y-full' : ''
+                    className={`fixed w-full md:w-auto left-0 top-0 md:static bg-white md:bg-transparent flex flex-col md:flex-row md:h-full justify-center md:justify-end text-center py-3 pt-16 md:p-0 -z-1 ${
+                        !isMobileMenuOpen
+                            ? 'transform -translate-y-full'
+                            : ' shadow-lg'
                     } transition-transform duration-300 md:transform-none md:transition-none`}
                 >
                     <NavLink to='/'>Beranda</NavLink>
