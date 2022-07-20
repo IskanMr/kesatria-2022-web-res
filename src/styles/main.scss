@@ -24,33 +24,6 @@
     }
 }
 
-@layer components {
-    #page .bordered-card {
-        @apply rounded-lg border-2 px-4 py-2;
-    }
-
-    .webcomic * {
-        -moz-user-select: -moz-none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        -o-user-select: none;
-        user-select: none;
-        @apply font-display;
-    }
-
-    .webcomic .object-container * {
-        z-index: 20;
-    }
-
-    .customized-form {
-        @apply w-full rounded-md border-black focus:outline-none focus:border-transparent focus:ring-black focus:ring-2 transform duration-150 mt-1 focus:-translate-y-1 focus:shadow-md;
-    }
-
-    .h-screen-no-header {
-        height: calc(100vh - 50px);
-    }
-}
-
 /* A temporary solution to make sticky header work (FIXME?) */
 #page {
     overflow: initial !important;
@@ -92,5 +65,6 @@
     }
 }
 #pagetitle {
-    text-shadow: -1px -1px 0 #F26628, 1px -1px 0 #F26628, -1px 1px 0 #F26628, 1px 1px 0 #F26628;
+    text-shadow: -1px -1px 0 #f26628, 1px -1px 0 #f26628, -1px 1px 0 #f26628,
+        1px 1px 0 #f26628;
 }

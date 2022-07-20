@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors');
 const forms = require('@tailwindcss/forms');
 
 module.exports = {
+    mode: 'jit',
     purge: ['./src/**/*.{js,jsx,ts,tsx}'],
     darkMode: false, // or 'media' or 'class'
     theme: {
@@ -10,7 +11,7 @@ module.exports = {
                 transparent: 'transparent',
                 current: 'currentColor',
                 main: { white: '#F1F1F1', blue: '#132B3B' },
-                orange: { default: '#F26628', light: '#F8A36C' },
+                oranges: { default: '#F26628', light: '#F8A36C' },
                 green: '#95DACB',
                 black: '#0D181D',
                 pureblack: colors.black,
@@ -19,10 +20,11 @@ module.exports = {
                     default: '#224860',
                     dark: '#132B3B',
                 },
-                white_bone: '#F1F1F1', //sebelumnya milih white, diubah menjadi milik white_bone
+                white_bone: '#F1F1F1', // sebelumnya milih white, diubah menjadi milik white_bone
                 white: '#FFFFFF',
                 gray: {
                     lighter: '#F1F1F1',
+                    default: '#B3B3B3',
                     darker: '#D9D8D3',
                 },
                 accent: {
@@ -55,18 +57,22 @@ module.exports = {
             },
             fontFamily: {
                 display: ['Mont', 'system-ui', 'sans-serif'],
-                body: ['Lato', 'system-ui', 'sans-serif'],
-                samarkan : ['Samarkan', 'sans-serif'],
-                Mont : ['Mont', 'sans-serif'],
+                body: ['Gill', 'sans-serif'],
+                samarkan: ['Samarkan', 'sans-serif'],
+                mont: ['Mont', 'sans-serif'],
+                gill: ['Gill', 'sans-serif'],
             },
-            boxShadow: {
-                buttonLg: `0 0.6rem 0.65rem rgb(42 42 42 / 0.5)`,
-                buttonSm: `0 0.45rem 0.5rem rgb(42 42 42 / 0.5)`,
-                displayLg: '0 1.25rem 1rem rgb(42 42 42 / 0.4)',
-                displaySm: '0 1rem 0.75rem rgb(42 42 42 / 0.4)',
+            dropShadow: {
+                blue: '0 8px 0 #224860',
             },
             fontWeight: {
                 semilight: 350,
+            },
+            width: {
+                21: '85px',
+            },
+            borderWidth: {
+                6: '6px',
             },
         },
     },

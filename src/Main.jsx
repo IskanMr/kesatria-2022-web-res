@@ -47,7 +47,13 @@ function Main() {
                             path='/penugasan'
                             component={pages.Penugasan}
                         />
+                        <Route
+                            exact
+                            path='/jelajah-teknik'
+                            component={pages.JelajahTeknik}
+                        />
                         <Route path='/agenda' component={pages.Agenda} />
+                        <Route exact path='/materi' component={pages.Materi1} />
                         <Route
                             path='/dokumentasi'
                             component={pages.Dokumentasi}
@@ -56,7 +62,7 @@ function Main() {
                             path='/teknik-store'
                             component={pages.TeknikStore}
                         />
-                        <Route path='/qna' component={pages.QNA} />
+                        <Route path='/pertanyaan-umum' component={pages.QNA} />
 
                         {/* The 404 page */}
                         <Route component={pages.NotFound} />
