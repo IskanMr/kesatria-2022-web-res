@@ -5,19 +5,11 @@
 # on:
 #   push:
 #   pull_request:
-#     branches: [dev, prod]
+#     branches: [dev, main]
 
 # jobs:
 #   main-job:
 #     runs-on: ubuntu-latest
-
-#     env:
-#       REACT_APP_FIREBASE_API_KEY: ${{ secrets.REACT_APP_FIREBASE_API_KEY }}
-#       REACT_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_AUTH_DOMAIN }}
-#       REACT_APP_FIREBASE_PROJECT_ID: ${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}
-#       REACT_APP_FIREBASE_STORAGE_BUCKET: ${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}
-#       REACT_APP_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.REACT_APP_FIREBASE_MESSAGING_SENDER_ID }}
-#       REACT_APP_FIREBASE_APP_ID: ${{ secrets.REACT_APP_FIREBASE_APP_ID }}
 
 #     steps:
 #     - name: Prepare source files from the repo
@@ -32,13 +24,13 @@
 #     - name: Prepare dependencies
 #       run: test -d "node_modules" && echo "Cache found; not reinstalling dependencies." || npm ci
 
-#     - id: prod-deploy
+#     - id: main-deploy
 #       name: Build and deploy for production
-#       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/prod' }}
+#       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
 #       run: npm run build && npm run deploy:wp
 #       env:
 #         INLINE_RUNTIME_CHUNK: 'false' # Disable inlined scripts on resulting build
-#         PUBLIC_URL: //kesatria-2021-resources.vercel.app
+#         PUBLIC_URL: //kesatria-2022-web-res.vercel.app
 #         VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
 #         VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 #         VERCEL_SCOPE: ${{ secrets.VERCEL_SCOPE }}
@@ -47,7 +39,7 @@
 #         WP_PASSWORD: ${{ secrets.WP_DEPLOY_PASSWORD }}
 
 #     - name: Build and deploy draft/preview [Click to see deploy URL]
-#       if: ${{ steps.prod-deploy.outcome == 'skipped' }}
+#       if: ${{ steps.main-deploy.outcome == 'skipped' }}
 #       run: npm run build && npm run deploy:draft
 #       env:
 #         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
