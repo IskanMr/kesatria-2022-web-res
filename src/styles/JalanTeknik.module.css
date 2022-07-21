@@ -1,4 +1,51 @@
 .carouselItem {
-    width: 1181px !important;
-    position: absolute;
+    display: flex !important;
+    height:65vmin;
+    width:80vw;
+    flex-direction: column;
+    display: flex !important;
+    background-color: #224860;
+    border-radius:5vmin;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .carousel-item {
+    display: flex !important;
+    height: 65vmin;
+    width: 80vw;
+    flex-direction: column;
+    display: flex !important;
+    background-color: #224860;
+    border-radius: 5vmin;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+} */
+
+.cardContainer {
+    width: 100%;
+    display: flex !important;
+    height: auto !important;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5rem;
+}
+
+/* .card-container {
+    width: 100%;
+    display: flex !important;
+    height: auto !important;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5rem;
+} */
+
+.slickPrev {
+    content: url('../assets/images/jalanteknik/arrowprev.png');
+}
+
+.slickNext {
+    content: url('../assets/images/jalanteknik/arrownext.png');
 }
