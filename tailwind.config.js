@@ -70,6 +70,7 @@ module.exports = {
             },
             width: {
                 21: '85px',
+                1100: '1122px'
             },
             borderWidth: {
                 6: '6px',
