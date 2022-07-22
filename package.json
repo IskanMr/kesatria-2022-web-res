@@ -21,10 +21,10 @@
         "sweetalert2": "^11.0.19"
     },
     "scripts": {
-        "start": "craco start & npm run watch:css",
-        "build": "craco build && npm run build:css",
-        "build:css": "postcss -i src/styles/main.scss -o output.css",
-        "watch:css": "postcss -i src/styles/main.scss -o output.css -w",
+        "start": "craco start",
+        "build": "craco build",
+        "deploy:draft": "netlify deploy",
+        "deploy:wp": "node wp-deploy.mjs && vercel --prod --scope $VERCEL_SCOPE --token $VERCEL_TOKEN",
         "lint": "eslint --ext .js --ext .jsx src/",
         "lint:fix": "eslint --fix --ext .js --ext .jsx src/"
     },
