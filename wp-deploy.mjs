@@ -14,7 +14,7 @@ const payloadData = [
     ...scripts.map((el) => {
         el.defer = true; // Assume that the scripts will be injected into the <head>
         return el.outerHTML;
-    })
+    }),
 ];
 //#endregion
 
@@ -44,12 +44,24 @@ await page.type('#user_pass', process.env.WP_PASSWORD, { delay: 150 });
 // Click the "login" button
 await Promise.all([
     page.click('#wp-submit'),
-    page.waitForNavigation({ waitUntil: 'load' })
+    page.waitForNavigation({ waitUntil: 'load' }),
 ]);
 
 try {
-    if (page.url() !== targetUrl) {
-        throw new Error();
+    // The wp-login page now apparently doesn't reliably redirect to the correct page after login
+    // So, do some new workaround here
+    let loginRedirectTries = 0;
+    const loginRedirectTriesLimit = 10;
+    while (page.url() !== targetUrl) {
+        if (++loginRedirectTries > loginRedirectTriesLimit) {
+            throw new Error();
+        }
+        if (
+            page.url().includes('wp-login') &&
+            page.url().includes('redirect_to=')
+        ) {
+            await page.goto(targetUrl);
+        }
     }
 
     await page.bringToFront();
@@ -73,7 +85,7 @@ try {
     // Adjust the full string to match the autocompletion behavior of CodeMirror
     await page.type(
         '.CodeMirror-code',
-        payloadData.join('').replace(/(\<\/)[a-z]+\>/ig, '$1'),
+        payloadData.join('').replace(/(\<\/)[a-z]+\>/gi, '$1')
     );
 
     // Remove the autocompleted `script` ending tag
@@ -85,14 +97,15 @@ try {
 
     await Promise.all([
         page.click('input[type=submit][name=update]'),
-        page.waitForSelector('#optionsframework-options-saved')
+        page.waitForSelector('#optionsframework-options-saved'),
     ]);
-
-}
-finally {
+} finally {
     // We need to click the hidden logout button that only appears on parent menu hover
     await page.evaluate(() => {
-        document.getElementById('wp-admin-bar-logout').querySelector('a.ab-item').click();
+        document
+            .getElementById('wp-admin-bar-logout')
+            .querySelector('a.ab-item')
+            .click();
     });
     await page.waitForNavigation({ waitUntil: 'load' });
     await headlessBrowser.close();

@@ -1,4 +1,12 @@
-import React, { Component } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    Redirect
+} from "react-router-dom";
+
+import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -6,94 +14,97 @@ import '../../styles/_fonts.scss';
 import styles from '../../styles/JalanTeknik.module.css';
 import { HtmlHead } from '../../components/HtmlHead';
 import { PageTitle } from '../../components/PageTitle';
-import { GenericPage } from '../../components/GenericPage';
 import background from "../../assets/images/pattern-light.png";
+import arrowPrev from "../../assets/images/jalanteknik/arrowprev.png"
+import arrowNext from "../../assets/images/jalanteknik/arrownext.png"
+import cloud from "../../assets/images/awanGabung.png"
 
-const customeSlider = React.createRef();
-
-const gotoNext = () => {
-    customeSlider.current.slickNext()
+function SampleNextArrow(props) {
+    const { className, onClick } = props;
+    return (
+        <div // eslint-disable-line jsx-a11y/no-static-element-interactions 
+            className={className}
+            style={{ content: `url(${arrowNext})`, height: '15vmin', width: '4vmin', right: '11vw', zIndex: '3', display: "block" }}
+            onClick={onClick} aria-hidden="true"
+        />
+    );
 }
 
-const gotoPrev = () => {
-    customeSlider.current.slickPrev()
+function SamplePrevArrow(props) {
+    const { className, onClick } = props;
+    return (
+        <div // eslint-disable-line jsx-a11y/no-static-element-interactions
+            className={className}
+            style={{ content: `url(${arrowPrev})`, height: '15vmin', width: '4vmin', left: '11vw', zIndex: '3', display: "block" }}
+            onClick={onClick} aria-hidden="true"
+        />
+    );
 }
 
 const settings = {
-    dots: true,
+    dots: false,
     autoplay: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrow: false,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
 };
 
 export function JelajahTeknik() {
     return (
         <>
-            <div className="bg-white_bone block w-100" style={{ backgroundImage: `url(${background})` }}>
-                <HtmlHead title='Jelajah Teknik' decription='Yes' />
-                <div className="carousel-container" style={{
-                    display: 'block',
-                    height: '100%',
-                    width: '100%',
-                    // position: 'relative',
-                    justifyContent: 'center',
-                    zIndex: '-2'
-                }}>
-                    <GenericPage>
-                        <PageTitle title='Jelajah Teknik' />
-
-                        <div className="card-container pt-10" style={{
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            width: '100%',
-                            height: '100%',
-                            zIndex: '-1',
-                        }}>
-                            <button className='btn-slick' type='button' onClick={() => gotoPrev()} style={{ width: '8vmin', left: '15vw', top: '55%', verticalAlign: 'middle', overflow: 'hidden', zIndex: '3', position: 'absolute', display: 'block' }} >
-                                <svg width='100%' height='100%' xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth='2'>
-                                    <path strokeLinecap='round' strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                                </svg>
-                            </button>
-                            <Slider ref={customeSlider} {...settings}>
-                                {/* <CCarouselItem className="bg-[#224860] h-[100vh] w-[800px] flex flex-col relative" style={{  }}>
-                                    <CImage className="" src="https://media-exp1.licdn.com/dms/image/C5603AQEDk8-4kGrnZw/profile-displayphoto-shrink_200_200/0/1630935435708?e=1660176000&v=beta&t=PNfAzjZMoa-mMuT_yxhGUAOsVXCjjeFlwio9D2s-3t4" alt="slide 1" />
-                                    <CCarouselCaption>
-                                        <h5 className="text-center">Semangat JIT ^_^</h5>
-                                        <p className="text-center">dari koor tercinta</p>
-                                    </CCarouselCaption>
-                                </CCarouselItem>
-                                <CCarouselItem className="bg-[#224860] h-[100vh] flex flex-col relative" style={{ }}>
-                                    <CImage className="" src="https://media-exp1.licdn.com/dms/image/C5603AQEDk8-4kGrnZw/profile-displayphoto-shrink_200_200/0/1630935435708?e=1660176000&v=beta&t=PNfAzjZMoa-mMuT_yxhGUAOsVXCjjeFlwio9D2s-3t4" alt="slide 1" />
-                                    <CCarouselCaption>
-                                        <h5 className='text-center'>Semangat JIT ^_^</h5>
-                                        <p className='text-center'>lalaa</p>
-                                    </CCarouselCaption>
-                                </CCarouselItem> */}
-                                <div className={`${styles.carouselItem} carousel-item bg-[#224860] h-[450px] ml-auto mr-auto relative items-center justify-center align-center`} ref={element => {
-                                    if (element) element.style.setProperty('display', 'flex', 'important'); 
-                                }}>
-                                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEDk8-4kGrnZw/profile-displayphoto-shrink_200_200/0/1630935435708?e=1660176000&v=beta&t=PNfAzjZMoa-mMuT_yxhGUAOsVXCjjeFlwio9D2s-3t4" alt="" />
-                                    <h3 className='text-white pt-[18rem] text-center absolute'>Semangat JIT ^_^</h3>
+            <HtmlHead title='Jelajah Teknik' decription='Yes' />
+            <div className="bg-white_bone -z-3" style={{ backgroundImage: `url(${background})` }}>
+                <div className='pt-8 sm:py-12 min-h-screen'>
+                    <img src={cloud} alt="" style={{ right: '2.5%', top: '23.5%', width: 'auto', height: 'auto', zIndex: '3', display: 'flex', position: 'absolute' }} />
+                    <img src={cloud} alt="" style={{ left: '0%', bottom: '-5%', width: 'auto', height: 'auto', zIndex: '3', display: 'flex', position: 'absolute' }} />
+                    <PageTitle title='Jelajah Teknik' />
+                    <Slider {...settings}>
+                        <div className={`${styles.cardContainer}`}>
+                            <div className={`${styles.carouselItem}`}>
+                                <div className='card-one w-[45vw] flex-col flex justify-start'>
+                                    <h3 className='font-gill font-bold text-white text-center ml-[4rem] mb-[4vmin] text-[4vmin]'>Ngulik Teknik</h3>
+                                    <p className='font-gill font-bold text-white text-center ml-[4rem] mb-[7vmin] text-[3.5vmin]'>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus neque molestias nam exercitationem natus voluptatum quos unde sint impedit esse aliquid eaque rem quaerat. Sequi, eveniet ipsum ex cupiditate vero at!
+                                    </p>
+                                    <div className='button-container justify-center items-center flex flex-row'>
+                                        <div className=' text-white text-[16pt] ml-[4rem]'>
+                                            <button className="font-gill font-bold bg-[#F26628] rounded-full p-4 px-6" type='button'>
+                                                <Link to="jelajah-teknik/ngulik-teknik">JELAJAHI LEBIH LANJUT</Link>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className={`${styles.carouselItem} carousel-item bg-[#224860] h-[450px] ml-auto mr-auto relative items-center justify-center align-center`} ref={element => {
-                                    if (element) element.style.setProperty('display', 'flex', 'important');
-                                }}>
-                                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEDk8-4kGrnZw/profile-displayphoto-shrink_200_200/0/1630935435708?e=1660176000&v=beta&t=PNfAzjZMoa-mMuT_yxhGUAOsVXCjjeFlwio9D2s-3t4" alt="" />
-                                    <h3 className='text-white pt-[18rem] text-center absolute'>:)</h3>
+                                <div className='card-two w-[35vw] flex flex-row items-center justify-center'>
+                                    <img style={{ height: '370px', width: '370px' }} src="https://media-exp1.licdn.com/dms/image/C5603AQEDk8-4kGrnZw/profile-displayphoto-shrink_200_200/0/1630935435708?e=1660176000&v=beta&t=PNfAzjZMoa-mMuT_yxhGUAOsVXCjjeFlwio9D2s-3t4" alt="" />
                                 </div>
-                            </Slider>
-                            <button className='btn-slick' type='button' onClick={() => gotoNext()} style={{ width: '8vmin', right: '15vw', top: '55%', verticalAlign: 'middle', overflow: 'hidden', zIndex: '3', position: 'absolute', display: 'block' }}>
-                                <svg width='100%' height='100%' xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </button>
+                            </div>
                         </div>
-
-                    </GenericPage >
+                        <div className={`${styles.cardContainer} `}>
+                            <div className={`${styles.carouselItem}`}>
+                                <div className='card-one w-[45vw] flex-col flex justify-start'>
+                                    <h3 className='font-gill font-bold text-white text-center ml-[4rem] mb-[4vmin] text-[4vmin]'>Mozilla Hubs</h3>
+                                    <p className='font-gill font-bold text-white text-center ml-[4rem] mb-[7vmin] text-[3.5vmin]'>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus neque molestias nam exercitationem natus voluptatum quos unde sint impedit esse aliquid eaque rem quaerat. Sequi, eveniet ipsum ex cupiditate vero at!
+                                    </p>
+                                    <div className='button-container justify-center items-center flex flex-row'>
+                                        <div className=' text-white text-[16pt] ml-[4rem]'>
+                                            <button className="font-gill font-bold bg-[#F26628] rounded-full p-4 px-6" type='button'>
+                                                <Link to="jelajah-teknik/jalan-jalan-teknik">JELAJAHI LEBIH LANJUT</Link>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='card-two w-[35vw] flex flex-row items-center justify-center'>
+                                    <img style={{ height: '370px', width: '370px' }} src="https://media-exp1.licdn.com/dms/image/C5603AQEDk8-4kGrnZw/profile-displayphoto-shrink_200_200/0/1630935435708?e=1660176000&v=beta&t=PNfAzjZMoa-mMuT_yxhGUAOsVXCjjeFlwio9D2s-3t4" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </Slider>
                 </div>
-            </div >
+            </div>
+
         </>
     );
 }
