@@ -1,4 +1,20 @@
+.cardContainer {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+    overflow: visible;
+}
+
 .carouselItem {
-    width: 1181px !important;
-    position: absolute;
+    display: flex !important;
+    height: 65vh;
+    width: 80vw;
+    flex-direction: row;
+    background-color: #224860;
+    border-radius: 3vmin;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
