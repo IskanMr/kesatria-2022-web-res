@@ -1,51 +1,20 @@
-.carouselItem {
-    display: flex !important;
-    height:65vmin;
-    width:80vw;
-    flex-direction: column;
-    display: flex !important;
-    background-color: #224860;
-    border-radius:5vmin;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-/* .carousel-item {
-    display: flex !important;
-    height: 65vmin;
-    width: 80vw;
-    flex-direction: column;
-    display: flex !important;
-    background-color: #224860;
-    border-radius: 5vmin;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-} */
-
 .cardContainer {
     width: 100%;
     display: flex !important;
-    height: auto !important;
     align-items: center;
     justify-content: center;
-    padding-top: 2.5rem;
+    padding: 2rem 0 2rem 0;
+    overflow: visible;
 }
 
-/* .card-container {
-    width: 100%;
+.carouselItem {
     display: flex !important;
-    height: auto !important;
-    align-items: center;
+    height: 65vh;
+    width: 80vw;
+    flex-direction: row;
+    background-color: #224860;
+    border-radius: 3vmin;
+    position: relative;
     justify-content: center;
-    padding-top: 2.5rem;
-} */
-
-.slickPrev {
-    content: url('../assets/images/jalanteknik/arrowprev.png');
-}
-
-.slickNext {
-    content: url('../assets/images/jalanteknik/arrownext.png');
+    align-items: center;
 }
