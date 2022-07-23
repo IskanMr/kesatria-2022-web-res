@@ -3,13 +3,14 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0 2rem 0;
+    padding: 6rem 0 6rem 0;
     overflow: visible;
+    z-index: 2;
 }
 
 .carouselItem {
     display: flex !important;
-    height: 65vh;
+    height: 160vmin;
     width: 80vw;
     flex-direction: row;
     background-color: #224860;
