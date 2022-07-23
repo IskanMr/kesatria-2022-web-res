@@ -1,18 +1,18 @@
 import React from 'react'
-import "../Calender/CalenderElements.css"
-import awan50 from "../../images/awan6.png"
+import styles from "../Calender/CalenderElements.css"
+import awan50 from "../../../assets/images/homepage/awan6.png"
 import {VscDebugStackframeDot } from "react-icons/vsc";
-import awan3 from "../../images/awan5.png"
-import {youtube1Animation, youtube2Animation } from "../../animation";
+import awan3 from "../../../assets/images/homepage/awan5.png"
+import {youtube1Animation, youtube2Animation } from "../../../animation";
 import { motion } from "framer-motion";
 import { useScroll } from "../UseScroll/useScroll";
 
 function Calender() {
   const [element, controls] = useScroll();
 return (
-<div class='myBg5' id='calender'>
-  <div class='ship' ref={element}>
-    <motion.div className='Awan50'
+<div class={`${styles.myBg5}`} id='calender'>
+  <div class={`${styles.ship}`} ref={element}>
+    <motion.div className={`${styles.Awan50}`}
       variants={youtube2Animation}  
       animate={controls}
       transition={{
@@ -24,7 +24,7 @@ return (
     <img src={awan50} />
     </motion.div>
 
-    <motion.div className='Awan3'
+    <motion.div className={`${styles.Awan3}`}
     variants={youtube1Animation}  
     animate={controls}
     transition={{
@@ -36,14 +36,14 @@ return (
     <img src={awan3} />
     </motion.div>
 
-    <div className='Container'>
-    <div class="calendar">
-    <div class="month-indicator">
-      <time> Agustus 2022 </time>
+    <div className={`${styles.Container}`}>
+    <div class={`${styles.calendar}`}>
+    <div class={`${styles.month-indicator}`}>
+      <div className={`${styles.time}`}> Agustus 2022 </div>
     </div>
 
-    <div class="myBg6">
-    <div class="day-of-week">
+    <div class={`${styles.myBg6}`}>
+    <div class= {`${styles.day-of-week}`}>
       <div>Sen</div>
       <div>Sel</div>
       <div>Rab</div>
@@ -53,7 +53,7 @@ return (
       <div>Min</div>
     </div>
     
-    <div class="date-grid">
+    <div class={`${styles.date-grid}`}>
       <button>
         <time>1</time>
       </button>
@@ -62,14 +62,14 @@ return (
       </button>
       <button>
         <time>
-          <div className='hari'>
+          <div className={`${styles.hari}`}>
             3
           </div>
         </time>
       </button>
       <button>
         <time>
-        <div className='hari'>
+        <div className={`${styles.hari}`}>
             4
           </div>
         </time>
@@ -159,11 +159,11 @@ return (
     </div>
   </div>
 
-    <div className='keterangan'>
+    <div className={`${styles.keterangan}`}>
        PPSMB KESATRIA 2022
     </div>
     </div>
-    <VscDebugStackframeDot className='icon20'></VscDebugStackframeDot>
+    <VscDebugStackframeDot className={`${styles.icon20}`}></VscDebugStackframeDot>
   </div>
 </div>
   )

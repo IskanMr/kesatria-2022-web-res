@@ -1,16 +1,13 @@
 import React, {useState} from 'react'
-import Sidebar from '../Components/Sidebar';
-import Navbar from '../Components/Navbar';
-import HeroSection from '../Components/HeroSection';
-import Youtube from '../Components/Youtube';
-import Jjt from '../Components/JJT';
+import HeroSection from '../../components/Homepage/Hero'
+import Youtube from '../../components/Homepage/Youtube'
+import Jjt from '../../components/Homepage/JJT';
 import KilasFooter from './kilasfooter';
-import Calender from '../Components/Calender'
+import Calender from '../../components/Homepage/Calender'
 import Kartu from './kartu';
 import Mengenai from './mengenai';
 import { motion } from 'framer-motion';
-import Scroll from '../Components/scroll';
-import Store from '../Components/Store';
+import ScrollArrow from '../../components/Homepage/scrollToTop';
 
 
 
@@ -36,7 +33,7 @@ const Home = () => {
         <Calender />
         <Kartu />
         <KilasFooter />
-        <Scroll />
+        <ScrollArrow />
    </motion.div>
    </React.StrictMode>
   )
