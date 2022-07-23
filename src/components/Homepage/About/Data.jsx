@@ -1,0 +1,22 @@
+export const homeObjOne ={
+    id: 'about',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Mengenal PPSMB KESATRIA 2022',
+    headLine: 'ANTACHANDRA',
+    description: 'Antachandra (terbang ke bulan) diawali dengan lepas landas dari permukaan bumi yang menggambarkan perjuangan awal atau titik awal para Kesatria Muda untuk mengawali kesaksian dan kegiatan mereka di lingkungan sivitas akademika UGM. Tidak pernah berhenti terbang sebelum sampai ke tujuan, kesatria dapat diartikan sebagai seorang pejuang yang tangguh, tetap dalam pendirian, dan konsisten dalam segala tindakan yang harus siap sedia bertanggung jawab atas segala tindakannya.',
+    imgStart: false,
+    img: require('../../images/logo_3.png'),
+    alt: 'Logo',
+    img2: require('../../images/logo_4.png'),
+    img3: require('../../images/logo_5.png'),
+    img4: require('../../images/logo_6.png'),
+    img5: require('../../images/logo_7.png'),
+    img6: require('../../images/logo_8.png'),
+    img8: require('../../images/awan4.png'),
+    img99: require('../../images/awan3.png'),
+    dark: true,
+    primary: true,
+    darkText: false
+}
