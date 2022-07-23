@@ -41,6 +41,11 @@ module.exports = {
                 },
             },
             screens: {
+                '780px': {'max': '780px'},
+                '768px': {'max': '768px'},
+                '998px': '998px',
+                '320px': {'min': '320px', 'max': '768px'},
+                '1024px': {'min': '768px', 'max': '1024px'},
                 portrait: {
                     raw: '(orientation: portrait)',
                 },
