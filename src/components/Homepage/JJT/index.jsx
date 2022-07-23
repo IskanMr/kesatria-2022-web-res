@@ -1,6 +1,6 @@
 import React from 'react'
-import "../JJT/JjtElements.css"
-import { jjtAnimation } from "../../animation";
+import styles from "../JJT/JjtElements.css"
+import { jjtAnimation } from "../../../animation";
 import { motion } from "framer-motion";
 import { useScroll } from "../UseScroll/useScroll";
 
@@ -9,8 +9,8 @@ function Jjt() {
   const [element, controls] = useScroll();
   
   return (
-    <div className="Bg4" id='jelajahteknik'>
-      <motion.div className='max-width' ref={element}
+    <div className={`${styles.Bg4}`}id='jelajahteknik'>
+      <motion.div className={`${styles.max-width}`} ref={element}
             variants={jjtAnimation}  
             animate={controls}
                transition={{
@@ -19,11 +19,11 @@ function Jjt() {
                  duration: 1.8
                }}
             > 
-       <div className='kotak'>
-                <div className='kotak2'>
-                <div className='kotak3'>
-                <div className='kotak1'></div>
-                <div className='jjt1'> Jalan-Jalan Teknik </div>
+       <div className={`${styles.kotak}`}>
+                <div className={`${styles.kotak2}`}>
+                <div className={`${styles.kotak3}`}>
+                <div className={`${styles.kotak1}`}></div>
+                <div className={`${styles.jjt1}`}> Jalan-Jalan Teknik </div>
                 </div>
                 </div>
         </div>

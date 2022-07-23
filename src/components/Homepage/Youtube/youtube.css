@@ -1,5 +1,5 @@
 .Bg2{
-    background-image: url("../../images/pattern2.png");
+    background-image: url("../../../assets/images/homepage/pattern2.png");
     background-size: cover;
     height: 125vh;
     background-color: #132B3B ;
@@ -136,7 +136,7 @@
     .Bg2{
         width: auto;
         height: 500px;
-        background-image: url("../../images/pattern2small.png");
+        background-image: url("../../../assets/images/homepage/pattern2small.png");
         background-size: cover;
     }
 
@@ -214,7 +214,7 @@
     .Bg2{
         width: auto;
         height: 500px;
-        background-image: url("../../images/pattern2small.png");
+        background-image: url("../../../assets/images/homepage/pattern2small.png");
         background-size: cover;
     }
 
@@ -375,7 +375,7 @@
     .Bg2{
         width: auto;
         height: 120vh;
-        background-image: url("../../images/pattern2small.png");
+        background-image: url("../../../assets/images/homepage/pattern2small.png");
       }
     
       .max-width{

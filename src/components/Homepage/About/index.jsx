@@ -2,9 +2,9 @@ import React from 'react'
 import {AboutRow, Column1, Column2, Column3, Column4, TextWrapper, TopLine, Heading, Subtitle, Img, ImgWrap, ImgDep,ImgDep1, ImgDep12, ImgDep3, ImgDep4, ImgDep5,Img11, Img14, Img12, Img13, Img4, Img15} from './AboutElements'
 import { useScroll } from "../UseScroll/useScroll";
 import { motion } from "framer-motion";
-import { aboutAnimations, about1Animations } from "../../animation";
+import { aboutAnimations, about1Animations } from "../../../animation";
 import { useSpring, animated } from 'react-spring'
-import "../About/AboutElements.css"
+import styles from "../About/AboutElements.css"
 
 const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img,img2, img3, img4, img5, img6,img8, alt}) => {
 const [element, controls] = useScroll();
@@ -46,27 +46,27 @@ const styles = useSpring({
                   <ImgDep1 >
                   <Img11 src={img2} alt={alt} />
                   </ImgDep1>
-                  <animated.div className='ImgDep1' style={styles} />
+                  <animated.div className= {`${styles.ImgDep1}`} style={styles} />
 
                   <ImgDep12>
                   <Img12 src={img3} alt={alt} />
                   </ImgDep12>
-                  <animated.div className='ImgDep2' style={styles} />
+                  <animated.div className={`${styles.ImgDep2}`} style={styles} />
                   
                   <ImgDep3>
                   <Img13 src={img4} alt={alt} />
                   </ImgDep3>
-                  <animated.div className='ImgDep3' style={styles} />
+                  <animated.div className={`${styles.ImgDep3}`} style={styles} />
 
                   <ImgDep4>
                   <Img14 src={img5} alt={alt} />
                   </ImgDep4>
-                  <animated.div className='ImgDep4' style={styles} />
+                  <animated.div className={`${styles.ImgDep4}`} style={styles} />
 
                   <ImgDep5>
                   <Img15 src={img6} alt={alt} />
                   </ImgDep5>
-                  <animated.div className='ImgDep5' style={styles} />
+                  <animated.div className={`${styles.ImgDep5}`} style={styles} />
 
                 </ImgDep>
               </Column3>

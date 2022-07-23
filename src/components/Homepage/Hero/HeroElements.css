@@ -3,7 +3,7 @@ img{
 }
 
 .Bg1{
-    background-image: url("../../images/Bg1.png");
+    background-image: url("../../../assets/images/homepage/Bg1.png");
     background-size: cover;
     /* position: relative; */
     width: 100%;
@@ -141,7 +141,7 @@ color: #0C2434;
      height: 550px;
      margin-top: -10px;
      overflow: hidden;
-     background-image: url("../../images/Bgmobile1.png");
+     background-image: url("../../../assets/images/homepage/Bgmobile1.png");
      background-size: cover;
     }
  
@@ -201,7 +201,7 @@ color: #0C2434;
     height: 600px;
     margin-top: -10px;
     overflow: hidden;
-    background-image: url("../../images/Bgmobile1.png");
+    background-image: url("../../../assets/images/homepage/Bgmobile1.png");
     background-size: cover;
    }
 

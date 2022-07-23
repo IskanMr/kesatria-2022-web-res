@@ -1,12 +1,11 @@
 import React from 'react'
-import Kilas from '../Components/Kilasbalik'
-import Footer from '../Components/Footer';
-import "../pages/kilasfooter.css"
+import Kilas from '../../components/Homepage/KilasBalik'
+import styles from "../pages/kilasfooter.css"
 
 function KilasFooter() {
   return (
     <>
-    <div className="Bg10"> 
+    <div className={`${styles.Bg10}`}> 
         <Kilas />
         <Footer />
     </div>

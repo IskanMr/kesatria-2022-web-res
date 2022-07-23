@@ -1,7 +1,7 @@
 
 import React, {useState} from 'react';
 import {FaChevronUp} from 'react-icons/fa';
-import '../scroll/style.css';
+import styles from '../scroll/style.css';
 
 
 const ScrollArrow = () => {
@@ -23,8 +23,8 @@ const ScrollArrow = () => {
   window.addEventListener('scroll', checkScrollTop)
 
   return (
-        <div className='kotak10'>
-        <FaChevronUp className="scrollTop" onClick={scrollTop} style={{display: showScroll ? 'flex' : 'none'}}/>
+        <div className={`${styles.kotak10}`}>
+        <FaChevronUp className={`${styles.scrollTop}`} onClick={scrollTop} style={{display: showScroll ? 'flex' : 'none'}}/>
         </div>
   );
 }
