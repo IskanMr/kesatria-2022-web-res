@@ -7,30 +7,32 @@ function WantGoDay2(){
         </button>
     )
 }
-function JustNull(){
-    return(
-        <button type='submit' className='flex self-stretch w-21 justify-center my-6 mr-6 rounded-r-2xl px-7 py-4 flex-shrink-0 items-stretch duration-100 '>
-            <img src={Go} alt="Go" className='h-full w-16' />
-        </button>
-    )
-}
-
 export function HariKedua ({time, title, deskripsi, go}) {
+    const buttonAll = "group container border-6 border-blue-default block flex-row rounded-3xl w-1100 grow py-4";
+    const titleAgenda = 'font-gill text-4xl font-bold text-blue-default';
+    const deskripsiAgenda = 'font-gill text-3xl text-judul text-blue-default min-w-96';
+    const timeAgenda= "w-32 h-14 my-auto flex place-content-center bg-blue-default text-white font-gill font-bold text-3xl py-2 md:mt-4 rounded-2xl mx-9 agenda:mx-6 lg:my-9";
+    const buttonGoAll = "group container border-6 border-blue-default block flex-row rounded-3xl hover:bg-blue-default w-1100 grow cursor-pointer py-4";
+    const titleGoAgenda = 'font-gill text-4xl font-bold text-blue-default group-hover:text-white';
+    const deskripsiGoAgenda = 'font-gill text-3xl text-judul text-blue-default group-hover:text-white min-w-96';
+    const timeGoAgenda= "w-32 h-14 my-auto flex place-content-center bg-blue-default text-white font-gill font-bold text-3xl py-2 md:mt-4 rounded-2xl mx-9 agenda:mx-6 group-hover:bg-oranges-default lg:my-9";
     return(
+        
+
         <div id="list-jadwal-hari2" className='mt-2 pt-5 mx-auto' style={{
             animation:
                 'test-appear-up-anim 0.5s cubic-bezier(0, 1, 1, 1)',
         }}>
-        <div className="group container border-6 border-blue-default block flex-row rounded-3xl hover:bg-blue-default w-1100 grow cursor-pointer ">
-            <div className="self-stretch flex flex-col md:flex-row items-start md:items-center mr-auto md:flex-wrap">
-                <div className="w-32 h-14 my-auto flex place-content-center bg-blue-default text-white font-gill font-bold text-3xl py-2 md:mt-4 rounded-2xl mx-9 sm:mx-6 group-hover:bg-oranges-default lg:my-9">
+        <div className={go?buttonGoAll:buttonAll}>
+            <div className="self-stretch flex flex-col md:flex-row items-start md:items-center mr-auto agenda:flex-wrap">
+                <div className={go?timeGoAgenda:timeAgenda}>
                     {time}
                 </div>
-                <div className="container sm:w-5/6 flex flex-col">
-                    <div className='font-gill text-4xl font-bold text-blue-default group-hover:text-white ml-6'>
+                <div className="container sm:w-5/6 flex flex-col agenda:w-full">
+                    <div className={go?titleGoAgenda:titleAgenda}>
                        {title}
                     </div>
-                    <div className='font-gill text-3xl text-judul text-blue-default group-hover:text-white ml-6 min-w-96'>
+                    <div className={go?deskripsiGoAgenda:deskripsiAgenda}>
                        {deskripsi}
                     </div>
                 </div>

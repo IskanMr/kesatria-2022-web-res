@@ -14,6 +14,8 @@ import { PageTitle } from '../../components/PageTitle';
 import { HariPertama } from './hari-1/hari1';
 import { HariKedua } from './hari-2/hari2';
 import agendaData from '../../resources/daftar-agenda.json';
+import { GenericPage } from '../../components/GenericPage';
+import background from '../../assets/images/pattern-light.png';
 
 let checkingDay;
 
@@ -37,6 +39,11 @@ export function Agenda() {
     return (
         <>
             <HtmlHead title='Agenda' decription='Yes' />
+            <div
+                className='bg-white_bone'
+                style={{ backgroundImage: `url(${background})` }}
+            >
+            <GenericPage>
             <PageTitle title="Agenda" />
             <div className="container mx-auto px-auto w-5/6 place-items-center flex flex-col grow">
                 <Router>
@@ -83,6 +90,8 @@ export function Agenda() {
                 <br/>
                 <br/>
                 <br/>
+            </div>
+            </GenericPage>
             </div>
         </>
     );
