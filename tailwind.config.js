@@ -41,12 +41,12 @@ module.exports = {
                 },
             },
             screens: {
-                '780px': {'max': '780px'},
-                '768px': {'max': '768px'},
+                '780px': { max: '780px' },
+                '768px': { max: '768px' },
                 '998px': '998px',
-                '320px': {'min': '320px', 'max': '768px'},
-                '1024px': {'min': '768px', 'max': '1024px'},
-                '1280px': {'min': '0px', 'max': '1280px'},
+                '320px': { min: '320px', max: '768px' },
+                '1024px': { min: '768px', max: '1024px' },
+                '1280px': { min: '0px', max: '1280px' },
                 portrait: {
                     raw: '(orientation: portrait)',
                 },
