@@ -1,12 +1,14 @@
 import React from 'react'
+import { motion } from "framer-motion";
+import { useSpring, animated } from 'react-spring'
 import {AboutRow, Column1, Column2, Column3, Column4, TextWrapper, TopLine, Heading, Subtitle, Img, ImgWrap, ImgDep,ImgDep1, ImgDep12, ImgDep3, ImgDep4, ImgDep5,Img11, Img14, Img12, Img13, Img4, Img15} from './AboutElements'
 import { useScroll } from "../UseScroll/useScroll";
-import { motion } from "framer-motion";
-import { aboutAnimations, about1Animations } from "../../../animation";
-import { useSpring, animated } from 'react-spring'
+
+import { aboutAnimations, about1Animations } from "../../../utils/animation";
+
 import styles from "./AboutElements.module.css"
 
-const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img,img2, img3, img4, img5, img6,img8, alt}) => {
+export function AboutSection  ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img,img2, img3, img4, img5, img6,img8, alt})  {
 const [element, controls] = useScroll();
 const styles5 = useSpring({
   loop: true,
@@ -90,4 +92,3 @@ const styles5 = useSpring({
   )
 }
 
-export default AboutSection

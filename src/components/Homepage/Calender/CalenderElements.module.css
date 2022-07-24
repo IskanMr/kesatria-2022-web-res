@@ -125,19 +125,19 @@
     height: 32.5vh;
 }
   
-.day-of-week,
+.dayOfWeek,
 .date-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
   
-.day-of-week {
+.dayOfWeek {
     position: relative;
     top: 10px;
     margin-top: 1.25em;
 }
   
-.day-of-week > * {
+.dayOfWeek > * {
     font-size: 0.7em;
     color: #0C2434;
     font-weight: 500;
@@ -147,16 +147,16 @@
 }
   
   /* Dates */
-.date-grid {
+.dateGrid {
     margin-top: 0.7em;
 }
   
   /* Positioning the first day */
-.date-grid button:first-child {
+.dateGrid button:first-child {
     grid-column:1;
 }
   
-.date-grid button {
+.dateGrid button {
     position: relative;
     border: none;
     width: 6.5ch;
@@ -166,14 +166,14 @@
     color: #616161;
 }
   
-.date-grid button:hover,
-.date-grid button:focus {
+.dateGrid button:hover,
+.dateGrid button:focus {
     outline: none;
     color: var(--blue-grey-700);
 }
   
-.date-grid button:active,
-.date-grid button.is-selected {
+.dateGrid button:active,
+.dateGrid button.is-selected {
     color: var(--teal-900);
 }
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import { homeObjOne } from '../../components/Homepage/About/Data'
-import AboutSection from '../../components/Homepage/About/index'
+import {AboutSection } from '../../components/Homepage/About/index'
 import styles from './Mengenai.module.css';
 
-function Mengenai() {
+export function Mengenai() {
   return (
         <>
             <div className={`${styles.Bg21}`}>
@@ -13,4 +13,3 @@ function Mengenai() {
   )
 }
 
-export default Mengenai
