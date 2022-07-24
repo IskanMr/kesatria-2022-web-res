@@ -20,7 +20,7 @@ export function Penugasan() {
                         src='https://drive.google.com/file/d/1canFad3kwDTDxoo2FdayU39Hww2W5_k0/preview'
                         style={{ width: 1800, height: 1000 }}
                         allow='autoplay'
-                        title='Detail Penugasan'
+                        title='Detail Penugasan' 
                         className='absolute w-full shadow hover:shadow-2xl shadow-blue-500/50 rounded-2xl place-content-center mt-8 '/
                     >
                 </div>

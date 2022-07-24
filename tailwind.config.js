@@ -78,6 +78,11 @@ module.exports = {
                 21: '85px',
                 1100: '1122px'
             },
+            height:{
+                xl : '1080px',
+                lg : '720px',
+                md : '480px'
+            },
             borderWidth: {
                 6: '6px',
             },

@@ -26,7 +26,7 @@ export function Agenda() {
     let changeDay2;
     const clicked = 'font-gill text-2xl font-bold w-32 bg-oranges-default text-white flex place-content-center';
     const unClicked = 'font-gill text-2xl font-bold w-32 bg-oranges-light text-white flex place-content-center';
-    if(location.pathname === "/agenda/hari-1"){
+    if(location.pathname === "/agenda/hari-1" || location.pathname === "/agenda"){
         [cssDay1, changeDay1] = useState(clicked);
         [cssDay2, changeDay2] = useState(unClicked);
     }else{
@@ -34,7 +34,6 @@ export function Agenda() {
         [cssDay2, changeDay2] = useState(clicked);
     }
     
-        console.log(location.pathname);
     return (
         <>
             <HtmlHead title='Agenda' decription='Yes' />
