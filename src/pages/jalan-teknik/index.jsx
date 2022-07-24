@@ -100,7 +100,7 @@ export function JelajahTeknik() {
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus neque molestias nam exercitationem natus voluptatum quos unde sint impedit esse aliquid eaque rem quaerat. Sequi, eveniet ipsum ex cupiditate vero at!
                                         </p>
                                         <div className='button-container justify-center items-center flex flex-row'>
-                                            <div className=' text-white text-[3vmin] md:text-[2.5vmin] mb-[1.5rem]'>
+                                            <div className=' text-white text-[3.5vmin] md:text-[3vmin] mb-[1.5rem]'>
                                                 <button className="font-gill font-bold bg-[#F26628] rounded-full p-[0.5rem] px-[1rem]" type='button'>
                                                     <Link to="jelajah-teknik/jalan-jalan-teknik">JELAJAHI LEBIH LANJUT</Link>
                                                 </button>
