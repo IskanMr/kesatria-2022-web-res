@@ -21,10 +21,8 @@ export function Penugasan() {
                         style={{ width: 1800, height: 1000 }}
                         allow='autoplay'
                         title='Detail Penugasan'
-                        className='absolute w-full shadow hover:shadow-2xl shadow-blue-500/50 rounded-2xl place-content-center mt-8 '
+                        className='absolute w-full shadow hover:shadow-2xl shadow-blue-500/50 rounded-2xl place-content-center mt-8 '/
                     >
-                        documnet
-                    </iframe>
                 </div>
             </div>
         </div>

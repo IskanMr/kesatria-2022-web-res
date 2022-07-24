@@ -12,10 +12,13 @@ function WantGoDay1(){
 
 export function HariPertama ({time, title, deskripsi, go}) {
     return(
-        <div id="list-jadwal-hari1" className='self-stretch mt-6 pt-6 grow h-32 mx-auto' >
-            <div className="self-stretch group container border-6 border-oranges-default flex flex-row rounded-3xl hover:bg-oranges-default cursor-pointer flex-1 w-1100 grow">
-                <div className="self-stretch flex flex-col md:flex-row items-start md:items-center mr-auto md:flex-wrap flex-grow">
-                    <div className="w-32 h-14 my-auto flex place-content-center bg-oranges-default text-white font-gill font-bold text-3xl py-2 md:mt-4 rounded-2xl mx-9 sm:mx-6 group-hover:bg-blue-default lg:my-7">
+        <div id="list-jadwal-hari1" className='mt-2 pt-5 mx-auto' style={{
+            animation:
+                'test-appear-up-anim 0.5s cubic-bezier(0, 1, 1, 1)',
+        }}>
+            <div className="group container border-6 border-oranges-default block flex-row rounded-3xl hover:bg-oranges-default w-1100 grow cursor-pointer ">
+                <div className="self-stretch flex flex-col md:flex-row items-start md:items-center mr-auto md:flex-wrap">
+                    <div className="w-32 h-14 my-auto flex place-content-center bg-oranges-default text-white font-gill font-bold text-3xl py-2 md:mt-4 rounded-2xl mx-9 sm:mx-6 group-hover:bg-blue-default lg:my-9">
                         {time}
                     </div>
                     <div className="container sm:w-5/6 flex flex-col">
