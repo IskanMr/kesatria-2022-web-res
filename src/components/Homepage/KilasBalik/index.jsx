@@ -1,12 +1,12 @@
 import React from 'react'
-import styles from "../Kilasbalik/kilasbalik.css"
+import styles from "./KilasBalik.module.css"
 import awan5 from "../../../assets/images/homepage/awan6.png"
 import logo10 from"../../../assets/images/homepage/logo_10.png"
 import logo11 from"../../../assets/images/homepage/logo_11.png"
 import logo12 from"../../../assets/images/homepage/logo_12.png"
 import logo13 from"../../../assets/images/homepage/logo_13.png"
 import logo14 from"../../../assets/images/homepage/logo_14.png"
-import { youtube1Animation, jjtAnimation } from "../../animation";
+import { youtube1Animation, jjtAnimation } from "../../../animation";
 import { motion } from "framer-motion";
 import { useScroll } from "../UseScroll/useScroll";
 import { useSpring, animated } from 'react-spring'

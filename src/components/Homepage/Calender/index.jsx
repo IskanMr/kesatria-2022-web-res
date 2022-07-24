@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../Calender/CalenderElements.css"
+import styles from "./CalenderElements.module.css"
 import awan50 from "../../../assets/images/homepage/awan6.png"
 import {VscDebugStackframeDot } from "react-icons/vsc";
 import awan3 from "../../../assets/images/homepage/awan5.png"

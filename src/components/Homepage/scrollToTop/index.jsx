@@ -1,7 +1,7 @@
 
 import React, {useState} from 'react';
 import {FaChevronUp} from 'react-icons/fa';
-import styles from '../scroll/style.css';
+import styles from './TopElements.module.css';
 
 
 const ScrollArrow = () => {

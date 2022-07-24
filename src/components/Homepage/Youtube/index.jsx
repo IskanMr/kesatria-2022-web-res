@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 // import { render } from 'react-dom';
 // import { useModal } from 'react-hooks-use-modal';
-import styles from "../Youtube/youtube.css"
+import styles from "./Youtube.module.css"
 import awan1 from '../../../assets/images/homepage/awan1.png'
 import awan2 from '../../../assets/images/homepage/awan2.png'
 import awan20 from '../../../assets/images/homepage/awan3.png'

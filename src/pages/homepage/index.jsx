@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
-import HeroSection from '../../components/Homepage/Hero'
-import Youtube from '../../components/Homepage/Youtube'
-import Jjt from '../../components/Homepage/JJT';
+import HeroSection from '../../components/Homepage/Hero/index'
+import Youtube from '../../components/Homepage/Youtube/index'
+import Jjt from '../../components/Homepage/JJT/index';
 import KilasFooter from './kilasfooter';
-import Calender from '../../components/Homepage/Calender'
+import Calender from '../../components/Homepage/Calender/index'
 import Kartu from './kartu';
 import Mengenai from './mengenai';
 import { motion } from 'framer-motion';
-import ScrollArrow from '../../components/Homepage/scrollToTop';
+import ScrollArrow from '../../components/Homepage/scrollToTop/index';
 
 
 

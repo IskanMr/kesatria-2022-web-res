@@ -4,11 +4,11 @@ import { useScroll } from "../UseScroll/useScroll";
 import { motion } from "framer-motion";
 import { aboutAnimations, about1Animations } from "../../../animation";
 import { useSpring, animated } from 'react-spring'
-import styles from "../About/AboutElements.css"
+import styles from "./AboutElements.module.css"
 
 const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img,img2, img3, img4, img5, img6,img8, alt}) => {
 const [element, controls] = useScroll();
-const styles = useSpring({
+const styles5 = useSpring({
   loop: true,
   from: { rotateZ: 0 },
   to: { rotateZ: 360 },
@@ -46,27 +46,27 @@ const styles = useSpring({
                   <ImgDep1 >
                   <Img11 src={img2} alt={alt} />
                   </ImgDep1>
-                  <animated.div className= {`${styles.ImgDep1}`} style={styles} />
+                  <animated.div className= {`${styles.ImgDep1}`} style={styles5} />
 
                   <ImgDep12>
                   <Img12 src={img3} alt={alt} />
                   </ImgDep12>
-                  <animated.div className={`${styles.ImgDep2}`} style={styles} />
+                  <animated.div className={`${styles.ImgDep2}`} style={styles5} />
                   
                   <ImgDep3>
                   <Img13 src={img4} alt={alt} />
                   </ImgDep3>
-                  <animated.div className={`${styles.ImgDep3}`} style={styles} />
+                  <animated.div className={`${styles.ImgDep3}`} style={styles5} />
 
                   <ImgDep4>
                   <Img14 src={img5} alt={alt} />
                   </ImgDep4>
-                  <animated.div className={`${styles.ImgDep4}`} style={styles} />
+                  <animated.div className={`${styles.ImgDep4}`} style={styles5} />
 
                   <ImgDep5>
                   <Img15 src={img6} alt={alt} />
                   </ImgDep5>
-                  <animated.div className={`${styles.ImgDep5}`} style={styles} />
+                  <animated.div className={`${styles.ImgDep5}`} style={styles5} />
 
                 </ImgDep>
               </Column3>

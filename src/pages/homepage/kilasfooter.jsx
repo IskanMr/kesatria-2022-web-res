@@ -1,6 +1,6 @@
 import React from 'react'
-import Kilas from '../../components/Homepage/KilasBalik'
-import styles from "../pages/kilasfooter.css"
+import Kilas from '../../components/Homepage/KilasBalik/index'
+import styles from "./KilasFooter.module.css"
 
 function KilasFooter() {
   return (

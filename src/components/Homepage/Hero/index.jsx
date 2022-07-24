@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../HeroSection/HeroSection.css"
+import styles from "./HeroElements.module.css"
 import maskot from "../../../assets/images/homepage/mascot.png"
 import logo2 from "../../../assets/images/homepage/logo_2.png"
 import { FaAngleDown } from 'react-icons/fa';

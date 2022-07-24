@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../JJT/JjtElements.css"
+import styles from "./JjtElements.module.css"
 import { jjtAnimation } from "../../../animation";
 import { motion } from "framer-motion";
 import { useScroll } from "../UseScroll/useScroll";
