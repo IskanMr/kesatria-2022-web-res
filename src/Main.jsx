@@ -43,7 +43,6 @@ function Main() {
                     <Switch>
                         <Route exact path='/' component={pages.Home} />
                         <Route
-                            exact
                             path='/penugasan'
                             component={pages.Penugasan}
                         />
