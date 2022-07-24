@@ -57,11 +57,13 @@ export function PageHeader({ className }) {
                 >
                     <NavLink to='/'>Beranda</NavLink>
                     <NavLink to='/jelajah-teknik'>Jelajah Teknik</NavLink>
+                    <NavLink to='/dokumentasi'>Dokumentasi</NavLink>
                     <NavLink to='/agenda'>Agenda</NavLink>
                     <NavLink to='/penugasan'>Penugasan</NavLink>
                     <NavLink to='/materi'>Materi</NavLink>
                     <NavLink to='/teknik-store'>Teknik Store</NavLink>
                     <NavLink to='/pertanyaan-umum'>FAQ</NavLink>
+                    
                 </nav>
                 <button
                     type='button'
