@@ -47,6 +47,13 @@ export function HeroSection() {
           PPSMB KESATRIA 2022
       </motion.div>
 
+      <motion.div className={`${styles.scroll}`}
+       variants={homeInfo2Animation}  
+       transition={{ delay: 1.5, duration: 0.6, type: "tween" }}
+      >
+        Scroll Down
+      </motion.div>
+
       <motion.div className= {`${styles.topToBtm}`}
        variants={homeInfo2Animation}  
        transition={{ delay: 1.5, duration: 0.6, type: "tween" }}
