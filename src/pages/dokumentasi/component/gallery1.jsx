@@ -23,7 +23,7 @@ export function Gallery1() {
     }
 
     return (
-                <div className='container gallery object-cover h-80 w-96 mx-auto grid grid-cols-3 gap-2'>
+                <div className='container gallery object-cover w-96 mx-auto my-auto grid grid-cols-3 gap-2'>
                     <div
                         className='picture'
                         data-name='2019'
