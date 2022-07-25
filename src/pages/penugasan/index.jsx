@@ -55,7 +55,7 @@ export function Penugasan() {
                             </Route>
                             <Route path={`${path}/hari-1`}>
                                 <div className="h-10" />
-                                <div className='block xl:h-xl lg:h-xl md:h-xl sm:h-lg 320px:h-md mx-auto w-full' style={{
+                                <div className='block h-md xl:h-xl lg:h-xl sm:h-lg mx-auto w-full' style={{
                                     animation: 'test-appear-up-anim 1s cubic-bezier(0, 1, 1, 1)',
                                 }}>
                                     <iframe
