@@ -31,6 +31,7 @@
     /* background-color: #014d40; */
     height: 60vh;
     overflow-x: hidden;
+    overflow-y: visible;
     background-image: url('../../../assets/images/homepage/pattern3.png');
     background-color: #F1F1F1;
     /* background-color: black; */
@@ -44,11 +45,12 @@
     position: relative;
     /* background-color: #0C2434; */
     overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .Awan50{
     position: absolute;
-    width: 359px;
+    width: 100%;
     height: 206px;
     left: 1270px;
     top: 100px;
@@ -56,10 +58,10 @@
 
 .Awan3{
     position: relative;
-    width: 230px;
+    width: 100%;
     height: 18px;
     left: -37px;
-    top: -5px;
+    top: 20px;
 }
   
 .Container {
@@ -78,7 +80,7 @@
 }
 
   
-.month-indicator {
+.monthIndicator {
     color: #FAFAFA;
     max-width: 100%;
     height: 5vh;
@@ -110,11 +112,11 @@
 
 .icon20{
     height: 19px;
-    width: 180px;
+    width: 250px;
     text-align: center;
     position: relative;
-    bottom: 158px;
-    left: -290px;
+    bottom: 159px;
+    left: 250px;
     color: #F26628;
     font-size: 16px;
 }
@@ -125,19 +127,19 @@
     height: 32.5vh;
 }
   
-.day-of-week,
-.date-grid {
+.dayOfWeek,
+.dateGrid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
   
-.day-of-week {
+.dayOfWeek {
     position: relative;
     top: 10px;
     margin-top: 1.25em;
 }
   
-.day-of-week > * {
+.dayOfWeek > * {
     font-size: 0.7em;
     color: #0C2434;
     font-weight: 500;
@@ -147,16 +149,16 @@
 }
   
   /* Dates */
-.date-grid {
+.dateGrid {
     margin-top: 0.7em;
 }
   
   /* Positioning the first day */
-.date-grid button:first-child {
+.dateGrid button:first-child {
     grid-column:1;
 }
   
-.date-grid button {
+.dateGrid button {
     position: relative;
     border: none;
     width: 6.5ch;
@@ -166,14 +168,14 @@
     color: #616161;
 }
   
-.date-grid button:hover,
-.date-grid button:focus {
+.dateGrid button:hover,
+.dateGrid button:focus {
     outline: none;
     color: var(--blue-grey-700);
 }
   
-.date-grid button:active,
-.date-grid button.is-selected {
+.dateGrid button:active,
+.dateGrid button.is-selected {
     color: var(--teal-900);
 }
 

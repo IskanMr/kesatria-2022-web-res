@@ -1,7 +1,7 @@
 .Bg10{
-    background-image: url("../../assets/images/homepage/Bg2.png");
+    background-image: url("../../assets/images/homepage/pattern3.png");
     background-size: cover;
-    height: 135vh;
+    height: 80vh;
     display: flex;
     overflow: hidden;
 }
