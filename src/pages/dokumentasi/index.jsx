@@ -24,6 +24,7 @@ import awan2 from '../../assets/images/dokumentasi/awan2.png'
 import awan3 from '../../assets/images/dokumentasi/awan3.png'
 import crown from '../../assets/images/dokumentasi/crown.png'
 import { Gallery2 } from "./component/photos2";
+import { GenericPage } from '../../components/GenericPage';
 
 function SampleNextArrow(props) {
     const { className, onClick } = props;
@@ -91,91 +92,83 @@ export function Dokumentasi() {
     return (
         <>
             <HtmlHead title='Dokumentasi' decription='Yes' />
-        
-                <div className="bg-no-repeat bg-contain h-750 320px:h-400 relative" style={{ backgroundImage: `url(${awan3})` }}>
-                    <div className='absolute right-32 bottom-32'>
-                        <div className='font-samarkan text-4xl md:text-7xl z-10 absolute flex'>
-                            Kilas Balik
+            <div
+                className='bg-white_bone'
+                style={{ backgroundImage: `url(${background})` }}
+            >
+                
+                    <div className="bg-no-repeat bg-contain h-750 320px:h-400 relative" style={{ backgroundImage: `url(${awan3})` }}>
+                    <div className='absolute right-32 bottom-32 mx-auto'>
+                        <div>
+                            <img className="mx-auto" src={crown} alt="" />
                         </div>
-                        <div
-                            id='pagetitle'
-                            className='font-samarkan text-4xl md:text-7xl text-white z-0 relative flex ml-2'
-                        >
-                            Kilas Balik
-                        </div>
-
+                        <div className="mx-auto justify-center place-content-center flex">
+                            <div className='font-samarkan text-4xl md:text-7xl z-10 absolute flex'>
+                                Kilas Balik
+                            </div>
+                            <div
+                                id='pagetitle'
+                                className='font-samarkan text-4xl md:text-7xl text-white z-0 relative flex ml-2'
+                            >
+                                Kilas Balik
+                            </div>
+                        </div> 
                     </div>
-                         <div className="w-[45vmin] h-[25vmin] z-3 block absolute left-[-15vw] bottom-[-7vw] lg:bottom-[-5vw] lg:left-[-12vw] ml-52 mb-24">
-                    <img className="scale-[70%] lg:scale-[78%]" src={cloud} alt="" style={{ width: '100%', height: '100%', zIndex: '3', display: 'flex', position: 'absolute' }} />
-                </div>
+                         <div className="w-[45vmin] h-[25vmin] z-3 block absolute left-[-15vw] bottom-[-7vw] lg:bottom-[-5vw] lg:left-[-12vw] ml-52 mb-24 320px:left-[-50vw]">
+                            <img className="scale-[70%] lg:scale-[78%]" src={cloud} alt="" style={{ width: '100%', height: '100%', zIndex: '3', display: 'flex', position: 'absolute' }} />
+                        </div>
 
-                <div className="w-[45vmin] h-[25vmin] z-3 block absolute right-[-15vw] top-[-8vw] lg:top-[-5vw] lg:right-[-11vw] mr-52 mt-48">
-                    <img className="scale-[70%] lg:scale-[78%]" src={cloud} alt="" style={{ width: '100%', height: '100%', zIndex: '3', display: 'flex', position: 'absolute' }} />
-                </div>          
+                        <div className="w-[45vmin] h-[25vmin] z-3 block absolute right-[-15vw] top-[-8vw] lg:top-[-5vw] lg:right-[-11vw] mr-52 mt-48 320px:right-[-60vw] 320px:top-[-35vw]">
+                            <img className="scale-[70%] lg:scale-[78%]" src={cloud} alt="" style={{ width: '100%', height: '100%', zIndex: '3', display: 'flex', position: 'absolute' }} />
+                        </div>
+
                 </div>
             
                
+                <div className="relative">
+                        <PageTitle title='Dokumentasi' />
+                        <div className="mx-auto my-32 bg-blue-default rounded-2xl w-1/2 h-400 320px:w-4/5 relative"> 
+                        
+                        <iframe
+                                    src='https://www.youtube.com/embed/H38zGL5Iscs'
+                                    style={{ width: "95%", height: "95%" }}
+                                    allow='autoplay'
+                                    title='Rewind PPSMB Kesatria'
+                                    className="mx-auto py-5"
+                                />
+                        
+                        </div>
+                        <div className="w-[45vmin] h-[25vmin] z-3 block absolute left-[-15vw] bottom-[-7vw] lg:bottom-[-5vw] lg:left-[-12vw] ml-52 mb-24 320px:left-[-50vw]">
+                            <img className="scale-[70%] lg:scale-[78%]" src={cloud} alt="" style={{ width: '100%', height: '100%', zIndex: '3', display: 'flex', position: 'absolute' }} />
+                        </div>
+
+                        <div className="w-[45vmin] h-[25vmin] z-3 block absolute right-[-15vw] top-[-8vw] lg:top-[-5vw] lg:right-[-11vw] mr-52 mt-48 320px:right-[-60vw] 320px:top-[-35vw]">
+                            <img className="scale-[70%] lg:scale-[78%]" src={cloud} alt="" style={{ width: '100%', height: '100%', zIndex: '3', display: 'flex', position: 'absolute' }} />
+                        </div>
+                </div>
                 
-                <PageTitle title='Dokumentasi' />
-            <div className="mx-auto my-32 bg-blue-default rounded-2xl w-1/2 h-400"> 
-                <iframe
-                            src='https://www.youtube.com/embed/H38zGL5Iscs'
-                            style={{ width: "95%", height: "95%" }}
-                            allow='autoplay'
-                            title='Rewind PPSMB Kesatria'
-                            className="mx-auto py-5"
-                        />
-
-                     {/* <div className="w-[45vmin] h-[25vmin] z-3 block absolute left-[-15vw] bottom-[-7vw] lg:bottom-[-5vw] lg:left-[-12vw] ml-52 mb-24">
-                <img className="scale-[70%] lg:scale-[78%]" src={cloud} alt="" style={{ width: '100%', height: '100%', zIndex: '3', display: 'flex', position: 'absolute' }} />
             </div>
-
-            <div className="w-[45vmin] h-[25vmin] z-3 block absolute right-[-15vw] top-[-8vw] lg:top-[-5vw] lg:right-[-11vw] mr-52 mt-48">
-                <img className="scale-[70%] lg:scale-[78%]" src={cloud} alt="" style={{ width: '100%', height: '100%', zIndex: '3', display: 'flex', position: 'absolute' }} />
-            </div>     */}
-            </div>
-           
-            
-            
-            
-            <div>
+                
+                
+            {/* <div className="relative">
                 <PageTitle title='Behind The Scene' />
-                {/* <div className="mx-auto rounded-2xl w-1/2"> 
-                
-                    <div className="mx-auto grid grid-cols-3 gap-4">
-                        <div className="h-15 w-1/3 bg-blue-default aspect-[4/3] rounded-lg "> 
-                        kjashjkahsdlk
-                        </div>
-                        <div className="h-15 w-1/3 bg-blue-default aspect-[4/3] rounded-lg">
-                            lkadlsadlkaw
-                        </div>
-                        <div className="h-15 w-1/3 bg-blue-default aspect-[4/3] rounded-lg"> 
-                        kjashjkahsdlk
-                        </div>
-                        <div className="h-15 w-1/3 bg-blue-default aspect-[4/3] rounded-lg">
-                            lkadlsadlkaw
-                        </div>
-                        <div className="h-15 w-1/3 bg-blue-default aspect-[4/3] rounded-lg"> 
-                        kjashjkahsdlk
-                        </div>
-                        <div className="h-15 w-1/3 bg-blue-default aspect-[4/3] rounded-lg">
-                            lkadlsadlkaw
-                        </div>
-                    </div>
-                </div> */}
-                
-                
-                
-            </div>
-           
-            <div className="mx-auto my-32 bg-blue-default rounded-2xl w-3/4 h-400 py-9">
-                <Slider {...settings}>
-                    <Gallery1 />
-                    <Gallery1 />
-                    <Gallery1 />
-                    <Gallery1 />
-                </Slider>
-            </div>
+            
+                <div className="mx-auto my-32 bg-blue-default rounded-2xl w-3/4 h-400 py-9">
+                    <Slider {...settings}>
+                        <Gallery1 />
+                        <Gallery1 />
+                        <Gallery1 />
+                        <Gallery1 />
+                    </Slider>
+                </div>
+                <div className="w-[45vmin] h-[25vmin] z-3 block absolute left-[-15vw] bottom-[-7vw] lg:bottom-[-5vw] lg:left-[-12vw] ml-52 mb-24 320px:left-[-50vw]">
+                    <img className="scale-[70%] lg:scale-[78%]" src={cloud} alt="" style={{ width: '100%', height: '100%', zIndex: '3', display: 'flex', position: 'absolute' }} />
+                </div>
+
+                <div className="w-[45vmin] h-[25vmin] z-3 block absolute right-[-15vw] top-[-8vw] lg:top-[-5vw] lg:right-[-11vw] mr-52 mt-48 320px:right-[-60vw] 320px:top-[-35vw]">
+                    <img className="scale-[70%] lg:scale-[78%]" src={cloud} alt="" style={{ width: '100%', height: '100%', zIndex: '3', display: 'flex', position: 'absolute' }} />
+                </div>
+            </div>     */}
         </>
     );
 }
