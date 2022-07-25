@@ -1,5 +1,5 @@
 import React from 'react'
-import {VscDebugStackframeDot } from "react-icons/vsc";
+import {BiCheckbox } from "react-icons/bi";
 import { motion } from "framer-motion/dist/es/index";
 import styles from "./CalenderElements.module.css"
 import awan50 from "../../../assets/images/homepage/awan6.png"
@@ -163,7 +163,7 @@ return (
        PPSMB KESATRIA 2022
     </div>
     </div>
-    <VscDebugStackframeDot className={`${styles.icon20}`}/>
+    <BiCheckbox className={`${styles.icon20}`}/>
   </div>
 </div>
   )

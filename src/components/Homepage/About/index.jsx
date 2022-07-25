@@ -5,8 +5,15 @@ import {AboutRow, Column1, Column2, Column3, Column4, TextWrapper, TopLine, Head
 import { useScroll } from "../UseScroll/useScroll";
 import { aboutAnimations, about1Animations } from "../../../utils/animation";
 import styles from "./AboutElements.module.css"
+import img from '../../../assets/images/homepage/logo_3.png'
+import img2 from '../../../assets/images/homepage/logo_4.png'
+import img3 from '../../../assets/images/homepage/logo_5.png'
+import img4 from '../../../assets/images/homepage/logo_6.png'
+import img5 from '../../../assets/images/homepage/logo_7.png'
+import img6 from '../../../assets/images/homepage/logo_8.png'
+import img8 from '../../../assets/images/homepage/awan4.png'
 
-export function AboutSection  ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img,img2, img3, img4, img5, img6,img8, alt})  {
+export function AboutSection  ()  {
 const [element, controls] = useScroll();
 const styles5 = useSpring({
   loop: true,
@@ -17,8 +24,6 @@ const styles5 = useSpring({
 
     return (
         <section className='AboutContainer'
-            lightBg={lightBg}
-            id={id}
             ref={element}
         >
             <motion.div
@@ -31,23 +36,23 @@ const styles5 = useSpring({
                     duration: 1.6,
                 }}
             >
-                <AboutRow imgStart={imgStart}>
+                <AboutRow>
                     <Column1>
                         <TextWrapper>
-                            <TopLine> {topLine} </TopLine>
-                            <Heading lightText={lightText}> {headLine} </Heading>
-                            <Subtitle darkText={darkText}> {description} </Subtitle>
+                            <TopLine to='/'> Mengenal PPSMB KESATRIA 2022 </TopLine>
+                            <Heading to='/'>  ANTACHANDRA </Heading>
+                            <Subtitle to='/'> Antachandra (terbang ke bulan) diawali dengan lepas landas dari permukaan bumi yang menggambarkan perjuangan awal atau titik awal para Kesatria Muda untuk mengawali kesaksian dan kegiatan mereka di lingkungan sivitas akademika UGM. Tidak pernah berhenti terbang sebelum sampai ke tujuan, kesatria dapat diartikan sebagai seorang pejuang yang tangguh, tetap dalam pendirian, dan konsisten dalam segala tindakan yang harus siap sedia bertanggung jawab atas segala tindakannya. </Subtitle>
                         </TextWrapper>
                     </Column1>
 
                     <Column2>
                         <ImgWrap>
-                            <Img src={img} alt={alt} />
+                            <Img src={img} alt='pic' />
                         </ImgWrap>
                         <Column3>
                             <ImgDep>
                                 <ImgDep1>
-                                    <Img11 src={img2} alt={alt} />
+                                    <Img11 src={img2} alt='pic'/>
                                 </ImgDep1>
                                 <animated.div
                                     className={`${styles.ImgDep1}`}
@@ -55,7 +60,7 @@ const styles5 = useSpring({
                                 />
 
                                 <ImgDep12>
-                                    <Img12 src={img3} alt={alt} />
+                                    <Img12 src={img3} alt='pic' />
                                 </ImgDep12>
                                 <animated.div
                                     className={`${styles.ImgDep2}`}
@@ -63,7 +68,7 @@ const styles5 = useSpring({
                                 />
 
                                 <ImgDep3>
-                                    <Img13 src={img4} alt={alt} />
+                                    <Img13 src={img4} alt='pic'/>
                                 </ImgDep3>
                                 <animated.div
                                     className={`${styles.ImgDep3}`}
@@ -71,7 +76,7 @@ const styles5 = useSpring({
                                 />
 
                                 <ImgDep4>
-                                    <Img14 src={img5} alt={alt} />
+                                    <Img14 src={img5} alt='pic' />
                                 </ImgDep4>
                                 <animated.div
                                     className={`${styles.ImgDep4}`}
@@ -79,7 +84,7 @@ const styles5 = useSpring({
                                 />
 
                                 <ImgDep5>
-                                    <Img15 src={img6} alt={alt} />
+                                    <Img15 src={img6} alt='pic' />
                                 </ImgDep5>
                                 <animated.div
                                     className={`${styles.ImgDep5}`}
@@ -98,7 +103,7 @@ const styles5 = useSpring({
                         }}
                     >
                         <Column4>
-                            <Img4 src={img8} alt={alt} />
+                            <Img4 src={img8} alt='pic' />
                         </Column4>
                     </motion.div>
                 </AboutRow>
