@@ -109,7 +109,7 @@ export function Materi() {
                 </div>
             </div>  
         }
-                <div className='flex flex-row md:flex-col gap-x-8 w-9/12 mx-auto'>
+                <div className='flex flex-col md:flex-row gap-x-8 w-9/12 mx-auto'>
                     
                 
                     {!isMobile ?
