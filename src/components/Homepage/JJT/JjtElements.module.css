@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 
-.max-width{
+.maxwidth{
     width: 100%;
     display: flex;
 }
@@ -69,7 +69,7 @@
     width: 1000px;
     height: 550px;
     padding: auto;
-    background: url(../../images/Bgjjt.png);
+    background-image: url("../../../assets/images/homepage/Bgjjt.png");
     border-radius: 45px;
     bottom: -22px;
     justify-content: center;

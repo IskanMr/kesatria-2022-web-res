@@ -1,17 +1,17 @@
 import React, { useState, useCallback } from 'react';
 // import { render } from 'react-dom';
 // import { useModal } from 'react-hooks-use-modal';
-import styles from "../Youtube/youtube.css"
+import { motion } from "framer-motion";
+import styles from "./Youtube.module.css"
 import awan1 from '../../../assets/images/homepage/awan1.png'
 import awan2 from '../../../assets/images/homepage/awan2.png'
 import awan20 from '../../../assets/images/homepage/awan3.png'
-import { youtubeAnimation, youtube1Animation, youtube2Animation } from "../../../animation";
-import { motion } from "framer-motion";
+import { youtubeAnimation, youtube1Animation, youtube2Animation } from "../../../utils/animation";
 import { useScroll } from "../UseScroll/useScroll";
 import anthem1 from '../../../assets/images/homepage/anthem.png'
 
 
-function Youtube() {
+export function Youtube() {
   // const [Modal, open, close, isOpen] = useModal('root', {
   //   preventScroll: true,
   //   closeOnOverlayClick: false
@@ -20,11 +20,11 @@ function Youtube() {
   const [element, controls] = useScroll();
   return (
     <div className={`${styles.Bg2}`} >
-       <div className={`${styles.max-width}`} id='youtube'>
+       <div className={`${styles.maxwidth}`} id='youtube'>
       
       <div className={`${styles.box5}`}>
       <div className={`${styles.Awan20}`}>
-          <img src={awan20} />
+          <img src={awan20} alt='pic' />
       </div>
       </div>
 
@@ -38,7 +38,7 @@ function Youtube() {
              duration: 1.8,
            }}
         >
-              <img src={awan2} />
+              <img src={awan2} alt='pic' />
         </motion.div>
         <motion.div className={`${styles.Awan1}`}
           variants={youtube2Animation}  
@@ -49,7 +49,7 @@ function Youtube() {
              duration: 1.8,
            }}
         >
-              <img src={awan1} />
+              <img src={awan1} alt='pic' />
         </motion.div>
       
         <section className={`${styles.box10}`}  ref={element}>
@@ -64,23 +64,22 @@ function Youtube() {
         >
         <div className={`${styles.box3}`}>
             <div className={`${styles.anthem}`}>
-            <img src={anthem1} />
+            <img src={anthem1}  alt='pic'/>
             </div>
-            
-            {/* <iframe iframe width="560" height="315" src="https://www.youtube.com/embed/M4ZoCHID9GI" title="YouTube video player" frameborder="0" border-radius="20px"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"gesture="media"allowfullscreen></iframe> */}
-              <div className={`${styles.teks1}`}>
+
+            <div className='teks1'>
                 ANTHEM
               </div>
-              <div className={`${styles.teks2}`}>
+              <div className='teks2'>
                 PPSMB KESATRIA 2022
               </div>
         </div>
-      </motion.div>
-      </section>
-      </div>
-      </div>
+
+    </motion.div>
+    </section>
     </div>
-  )
+    </div>
+    </div>
+    );
 }
 
-export default Youtube
