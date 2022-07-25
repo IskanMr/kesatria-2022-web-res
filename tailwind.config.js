@@ -77,6 +77,15 @@ module.exports = {
             width: {
                 21: '85px',
             },
+            height: {
+                750 : '750px',
+                400 : '400px',
+                600 : '600px' 
+            },
+            margin : {
+                '200px' : '200px',
+            },
+
             borderWidth: {
                 6: '6px',
             },

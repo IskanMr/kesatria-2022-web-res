@@ -10,14 +10,14 @@ export function Penugasan() {
     return (
         <div
             style={{ backgroundImage: `url(${image})` }}
-            className='w-full h-screen bg-repeat-x bg-cover'
+            className='w-full h-screen bg-repeat-x bg-contain'
         >
             <HtmlHead title='Penugasan' decription='Yes' />
             <PageTitle title='Penugasan' />
             <div className='flex -mt-8'>
                 <div className='relative flex w-full h-full shadow hover:shadow-3xl rounded-xl place-content-center pt-8 shadow-lg shadow-cyan-500/50'>
                     <iframe
-                        src='https://drive.google.com/file/d/1canFad3kwDTDxoo2FdayU39Hww2W5_k0/preview'
+                        src='https://youtu.be/H38zGL5Iscs'
                         style={{ width: 1800, height: 1000 }}
                         allow='autoplay'
                         title='Detail Penugasan'
