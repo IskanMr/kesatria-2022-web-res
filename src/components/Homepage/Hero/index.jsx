@@ -59,7 +59,7 @@ export function HeroSection() {
        transition={{ delay: 1.5, duration: 0.6, type: "tween" }}
       >
       <a href="#youtube" className={`${styles.anchor}`}>
-      <FaAngleDown className={`${styles.iconPosition.iconStyle}`} />
+      <FaAngleDown className={`${styles.iconPosition}`} />
       </a>
       </motion.div>        
       
