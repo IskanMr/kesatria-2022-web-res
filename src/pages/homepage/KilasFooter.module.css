@@ -1,0 +1,92 @@
+.Bg10{
+    background-image: url("../../assets/images/homepage/pattern3.png");
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 280px) and (max-width: 470px) {
+    .Bg10{
+        width: auto;
+        height: 110vh;
+        background-image: url("../../assets/images/homepage/Bgmobile2.png");
+        background-size: cover;
+        
+    }
+}
+
+@media screen and (min-width: 470px) and (max-width: 550px) {
+  .Bg10{
+      width: auto;
+      height: 120vh;
+      background-image: url("../../assets/images/homepage/Bgmobile2.png");
+      background-size: cover;
+      
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 650px) {
+  .Bg10{
+      width: auto;
+      height: 110vh;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+  .Bg10{
+      width: auto;
+      height: 110vh;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    
+    .Bg10{
+
+      width: auto;
+      height: 165vh;
+      background-image: url("../../assets/images/homepage/Bgmobile2.png");
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 915px) {
+    
+    .Bg10{
+
+      width: auto;
+      height: 175vh;
+      background-image: url("../../assets/images/homepage/Bgmobile2.png");
+    }
+}
+
+@media screen and (min-width: 915px) and (max-width: 1000px) {
+    
+    .Bg10{
+
+      width: auto;
+      height: 185vh;
+      background-image: url("../../assets/images/homepage/Bgmobile2.png");
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1500px) {
+    
+  .Bg10{
+
+    width: auto;
+    height: 145vh;
+    background-image: url("../../assets/images/homepage/Bg2.png");
+  }
+}
+
+@media screen and (min-width: 1450px) and (max-width: 1500px) {
+    
+  .Bg10{
+
+    width: auto;
+    height: 155vh;
+    background-image: url("../../assets/images/homepage/Bg2.png");
+  }
+}
+

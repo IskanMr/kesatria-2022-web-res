@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import styles from '../styles/PageFooter.module.css';
 
 import { openInNewTab } from '../utils/openInNewTab';
 
@@ -38,7 +37,7 @@ function SocialItem({
 export function PageFooter({ className }) {
     return (
         <footer
-            className={`${styles.footerContainer} bg-black text-gray-lighter flex flex-col md:flex-row font-semilight p-8 ${className}`}
+            className={` bg-main-blue text-white flex flex-col md:flex-row font-semilight p-8 ${className}`}
         >
             {/* TODO: Group the latter text-containing parts (with <div>s) instead of the current approach, to allow similar/uniform left-aligning in mobile viewports */}
             <div className='flex flex-row items-center w-auto md:w-2/5 mb-8 md:mb-0'>
