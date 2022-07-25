@@ -67,10 +67,10 @@ export function Youtube() {
             <img src={anthem1}  alt='pic'/>
             </div>
 
-            <div className='teks1'>
+            <div className={`${styles.teks1}`}>
                 ANTHEM
               </div>
-              <div className='teks2'>
+              <div className={`${styles.teks2}`}>
                 PPSMB KESATRIA 2022
               </div>
         </div>
