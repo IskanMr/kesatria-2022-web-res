@@ -19,7 +19,7 @@ export function PageHeader({ className }) {
                 {...{
                     [external ? 'href' : 'to']: to,
                 }}
-                className={`${styles.hoverUnderlineAnimation} hover:text-blue-default block p-4`}
+                className={`${styles.hoverUnderlineAnimation} hover:text-oranges-default block p-4`}
                 onClick={() => {
                     setMobileMenuOpen(false);
                 }}
@@ -41,7 +41,7 @@ export function PageHeader({ className }) {
                 className='bg-white flex-shrink-0 pl-6 pb-2 pt-1 pr-8 flex items-center uppercase  group'
             >
                 <HeaderLogo className='block h-10 md:h-14 w-auto mr-2' />
-                <div className='text-black text-xl md:text-2xl hover:text-blue-default transition-colors'>
+                <div className='text-black text-xl md:text-2xl hover:text-oranges-default transition-colors'>
                     ppsmb kesatria 2022
                 </div>
             </NavLinkStock>
