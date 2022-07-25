@@ -1,8 +1,7 @@
-
-import { Document, Page } from 'react-pdf'
+// import { Document, Page } from 'react-pdf'
 import React, {useState} from 'react';
-import PDFViewer from 'pdf-viewer-reactjs';
-import ReactPlayer from 'react-player';
+// import PDFViewer from 'pdf-viewer-reactjs';
+// import ReactPlayer from 'react-player';
 
 export function Material1() {
 

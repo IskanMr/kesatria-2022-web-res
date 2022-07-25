@@ -1,10 +1,10 @@
 import React from 'react'
-import { AgendaContainer, AgendaWrapper, AgendaCard1, AgendaCard2, AgendaIcon, AgendaCard3, AgendaCard3Link, ImageBackground} from './CardElements'
+import { AgendaContainer, AgendaWrapper, AgendaCard1, AgendaCard2, AgendaIcon, AgendaCard3, AgendaCard3Link,} from './CardElements'
 import Icon1 from '../../../assets/images/homepage/Agenda1.png'
 import Icon2 from '../../../assets/images/homepage/Agenda2.png'
 import Icon3 from '../../../assets/images/homepage/Agenda3.png'
 
-const Agenda = () => {
+export function Agenda() {
   
     return (
 
@@ -43,4 +43,3 @@ const Agenda = () => {
   )
 }
 
-export default Agenda

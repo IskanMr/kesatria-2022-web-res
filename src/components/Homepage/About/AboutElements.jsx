@@ -624,7 +624,7 @@ export const ImgDep5 = styled.div`
 export const Img = styled.img`
 width: 400px;
 position: relative;
-right: 320px;
+right: 155px;
 bottom: 40px;
 
 @media screen and (min-width: 280px) and (max-width: 470px) {

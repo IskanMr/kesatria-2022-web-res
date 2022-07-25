@@ -8,9 +8,9 @@ import {
     Redirect
 } from 'react-router-dom';
 import React, {useEffect, useState} from 'react';
-import { DropdownRouter, DropdownRoute, useToggleDropdown } from 'react-dropdown-router';
+// import { DropdownRouter, DropdownRoute, useToggleDropdown } from 'react-dropdown-router';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 import { HtmlHead } from '../../components/HtmlHead';
 import { PageTitle } from '../../components/PageTitle';
 import { Material1, Material2, Material3, Material4, Material5, Material6, Material7 } from './material/pageMateri';
