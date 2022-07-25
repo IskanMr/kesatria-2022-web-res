@@ -7,10 +7,7 @@ import {KilasFooter} from './kilasfooter';
 import {Calender} from '../../components/Homepage/Calender/index'
 import {Kartu} from './kartu';
 import {Mengenai} from './mengenai';
-
 import {ScrollArrow} from '../../components/Homepage/scrollToTop/index';
-
-
 
 
 export function HomePage () {
@@ -20,11 +17,9 @@ export function HomePage () {
         setIsOpen(!isOpen);
     }
 
-    
-  
     return (
     <React.StrictMode>
-   <motion.div initial= "hidden" animate="show">
+    <motion.div initial= "hidden" animate="show">
         <HeroSection />
         <Youtube />
         <Mengenai />

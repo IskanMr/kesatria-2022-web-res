@@ -140,7 +140,7 @@
         background-size: cover;
     }
 
-    .max-width{
+    .maxwidth{
         width: 100%;
     }
 
@@ -218,7 +218,7 @@
         background-size: cover;
     }
 
-    .max-width{
+    .maxwidth{
         width: 100%;
     }
 
@@ -485,7 +485,7 @@
 
     @media screen and (min-width: 1181px) and (max-width: 1280px) {
         
-      .max-width{
+      .maxwidth{
         max-width: 100%;
        }
 
@@ -577,7 +577,7 @@
             overflow: hidden;
            }
 
-           .max-width{
+           .maxwidth{
             max-width: 100%;
            }
 
@@ -600,7 +600,7 @@
     
     @media screen and (min-width: 1280px) and (max-width: 1400px) {
         
-        .max-width{
+        .maxwidth{
           max-width: 100%;
          }
   
@@ -643,7 +643,7 @@
 
         @media screen and (min-width: 1400px) and (max-width: 1500px) {
         
-            .max-width{
+            .maxwidth{
               max-width: 100%;
              }
       

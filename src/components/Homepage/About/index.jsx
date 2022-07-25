@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 import React from 'react'
 import { motion } from "framer-motion";
 import { useSpring, animated } from 'react-spring'
 import {AboutRow, Column1, Column2, Column3, Column4, TextWrapper, TopLine, Heading, Subtitle, Img, ImgWrap, ImgDep,ImgDep1, ImgDep12, ImgDep3, ImgDep4, ImgDep5,Img11, Img14, Img12, Img13, Img4, Img15} from './AboutElements'
 import { useScroll } from "../UseScroll/useScroll";
-
 import { aboutAnimations, about1Animations } from "../../../utils/animation";
-
 import styles from "./AboutElements.module.css"
 
 export function AboutSection  ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img,img2, img3, img4, img5, img6,img8, alt})  {
@@ -17,69 +14,9 @@ const styles5 = useSpring({
   to: { rotateZ: 360 },
   config: { duration: 3500}
 })
-=======
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useSpring, animated } from 'react-spring';
-import {
-    AboutRow,
-    Column1,
-    Column2,
-    Column3,
-    Column4,
-    TextWrapper,
-    TopLine,
-    Heading,
-    Subtitle,
-    Img,
-    ImgWrap,
-    ImgDep,
-    ImgDep1,
-    ImgDep12,
-    ImgDep3,
-    ImgDep4,
-    ImgDep5,
-    Img11,
-    Img14,
-    Img12,
-    Img13,
-    Img4,
-    Img15,
-} from './AboutElements';
-import { useScroll } from '../UseScroll/useScroll';
-import { aboutAnimations, about1Animations } from '../../../utils/animation';
-import styles from './AboutElements.module.css';
-
-const AboutSection = ({
-    lightBg,
-    id,
-    imgStart,
-    topLine,
-    lightText,
-    headLine,
-    darkText,
-    description,
-    img,
-    img2,
-    img3,
-    img4,
-    img5,
-    img6,
-    img8,
-    alt,
-}) => {
-    const [element, controls] = useScroll();
-    const styles5 = useSpring({
-        loop: true,
-        from: { rotateZ: 0 },
-        to: { rotateZ: 360 },
-        config: { duration: 3500 },
-    });
->>>>>>> 4a2179a47825880ad716a63eade67b0cdb815550
 
     return (
-        <section
-            className='AboutContainer'
+        <section className='AboutContainer'
             lightBg={lightBg}
             id={id}
             ref={element}
@@ -98,11 +35,8 @@ const AboutSection = ({
                     <Column1>
                         <TextWrapper>
                             <TopLine> {topLine} </TopLine>
-                            <Heading lightText={lightText}> {headLine}</Heading>
-                            <Subtitle darkText={darkText}>
-                                {' '}
-                                {description}{' '}
-                            </Subtitle>
+                            <Heading lightText={lightText}> {headLine} </Heading>
+                            <Subtitle darkText={darkText}> {description} </Subtitle>
                         </TextWrapper>
                     </Column1>
 
@@ -173,7 +107,3 @@ const AboutSection = ({
     );
 };
 
-<<<<<<< HEAD
-=======
-export default AboutSection;
->>>>>>> 4a2179a47825880ad716a63eade67b0cdb815550

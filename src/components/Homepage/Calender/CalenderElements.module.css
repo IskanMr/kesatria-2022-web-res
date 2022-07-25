@@ -78,7 +78,7 @@
 }
 
   
-.month-indicator {
+.monthIndicator {
     color: #FAFAFA;
     max-width: 100%;
     height: 5vh;
@@ -126,7 +126,7 @@
 }
   
 .dayOfWeek,
-.date-grid {
+.dateGrid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
