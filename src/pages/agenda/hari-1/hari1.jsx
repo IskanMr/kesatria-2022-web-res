@@ -11,13 +11,13 @@ function WantGoDay1(){
 
 
 export function HariPertama ({time, title, deskripsi, go}) {
-    const buttonAll = "group container border-6 border-oranges-default block flex-row rounded-3xl w-1100 grow py-4";
-    const titleAgenda = 'font-gill text-4xl font-bold text-oranges-default';
-    const deskripsiAgenda = 'font-gill text-3xl text-judul text-oranges-default min-w-96';
-    const timeAgenda= "w-32 h-14 my-auto flex place-content-center bg-oranges-default text-white font-gill font-bold text-3xl py-2 md:mt-4 rounded-2xl mx-9 agenda:mx-6 lg:my-9";
-    const buttonGoAll = "group container border-6 border-oranges-default block flex-row rounded-3xl hover:bg-oranges-default w-1100 grow cursor-pointer py-4";
-    const titleGoAgenda = 'font-gill text-4xl font-bold text-oranges-default group-hover:text-white';
-    const deskripsiGoAgenda = 'font-gill text-3xl text-judul text-oranges-default group-hover:text-white min-w-96';
+    const buttonAll = "group border-6 border-oranges-default flex-row shrink rounded-3xl grow py-4 lg:py-0 ";
+    const titleAgenda = 'font-gill text-3xl font-bold text-oranges-default w-full';
+    const deskripsiAgenda = 'font-gill text-2xl text-judul text-oranges-default min-w-96';
+    const timeAgenda= "w-32 lg:h-14 h-12 my-auto flex place-content-center bg-oranges-default text-white font-gill font-bold text-2xl md:text-3xl py-2 md:mt-4 rounded-2xl mx-9 agenda:mx-6 lg:my-9";
+    const buttonGoAll = "group border-6 border-oranges-default block flex-row rounded-3xl hover:bg-oranges-default w-1100 grow cursor-pointer py-4 md:py-0";
+    const titleGoAgenda = 'font-gill text-3xl font-bold text-oranges-default group-hover:text-white';
+    const deskripsiGoAgenda = 'font-gill text-2xl text-judul text-oranges-default group-hover:text-white min-w-96';
     const timeGoAgenda= "w-32 h-14 my-auto flex place-content-center bg-oranges-default text-white font-gill font-bold text-3xl py-2 md:mt-4 rounded-2xl mx-9 agenda:mx-6 group-hover:bg- blue-default lg:my-9";
     return(
         
@@ -31,7 +31,7 @@ export function HariPertama ({time, title, deskripsi, go}) {
                 <div className={go?timeGoAgenda:timeAgenda}>
                     {time}
                 </div>
-                <div className="container sm:w-5/6 flex flex-col agenda:w-full">
+                <div className="mx-6 md:w-5/6 flex flex-col  ">
                     <div className={go?titleGoAgenda:titleAgenda}>
                        {title}
                     </div>
