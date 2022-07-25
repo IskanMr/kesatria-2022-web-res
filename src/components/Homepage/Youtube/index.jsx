@@ -20,7 +20,7 @@ export function Youtube() {
   const [element, controls] = useScroll();
   return (
     <div className={`${styles.Bg2}`} >
-       <div className={`${styles.maxwidth}`} id='youtube'>
+       <div className={`${styles.kiki}`} id='youtube'>
       
       <div className={`${styles.box5}`}>
       <div className={`${styles.Awan20}`}>
@@ -28,7 +28,7 @@ export function Youtube() {
       </div>
       </div>
 
-      <div className={`${styles.box}`} ref={element}>
+      <div className={`${styles.box10}`} ref={element}>
         <motion.div className={`${styles.Awan2}`}
           variants={youtube1Animation}  
           animate={controls}
@@ -51,8 +51,9 @@ export function Youtube() {
         >
               <img src={awan1} alt='pic' />
         </motion.div>
+        </div>
       
-        <section className={`${styles.box10}`}  ref={element}>
+        <div className={`${styles.box}`}>
         <motion.div className={`${styles.box2}`}
          variants={youtubeAnimation}  
          animate={controls}
@@ -62,6 +63,7 @@ export function Youtube() {
               duration: 1
             }}
         >
+        
         <div className={`${styles.box3}`}>
             <div className={`${styles.anthem}`}>
             <img src={anthem1}  alt='pic'/>
@@ -76,7 +78,7 @@ export function Youtube() {
         </div>
 
     </motion.div>
-    </section>
+    
     </div>
     </div>
     </div>

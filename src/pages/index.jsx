@@ -8,7 +8,7 @@ export function Home() {
             <HtmlHead title='Beranda' decription='Yes' />
             <div className='flex flex-col bg-gray-lighter -mb-4'>
                 <HomePage />
-                <CountDown />
+                {/* <CountDown /> */}
             </div>
         </>
     );

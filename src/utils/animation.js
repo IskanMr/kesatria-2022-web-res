@@ -34,7 +34,7 @@ export const youtube1Animation = {
 };
 
 export const youtube2Animation = {
-    hidden: { x: 200, scale: 0.8, y: 0, opacity: 0 },
+    hidden: { x: 100, scale: 0.8, y: 0, opacity: 0 },
     show: { x: 0, scale: 1, y: 0, opacity: 1 },
 };
 
