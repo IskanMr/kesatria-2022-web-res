@@ -20,7 +20,7 @@ export function Material1() {
                     </div>
                     <div className='xl:h-xl lg:h-xl md:h-xl sm:h-lg 320px:h-md'>
                         <iframe
-                            src='https://drive.google.com/file/d/18v_GflB0cwiWwrbunv1Uv77gavbsDq8D/preview'
+                            src='https://drive.google.com/file/d/135-dprmEwy54rrKXKa8qe8qFp6atM9Lr/preview'
                             className='w-full overflow-hidden h-full'
                             allow='autoplay'
                             title='Personal Branding' 
@@ -52,7 +52,7 @@ export function Material2() {
                     </div>
                     <div className='xl:h-xl lg:h-xl md:h-xl sm:h-lg 320px:h-md'>
                         <iframe
-                            src='https://drive.google.com/file/d/135-dprmEwy54rrKXKa8qe8qFp6atM9Lr/preview'
+                            src='https://drive.google.com/file/d/18v_GflB0cwiWwrbunv1Uv77gavbsDq8D/preview'
                             className='w-full overflow-hidden h-full'
                             allow='autoplay'
                             title='Personal Branding' 
