@@ -70,7 +70,7 @@ export function SliderContainer({ Children }) {
                             >
                                 <div className={`${styles.cardContainer}`}>
                                     <div
-                                        className={`${styles.carouselItem} md:h-[72vmin]`}
+                                        className={`${styles.carouselItem} md:h-[68vmin]`}
                                     >
                                         {child}
                                     </div>{' '}
