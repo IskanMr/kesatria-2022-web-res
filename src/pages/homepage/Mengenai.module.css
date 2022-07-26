@@ -7,6 +7,8 @@
     background-image: url('../../assets/images/homepage/pattern3.png');
     background-color: #F1F1F1;
     overflow: hidden;
+    background-size: cover;
+    
 }
 
 

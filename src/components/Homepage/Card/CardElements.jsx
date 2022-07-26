@@ -25,6 +25,11 @@ export const AgendaContainer = styled.div`
         width: 100%;
         height: 110vh;
      }
+
+     @media screen and (min-width: 2000px) and (max-width: 5000px) {
+        width: 100%;
+        height: 50vh;
+     }
 `
 
 
@@ -35,7 +40,9 @@ export const AgendaWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
-    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (min-width: 400px) and (max-width: 470px) {
         grid-template-columns: 1fr;
@@ -112,8 +119,6 @@ export const AgendaCard1 = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 50%;
-    justify-content: flex-start;
     align-items: center;
     border-radius: 20px;
     margin-left: 50px;
@@ -122,6 +127,9 @@ export const AgendaCard1 = styled.div`
     border: 1px solid;
     box-shadow: 5px 2px 0px 5px #224860;
     transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 
     &:hover {

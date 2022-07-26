@@ -1,21 +1,12 @@
 import styled from "styled-components";
 
-export const section = styled.section`
-   .AboutWrapper{
-    display: grid;
-    z-index: 1;
-    height: 100vh;
-    width: 100%;
-    max-width: 100%;
-    padding: 0 24px;
-
-    @media screen and (min-width: 280px) and (max-width: 700px) {
-        width: auto;
-    }
-
-    @media screen and (min-width: 701px) and (max-width: 1000px) {
-        width: auto;
-}
+export const AboutContainer = styled.div`
+display: flex;
+position: relative;
+align-items: center;
+justify-content: center;
+width: 150%;
+height: 110vh;
 `
 
 export const Img5 = styled.img`
@@ -25,12 +16,14 @@ z-index: -99;
 `
 
 export const AboutRow = styled.div`
-display: grid;
+display: flex;
 position: relative;
 grid-auto-columns: minmax(auto, 1fr);
 align-items: center;
-top: 150px;
-justify-content: flex-end;
+justify-content: center;
+width: 150%;
+height: 110vh;
+
 
 grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1 col3'` : `'col3 col1 col2'`)};
 
@@ -54,10 +47,13 @@ grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1 col3'` : `'col3 c
 
 export const Column1 = styled.div`
 grid-area: col1;
+display: flex;
 position: relative;
+align-items: center;
+justify-content: center;
+width: 40%;
+top: -20px;
 
-left: 0px;
-width: 770px;
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
     width: auto;
@@ -92,7 +88,7 @@ grid-area: col2;
 position: relative;
 width: 760px;
 right: 0px;
-top: -50px;
+top: -80px;
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
     width: auto;
@@ -224,9 +220,7 @@ left: 90px;
 `
 
 export const TextWrapper = styled.div`
-max-width: 770px;
-right: 100px;
-height: 400px;
+height: 100%;
 width: 100%;
 position:relative;
 
@@ -430,11 +424,11 @@ export const ImgDep1 = styled.div`
     position: absolute;
     width: 90px;
     height: 90px;
-    right: 730px;
-    background: transparent;
+    right: 780px;
+    background: #FAFAFA;
+    box-shadow: 5px 2px rgba(0, 0, 0, 0.4);
     border-radius: 35px;
     top: 40px;
-    z-index:1;
 
     @media screen and (min-width: 280px) and (max-width: 700px) {
         top: 240px;
@@ -473,15 +467,14 @@ export const ImgDep1 = styled.div`
     
 `
 export const ImgDep12 = styled.div`
-position: absolute;
-width: 90px;
-height: 90px;
-right: 610px;
-background: transparent;
-border-radius: 35px;
-top: 40px;
-z-index:1;
-
+ position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 650px;
+    background: #FAFAFA;
+    box-shadow: 5px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 35px;
+    top: 40px;
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
         top: 240px;
@@ -510,14 +503,14 @@ z-index:1;
 
 `
 export const ImgDep3 = styled.div`
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    right: 490px;
-    background: #transparent;
-    border-radius: 35px;
-    top: 40px;
-    z-index:1;
+position: absolute;
+width: 90px;
+height: 90px;
+right: 520px;
+background: #FAFAFA;
+box-shadow: 5px 2px rgba(0, 0, 0, 0.4);
+border-radius: 35px;
+top: 40px;
 
     
     @media screen and (min-width: 280px) and (max-width: 700px) {
@@ -548,14 +541,14 @@ export const ImgDep3 = styled.div`
 
 `
 export const ImgDep4 = styled.div`
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    right: 370px;
-    background: #transparent;
-    border-radius: 35px;
-    top: 40px;
-    z-index:1;
+position: absolute;
+width: 90px;
+height: 90px;
+right: 390px;
+background: #FAFAFA;
+box-shadow: 5px 2px rgba(0, 0, 0, 0.4);
+border-radius: 35px;
+top: 40px;
 
     
     @media screen and (min-width: 280px) and (max-width: 700px) {
@@ -583,14 +576,14 @@ export const ImgDep4 = styled.div`
     
 `
 export const ImgDep5 = styled.div`
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    right: 250px;
-    background: transparent;
-    border-radius: 35px;
-    top: 40px;
-    z-index: 1;
+position: absolute;
+width: 90px;
+height: 90px;
+right: 260px;
+background: #FAFAFA;
+box-shadow: 5px 2px rgba(0, 0, 0, 0.4);
+border-radius: 35px;
+top: 40px;
 
     
     @media screen and (min-width: 280px) and (max-width: 700px) {
@@ -770,7 +763,6 @@ position: absolute;
 `
 export const Img4 = styled.img`
 width:100%;
-width: 389px;
 height: 206px;
 position: relative;
 
@@ -779,13 +771,12 @@ position: relative;
 }
 
 `
-
+export const AwanContainer = styled.div`
+ 
+`
 
 export const Column4 = styled.div`
-position: relative; 
-width: 300px;
-left: 1300px;
-top: 340px;
+
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
     display: none;

@@ -1,3 +1,14 @@
+.AboutWrapper{
+  display: flex;
+  z-index: 1;
+  height: 00vh;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: blue;
+
+}
 
 .ImgDep2{
     position: absolute;

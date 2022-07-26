@@ -29,45 +29,77 @@
     display: flex;
     width: 100%;
     /* background-color: #014d40; */
-    height: 60vh;
+    height: 65vh;
     overflow-x: hidden;
     overflow-y: visible;
+    background-size: cover;
     background-image: url('../../../assets/images/homepage/pattern3.png');
     background-color: #F1F1F1;
     /* background-color: black; */
-   
+}
+
+.ship2{
+    max-width: 100%;
+    height: 65vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
 }
 
 .ship{
     max-width: 100%;
-    height: 60vh;
-    width: 100%;
+    height: 50vh;
+    width: 40%;
     position: relative;
-    /* background-color: #0C2434; */
     overflow-x: hidden;
-    overflow-y: visible;
+    position: relative;
+    display: flex;
+    
+    justify-content: center;
+    align-self: center;
 }
 
+.ship1{
+    max-width: 100%;
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.ship4{
+    max-width: 100%;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    
+    justify-content: center;
+    align-self: flex-end;
+}
 .Awan50{
     position: absolute;
     width: 100%;
     height: 206px;
-    left: 1270px;
-    top: 100px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .Awan3{
     position: relative;
     width: 100%;
     height: 18px;
-    left: -37px;
-    top: 20px;
 }
   
 .Container {
     position: relative;
-    left: 10px;
-    top: 40px;
     max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
@@ -75,7 +107,7 @@
     background-color: #132B3B;
     border: 2px;
     border-radius: 10px;
-    height: 40vh;
+    height: 20vh;
     box-shadow: 2px 2px 0px 2px  rgba(0, 0, 0, 0.4);
 }
 
@@ -101,30 +133,35 @@
 
 .keterangan{
     height: 19px;
-    width: 180px;
+    width: 170px;
     text-align: center;
     position: relative;
-    bottom: 200px;
-    left: -230px;
     color: #F26628;
     font-size: 16px;
+    left: 140px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
 }
 
 .icon20{
     height: 19px;
     width: 250px;
-    text-align: center;
     position: relative;
-    bottom: 159px;
-    left: 250px;
+    top: 4px;
+    left:-165px;
+    display: flex;
     color: #F26628;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
 }
 
 .myBg6{
     max-width: 100%;
     background-color: #FAFAFA;
-    height: 32.5vh;
+    height: 20%;
 }
   
 .dayOfWeek,
@@ -162,7 +199,7 @@
     position: relative;
     border: none;
     width: 6.5ch;
-    height: 5.5ch;
+    height: 6.5ch;
     border-radius: 0;
     background-color: transparent;
     color: #616161;
@@ -334,5 +371,27 @@ height: 70vh;
 .myBg5{
 width: 100%;
 height: 70vh;
+}
+}
+
+@media screen and (min-width: 2000px) and (max-width: 5000px) {
+.myBg5{
+    background-size: cover;
+    height: 50vh;
+}
+.ship{
+    height: 40vh;
+}
+
+.ship2{
+    height: 50vh;
+    
+}
+
+.keterangan{
+    align-self: center;
+}
+.icon20{
+    align-self: center;
 }
 }

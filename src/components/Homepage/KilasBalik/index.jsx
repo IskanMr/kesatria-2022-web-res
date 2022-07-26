@@ -51,7 +51,8 @@ const [element, controls] = useScroll();
 
 return (
 <div className={`${styles.Bg9}`}> 
-      <div className={`${styles.kotak4}`} id='kilasbalik' ref={element}>
+<div className={`${styles.kotak15}`} id='kilasbalik' ref={element}>
+      
       <motion.div className={`${styles.Awan5}`}
       variants={youtube1Animation}  
       animate={controls}
@@ -63,7 +64,7 @@ return (
       >
               <img src={awan5} alt='pic'/>
       </motion.div>
-        
+      <div className={`${styles.kotak4}`}>
             <motion.div className={`${styles.kotak8}`} 
             variants={jjtAnimation}  
             animate={controls}
@@ -129,6 +130,7 @@ return (
               <img src={logo14} alt='pic'/>
             </div>
             </motion.div>
+            
 
             <motion.div className={`${styles.kotak5}`}
             variants={jjtAnimation}  
@@ -142,6 +144,7 @@ return (
             <div className={`${styles.kb}`}> Kilas Balik </div>
             </motion.div>
     </div>
+  </div>
 </div>
   )
 }
