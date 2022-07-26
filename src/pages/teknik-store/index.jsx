@@ -127,9 +127,11 @@ export function TeknikStore() {
                                 </div>
                             </div>
 
-                            <div className='hidden md:flex justify-between text-xl'>
+                            <div className='flex justify-between text-xl'>
                                 <button
-                                    className={`${button('secondary')}`}
+                                    className={`${button(
+                                        'secondary'
+                                    )} hidden md:block`}
                                     type='button'
                                     onClick={() => setIsOpen(false)}
                                 >
@@ -138,19 +140,10 @@ export function TeknikStore() {
 
                                 <button
                                     onClick={() => openInNewTab(picked.link)}
-                                    className={`${button('primary')}`}
+                                    className={`${button('primary')} w-100`}
                                     type='button'
                                 >
                                     Beli
-                                </button>
-                            </div>
-                            <div className='md:hidden w-100'>
-                                <button
-                                    onClick={() => openInNewTab(picked.link)}
-                                    className={`${button('primary')}`}
-                                    type='button'
-                                >
-                                    Beli Sekarang
                                 </button>
                             </div>
                         </div>

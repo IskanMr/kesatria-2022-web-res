@@ -23,8 +23,8 @@ function RemoveTrailingSlash() {
     const { pathname } = useLocation();
     const history = useHistory();
     useEffect(() => {
-        if (pathname.endsWith('/')) {
-            history.replace(pathname.slice(0, -1));
+        if (pathname === '/') {
+            history.push('/agenda');
         }
     }, []);
 
