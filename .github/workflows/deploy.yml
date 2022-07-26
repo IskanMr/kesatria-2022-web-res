@@ -1,5 +1,3 @@
-# Deploy assets to Netlify and transplant components to the WordPress custom code field
-
 name: Deployment
 
 on:
