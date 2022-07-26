@@ -84,11 +84,9 @@ module.exports = {
                 xl: '1080px',
                 lg: '720px',
                 md: '480px',
-            },
-            height: {
                 750 : '750px',
                 400 : '400px',
-                600 : '600px' 
+                600 : '600px'
             },
             margin : {
                 '200px' : '200px',
