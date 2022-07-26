@@ -45,7 +45,7 @@ export function Agenda() {
             >
             <GenericPage>
             <PageTitle title="Agenda" />
-            <div className="container mx-auto px-auto w-5/6 place-items-center flex flex-col grow">
+            <div className="mx-auto place-items-center flex flex-col shrink w-full ">
                 <Router>
                 <div id="agenda-hari" className='mx-auto flex flex-row mt-10'>
                     <Link to={`${path}/hari-1`}>
@@ -59,31 +59,33 @@ export function Agenda() {
                         </button>
                     </Link>
                 </div>
-                <Switch>
-                    <Route exact path={`${path}`}>
-                        <Redirect to={`${path}/hari-1`} />
-                    </Route>
-                    <Route path={`${path}/hari-1`} >
-                        {agendaData["hari-1"].map((item) => (
-                            // console.log(item.deskripsi)
-                            <HariPertama
-                                time={item.jam}
-                                title={item.judul}
-                                deskripsi={item.deskripsi}
-                            />
-                        ))}
-                    </Route>
-                    <Route path={`${path}/hari-2`}>
-                        {agendaData["hari-2"].map((item) => (
+                <div className="lg:w-4/5 w-full">
+                    <Switch>
+                        <Route exact path={`${path}`}>
+                            <Redirect to={`${path}/hari-1`} />
+                        </Route>
+                        <Route path={`${path}/hari-1`} >
+                            {agendaData["hari-1"].map((item) => (
                                 // console.log(item.deskripsi)
-                                <HariKedua
+                                <HariPertama
                                     time={item.jam}
                                     title={item.judul}
                                     deskripsi={item.deskripsi}
                                 />
                             ))}
-                    </Route>
-                </Switch>
+                        </Route>
+                        <Route path={`${path}/hari-2`}>
+                            {agendaData["hari-2"].map((item) => (
+                                    // console.log(item.deskripsi)
+                                    <HariKedua
+                                        time={item.jam}
+                                        title={item.judul}
+                                        deskripsi={item.deskripsi}
+                                    />
+                                ))}
+                        </Route>
+                    </Switch>
+                </div>
 
                 </Router>
                 <br/>

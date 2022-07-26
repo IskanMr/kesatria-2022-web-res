@@ -88,6 +88,10 @@ module.exports = {
             borderWidth: {
                 6: '6px',
             },
+            flexBasis: {
+                '1' : '33.33333%',
+                '2' : '66.66666%',
+            }
         },
     },
     variants: {
