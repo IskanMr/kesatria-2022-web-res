@@ -71,6 +71,7 @@ module.exports = {
             },
             dropShadow: {
                 blue: '0 8px 0 #224860',
+                orange: '0 10px 0 #F26628',
             },
             fontWeight: {
                 semilight: 350,
