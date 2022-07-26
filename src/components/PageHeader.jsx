@@ -3,7 +3,8 @@ import { NavLink as NavLinkStock } from 'react-router-dom';
 
 import styles from '../styles/PageHeader.module.css';
 
-import { ReactComponent as HeaderLogo } from '../assets/icons/kesatriaLogo.svg';
+import Logo from '../assets/images/homepage/logo_2.png';
+
 import { ReactComponent as HamburgerIcon } from '../assets/icons/list.svg';
 import { ReactComponent as RetractUpIcon } from '../assets/icons/chevron-up.svg';
 
@@ -19,7 +20,7 @@ export function PageHeader({ className }) {
                 {...{
                     [external ? 'href' : 'to']: to,
                 }}
-                className={`${styles.hoverUnderlineAnimation} hover:text-blue-default block p-4`}
+                className={`${styles.hoverUnderlineAnimation} hover:text-oranges-default block p-4`}
                 onClick={() => {
                     setMobileMenuOpen(false);
                 }}
@@ -38,10 +39,14 @@ export function PageHeader({ className }) {
         >
             <NavLinkStock
                 to='/'
-                className='bg-white flex-shrink-0 pl-6 pb-2 pt-1 pr-8 flex items-center uppercase  group'
+                className='flex flex-shrink-0 pl-6 pb-2 pt-1 pr-8 items-center uppercase group'
             >
-                <HeaderLogo className='block h-10 md:h-14 w-auto mr-2' />
-                <div className='text-black text-xl md:text-2xl hover:text-blue-default transition-colors'>
+                <img
+                    src={Logo}
+                    alt='logo'
+                    className='h-10 w-10 md:h-14 md:w-14'
+                />
+                <div className='text-black ml-2 text-xl md:text-2xl group-hover:text-oranges-default transition ease-in-out duration-300'>
                     ppsmb kesatria 2022
                 </div>
             </NavLinkStock>
@@ -56,7 +61,8 @@ export function PageHeader({ className }) {
                     } transition-transform duration-300 md:transform-none md:transition-none`}
                 >
                     <NavLink to='/'>Beranda</NavLink>
-                    <NavLink to='/jelajah-teknik'>Jelajah Teknik</NavLink>
+                    {/* <NavLink to='/jelajah-teknik'>Jelajah Teknik</NavLink>
+                    <NavLink to='/dokumentasi'>Dokumentasi</NavLink> */}
                     <NavLink to='/agenda'>Agenda</NavLink>
                     <NavLink to='/penugasan'>Penugasan</NavLink>
                     <NavLink to='/materi'>Materi</NavLink>

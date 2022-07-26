@@ -1,7 +1,7 @@
 export function PageTitle({ title }) {
     return (
         <div className='flex place-content-center'>
-            <div className='font-samarkan text-4xl md:text-7xl place-content-center z-10 absolute flex'>
+            <div className='font-samarkan text-4xl md:text-7xl place-content-center z-10 absolute flex text-blue-dark'>
                 {title}
             </div>
             <div

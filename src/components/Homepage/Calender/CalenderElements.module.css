@@ -1,0 +1,397 @@
+
+
+:root {
+    --teal-050: #effcf6;
+    --teal-100: #c6f7e2;
+    --teal-200: #8eedc7;
+    --teal-300: #65d6ad;
+    --teal-400: #3ebd93;
+    --teal-500: #27ab83;
+    --teal-600: #199473;
+    --teal-700: #147d64;
+    --teal-800: #0c6b58;
+    --teal-900: #014d40;
+    --blue-grey-050: #f0f4f8;
+    --blue-grey-100: #d9e2ec;
+    --blue-grey-200: #bcccdc;
+    --blue-grey-300: #9fb3c8;
+    --blue-grey-400: #829ab1;
+    --blue-grey-500: #627d98;
+    --blue-grey-600: #486581;
+    --blue-grey-700: #334e68;
+    --blue-grey-800: #243b53;
+    --blue-grey-900: #102a43;
+}
+  
+  
+  
+.myBg5 {
+    display: flex;
+    width: 100%;
+    /* background-color: #014d40; */
+    height: 65vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background-size: cover;
+    background-image: url('../../../assets/images/homepage/pattern3.png');
+    background-color: #F1F1F1;
+    /* background-color: black; */
+}
+
+.ship2{
+    max-width: 100%;
+    height: 65vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.ship{
+    max-width: 100%;
+    height: 50vh;
+    width: 40%;
+    position: relative;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    
+    justify-content: center;
+    align-self: center;
+}
+
+.ship1{
+    max-width: 100%;
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.ship4{
+    max-width: 100%;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    
+    justify-content: center;
+    align-self: flex-end;
+}
+.Awan50{
+    position: absolute;
+    width: 100%;
+    height: 206px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Awan3{
+    position: relative;
+    width: 100%;
+    height: 18px;
+}
+  
+.Container {
+    position: relative;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin: 5em auto 0 auto;
+    background-color: #132B3B;
+    border: 2px;
+    border-radius: 10px;
+    height: 20vh;
+    box-shadow: 2px 2px 0px 2px  rgba(0, 0, 0, 0.4);
+}
+
+  
+.monthIndicator {
+    color: #FAFAFA;
+    max-width: 100%;
+    height: 5vh;
+}
+
+.time{
+    position: relative;
+    top: 15px;
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
+  
+.hari {
+    color: #F26628;
+}
+
+.keterangan{
+    height: 19px;
+    width: 170px;
+    text-align: center;
+    position: relative;
+    color: #F26628;
+    font-size: 16px;
+    left: 140px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.icon20{
+    height: 19px;
+    width: 250px;
+    position: relative;
+    top: 4px;
+    left:-165px;
+    display: flex;
+    color: #F26628;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.myBg6{
+    max-width: 100%;
+    background-color: #FAFAFA;
+    height: 20%;
+}
+  
+.dayOfWeek,
+.dateGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+  
+.dayOfWeek {
+    position: relative;
+    top: 10px;
+    margin-top: 1.25em;
+}
+  
+.dayOfWeek > * {
+    font-size: 0.7em;
+    color: #0C2434;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    text-align: center;
+}
+  
+  /* Dates */
+.dateGrid {
+    margin-top: 0.7em;
+}
+  
+  /* Positioning the first day */
+.dateGrid button:first-child {
+    grid-column:1;
+}
+  
+.dateGrid button {
+    position: relative;
+    border: none;
+    width: 6.5ch;
+    height: 6.5ch;
+    border-radius: 0;
+    background-color: transparent;
+    color: #616161;
+}
+  
+.dateGrid button:hover,
+.dateGrid button:focus {
+    outline: none;
+    color: var(--blue-grey-700);
+}
+  
+.dateGrid button:active,
+.dateGrid button.is-selected {
+    color: var(--teal-900);
+}
+
+
+@media screen and (min-width: 280px) and (max-width: 700px) {
+    .keterangan{
+        left: 60px;
+        top: 30px;
+    }
+
+    .myBg5{
+        width: 100%;
+        height: 70vh;
+        background-image: url("../../../assets/images/homepage/pattern3small.png");
+        background-size: cover;
+    }
+
+    .ship{
+        width: 100%;
+        height: 70vh;
+    }
+
+    .icon20{
+        left: 0px;
+        top: 70px;
+    }
+
+    .Awan3{
+        width: 150px;
+        left:-50px;
+    }
+    
+    .Awan50{
+        width: 200px;
+        left: 250px;
+        top: 20px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .Awan50{
+        left: 350px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .Awan50{
+        left: 450px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .Awan50{
+        left: 550px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .myBg5{
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        
+        background-image: url("../../../assets/images/homepage/pattern3small.png");
+    }
+
+    .myBg6{
+        height: 33vh;
+    }
+
+    .ship{
+        width: 100%;
+        height: 70vh;
+    }
+
+    .Container{
+        height: 41vh;
+        top: 0px;
+    }
+
+    .keterangan{
+      top: 50px;
+      left: 60px;
+    }
+
+    .icon20{
+        top: 50px;
+        left: 0px;
+    }
+    
+    .Awan50{
+        left: 600px;
+        top: 10px;
+    }
+
+    .Awan3{
+        top: 30px;
+    }
+
+   .Calendar{
+    position: relative;
+    top: -200px;
+   }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+.Awan50{
+    left: 700px;
+}
+}
+
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .Awan50{
+        left: 800px;
+    }
+
+    .ship{
+        width: 100%;
+        height: 70vh;
+        
+    }
+    .myBg5{
+        width: 100%;
+        height: 70vh;
+    }
+  
+    }
+
+@media screen and (min-width: 1081px) and (max-width: 1280px) {
+        .Awan50{
+            left: 1000px;
+ }
+
+ .ship{
+    width: 100%;
+    height: 70vh;
+    
+}
+.myBg5{
+    width: 100%;
+    height: 70vh;
+}
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1500px) {
+    .Awan50{
+        left: 1200px;
+}
+
+.ship{
+width: 100%;
+height: 70vh;
+
+}
+.myBg5{
+width: 100%;
+height: 70vh;
+}
+}
+
+@media screen and (min-width: 2000px) and (max-width: 5000px) {
+.myBg5{
+    background-size: cover;
+    height: 50vh;
+}
+.ship{
+    height: 40vh;
+}
+
+.ship2{
+    height: 50vh;
+    
+}
+
+.keterangan{
+    align-self: center;
+}
+.icon20{
+    align-self: center;
+}
+}

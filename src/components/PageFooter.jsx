@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import styles from '../styles/PageFooter.module.css';
 
 import { openInNewTab } from '../utils/openInNewTab';
 
@@ -25,10 +24,10 @@ function SocialItem({
             }
             className='flex items-center font-semilight group my-2 max-w-max'
         >
-            <div className='bg-white group-hover:bg-oranges-default text-black p-1 rounded-full'>
+            <div className='bg-white group-hover:bg-oranges-default text-black p-1 rounded-full transition ease-in-out duration-300'>
                 <IconComponent className='block w-4 h-4 p-0.5 fill-current' />
             </div>
-            <span className='block text-sm md:text-base group-hover:text-oranges-default ml-2'>
+            <span className='block text-sm md:text-base group-hover:text-oranges-default ml-2 transition ease-in-out duration-300'>
                 {children}
             </span>
         </button>
@@ -38,7 +37,7 @@ function SocialItem({
 export function PageFooter({ className }) {
     return (
         <footer
-            className={`${styles.footerContainer} bg-black text-gray-lighter flex flex-col md:flex-row font-semilight p-8 ${className}`}
+            className={` bg-main-blue text-white flex flex-col md:flex-row font-semilight p-8 ${className}`}
         >
             {/* TODO: Group the latter text-containing parts (with <div>s) instead of the current approach, to allow similar/uniform left-aligning in mobile viewports */}
             <div className='flex flex-row items-center w-auto md:w-2/5 mb-8 md:mb-0'>
@@ -48,7 +47,7 @@ export function PageFooter({ className }) {
                         PPSMB Kesatria 2022
                     </p>
                     <button
-                        className='mb-2 md:mb-4 text-sm md:text-base hover:text-oranges-default text-left'
+                        className='mb-2 md:mb-4 text-sm md:text-base hover:text-oranges-default text-left transition ease-in-out duration-300'
                         type='button'
                         onClick={() =>
                             openInNewTab(
@@ -66,7 +65,7 @@ export function PageFooter({ className }) {
                     <p>
                         <Link
                             to='/'
-                            className='hover:text-oranges-default text-sm md:text-base'
+                            className='hover:text-oranges-default text-sm md:text-base transition ease-in-out duration-300'
                             title='Go to home page'
                         >
                             https://ppsmb.ft.ugm.ac.id

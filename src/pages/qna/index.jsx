@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import { GenericPage } from '../../components/GenericPage';
 import { HtmlHead } from '../../components/HtmlHead';
@@ -7,6 +8,8 @@ import { Question } from '../../components/QNA/Question';
 
 import { ReactComponent as Search } from '../../assets/icons/search.svg';
 import background from '../../assets/images/pattern-light.png';
+
+import { openInNewTab } from '../../utils/openInNewTab';
 
 import Questions from '../../resources/questions.json';
 
@@ -43,19 +46,28 @@ export function QNA() {
                     <div className='flex justify-center mt-6'>
                         <div className='flex flex-col w-100 md:w-3/4'>
                             {list.map((item) => (
-                                <Question item={item} />
+                                <motion.div
+                                    initial={{ y: 0, opacity: 0 }}
+                                    animate={{ y: -10, opacity: 1 }}
+                                    transition={{ duration: 1 }}
+                                >
+                                    <Question item={item} />
+                                </motion.div>
                             ))}
                         </div>
                     </div>
                     <div className='flex justify-center mt-4 md:mt-8'>
                         Pertanyaan kamu tidak ada di laman ini? Silahkan hubungi
-                        <a
-                            href='mailto:ppsmb-kesatria.ft@ugm.ac.id?subject=FAQ%20Kesatria%202022'
-                            className='ml-1'
+                        <button
+                            type='button'
+                            onClick={() =>
+                                openInNewTab('https://line.me/R/ti/p/@NRB2565A')
+                            }
+                            className='ml-1 text-oranges-default hover:text-oranges-light transition ease-in-out duration-300'
                         >
                             {' '}
                             sini
-                        </a>
+                        </button>
                     </div>
                 </GenericPage>
             </div>

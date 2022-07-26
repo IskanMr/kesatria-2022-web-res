@@ -1,17 +1,52 @@
 [
     {
         "id": "1",
-        "question": "Bagaimana jika belum memiliki KTM (Kartu Tanda Mahasiswa)?",
-        "answer": "Diperbolehkan untuk menggunakan e-KTM (dari website universitas), KTP, atau identitas lainnya. Untuk pelajar dapat menggunakan kartu pelajar."
+        "question": "Untuk ketentuan topi cap berwarna hitam apakah harus polos?",
+        "answer": "Warna topi dominan hitam, jika ada sedikit motif berwarna lain masih diperbolehkan."
     },
     {
         "id": "2",
-        "question": "Kenapa kalau kita pergi, dia bersama kita dan iya bukan?",
-        "answer": "Diperbolehkan untuk menggunakan e-KTM (dari website universitas), KTP, atau identitas lainnya. Untuk pelajar dapat menggunakan kartu pelajar."
+        "question": "Untuk ketentuan rambut tidak menyentuh alis dan telinga, ditujukan kepada mahasiswa atau mahasiswi baru?",
+        "answer": "Peraturan tersebut bersifat general. Untuk mahasiswa dan mahasiswi yang berambut panjang wajib diikat."
     },
     {
         "id": "3",
-        "question": "Bulan itu indah bukan?",
-        "answer": "Diperbolehkan untuk menggunakan e-KTM (dari website universitas), KTP, atau identitas lainnya. Untuk pelajar dapat menggunakan kartu pelajar."
+        "question": "Apakah sepatu yang dikenakan harus menutupi mata kaki?",
+        "answer": "Tidak, model sepatu yang dikenakan bebas."
+    },
+    {
+        "id": "4",
+        "question": "Nama forum dan link Google Classroom dapat dilihat dimana?",
+        "answer": "Di Simaster (Kemahasiswaan → PPSMB → Fakultas/Sekolah Vokasi)."
+    },
+    {
+        "id": "5",
+        "question": "Identitas yang harus disertakan dalam penugasan (seperti esai, PPT, atau CV) apa saja?",
+        "answer": "Diisi nama dan NIM dengan format bebas di pojok kanan atas. Untuk format penamaan file sesuai dengan ketentuan L.PK."
+    },
+    {
+        "id": "6",
+        "question": "Bagaimana penyelesaian apabila Kesatria Muda tidak dapat mengumpulkan tugas ke dalam Google Classroom?",
+        "answer": "Menghubungi Pemandu forum masing-masing."
+    },
+    {
+        "id": "7",
+        "question": "Apakah boleh mengumpulkan penugasan sebelum deadline?",
+        "answer": "Boleh."
+    },
+    {
+        "id": "8",
+        "question": "Adakah penugasan lain selain 7 L.PK yang tertera dalam Google Classroom? ",
+        "answer": "Penugasan sebelum hari-H mencakup 7 L.PK yang sudah tertera di Google Classroom, untuk penugasan lainnya seperti quiz dan lain-lain akan dilaksanakan pada hari-H PPSMB Kesatria 2022."
+    },
+    {
+        "id": "9",
+        "question": "Adakah format penamaan dalam penggunaan email pribadi?",
+        "answer": "Nama forum_Nama Lengkap. Contoh: Sadewa 1_Asep Firnanda"
+    },
+    {
+        "id": "10",
+        "question": "Bagaimana format nama profil Line?",
+        "answer": "Kode Forum_Nama. Contoh: SA3_Asep. Kode forum dapat di Guidebook Kesatria 2022."
     }
 ]

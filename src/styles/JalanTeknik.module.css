@@ -3,15 +3,40 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0 2rem 0;
+    padding: 7rem 0 7rem 0;
     overflow: visible;
+    z-index: 2;
 }
 
 .carouselItem {
     display: flex !important;
-    height: 65vh;
+    height: 160vmin;
     width: 80vw;
     flex-direction: row;
+    background-color: #224860;
+    border-radius: 3vmin;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoContainer {
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 9rem 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.videoItem {
+    display: flex !important;
+    height: 60vmin;
+    width: 80vw;
+    flex-direction: column;
     background-color: #224860;
     border-radius: 3vmin;
     position: relative;
