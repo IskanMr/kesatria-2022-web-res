@@ -2,7 +2,6 @@
     background-image: url("../../assets/images/homepage/pattern3.png");
     background-size: cover;
     height: 80vh;
-    display: flex;
     overflow: hidden;
 }
 
@@ -10,7 +9,7 @@
     .Bg10{
         width: auto;
         height: 110vh;
-        background-image: url("../../assets/images/homepage/Bgmobile2.png");
+        background-image: url("../../assets/images/homepage/pattern3small.png");
         background-size: cover;
         
     }
@@ -20,7 +19,7 @@
   .Bg10{
       width: auto;
       height: 120vh;
-      background-image: url("../../assets/images/homepage/Bgmobile2.png");
+      background-image: url("../../assets/images/homepage/pattern3small.png");
       background-size: cover;
       
   }
@@ -46,7 +45,7 @@
 
       width: auto;
       height: 165vh;
-      background-image: url("../../assets/images/homepage/Bgmobile2.png");
+      background-image: url("../../assets/images/homepage/pattern3small.png");
     }
 }
 
@@ -56,7 +55,7 @@
 
       width: auto;
       height: 175vh;
-      background-image: url("../../assets/images/homepage/Bgmobile2.png");
+      background-image: url("../../assets/images/homepage/pattern3small.png");
     }
 }
 
@@ -66,7 +65,7 @@
 
       width: auto;
       height: 185vh;
-      background-image: url("../../assets/images/homepage/Bgmobile2.png");
+      background-image: url("../../assets/images/homepage/pattern3small.png");
     }
 }
 
@@ -76,7 +75,7 @@
 
     width: auto;
     height: 145vh;
-    background-image: url("../../assets/images/homepage/Bg2.png");
+    background-image: url("../../assets/images/homepage/pattern3.png");
   }
 }
 

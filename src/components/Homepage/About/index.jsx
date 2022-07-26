@@ -1,11 +1,11 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { useSpring, animated } from 'react-spring'
-import {AboutRow, Column1, Column2, Column3, Column4, TextWrapper, TopLine, Heading, Subtitle, Img, ImgWrap, ImgDep,ImgDep1, ImgDep12, ImgDep3, ImgDep4, ImgDep5,Img11, Img14, Img12, Img13, Img4, Img15} from './AboutElements'
+import { AwanContainer, AboutContainer, AboutRow, Column1, Column2, Column3, Column4, TextWrapper, TopLine, Heading, Subtitle, Img, ImgWrap, ImgDep,ImgDep1, ImgDep12, ImgDep3, ImgDep4, ImgDep5,Img11, Img14, Img12, Img13, Img4, Img15} from './AboutElements'
 import { useScroll } from "../UseScroll/useScroll";
 import { aboutAnimations, about1Animations } from "../../../utils/animation";
 import styles from "./AboutElements.module.css"
-import img from '../../../assets/images/homepage/logo_3.png'
+import img from '../../../assets/images/homepage/logo_2.png'
 import img2 from '../../../assets/images/homepage/logo_4.png'
 import img3 from '../../../assets/images/homepage/logo_5.png'
 import img4 from '../../../assets/images/homepage/logo_6.png'
@@ -23,9 +23,8 @@ const styles5 = useSpring({
 })
 
     return (
-        <section className='AboutContainer'
-            ref={element}
-        >
+        <AboutContainer>
+            <div className='sizing 10' ref={element}>
             <motion.div
                 className='AboutWrapper'
                 variants={aboutAnimations}
@@ -54,42 +53,42 @@ const styles5 = useSpring({
                                 <ImgDep1>
                                     <Img11 src={img2} alt='pic'/>
                                 </ImgDep1>
-                                <animated.div
+                                {/* <animated.div
                                     className={`${styles.ImgDep1}`}
                                     style={styles5}
-                                />
+                                /> */}
 
                                 <ImgDep12>
                                     <Img12 src={img3} alt='pic' />
                                 </ImgDep12>
-                                <animated.div
+                                {/* <animated.div
                                     className={`${styles.ImgDep2}`}
                                     style={styles5}
-                                />
+                                /> */}
 
                                 <ImgDep3>
                                     <Img13 src={img4} alt='pic'/>
                                 </ImgDep3>
-                                <animated.div
+                                {/* <animated.div
                                     className={`${styles.ImgDep3}`}
                                     style={styles5}
-                                />
+                                /> */}
 
                                 <ImgDep4>
                                     <Img14 src={img5} alt='pic' />
                                 </ImgDep4>
-                                <animated.div
+                                {/* <animated.div
                                     className={`${styles.ImgDep4}`}
                                     style={styles5}
-                                />
+                                /> */}
 
                                 <ImgDep5>
                                     <Img15 src={img6} alt='pic' />
                                 </ImgDep5>
-                                <animated.div
+                                {/* <animated.div
                                     className={`${styles.ImgDep5}`}
                                     style={styles5}
-                                />
+                                /> */}
                             </ImgDep>
                         </Column3>
                     </Column2>
@@ -102,13 +101,16 @@ const styles5 = useSpring({
                             duration: 1.6,
                         }}
                     >
+                        <AwanContainer>
                         <Column4>
                             <Img4 src={img8} alt='pic' />
                         </Column4>
+                        </AwanContainer>
                     </motion.div>
                 </AboutRow>
             </motion.div>
-        </section>
+            </div>
+        </AboutContainer>
     );
 };
 

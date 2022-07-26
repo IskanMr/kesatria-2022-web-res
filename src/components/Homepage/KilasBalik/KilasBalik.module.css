@@ -2,27 +2,38 @@
     display: flex;
 }
 
-.kotak4{
-    max-width: 100%;
-    height: 600px;
+
+.kotak15{
+    height: 70%;
     width: 100%;
     position: absolute;
-   /* background-color: #0C2434; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.kotak4{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    /* background-color: aquamarine; */
 }
 
 .kotak5{
     position: relative;
-    width: 494.56px;
-    height: 354.52px;
-    padding: auto;
+    width: 35%;
+    height: 60%;
     background: #224860;
     border-radius: 60px;
     padding: 20px 10px 20px 10px;
     box-shadow: 10px 10px  #0C2434;
-    top:140px;
     justify-content: center;
     align-items: center;
-    left: 235px;
+
 }
 
 .Awan5{
@@ -35,8 +46,8 @@
 
 .kotak7{
     position: absolute;
-    width: 180px;
-    height: 65px;
+    width: 300px;
+    height: 105px;
     left: 0;
     top: 0;
     background: #F26628;
@@ -49,9 +60,8 @@
     position: absolute;
     width: 222px;
     height: 28px;
-    left: 30px;
-    top: 15px;
-    
+    left: 80px;
+    top: 40px;
     font-family: 'Gill Sans MT';
     font-style: normal;
     font-weight: 700;
@@ -65,11 +75,14 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    right: 600px;
+    right: 200px;
     background: #FAFAFA;
     box-shadow: 5px 2px #F26628;
     border-radius: 35px;
     top: 300px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-start;
 }
 
 .logo10{
@@ -82,11 +95,14 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    right: 300px;
+    right: 150px;
     background: #FAFAFA;
     box-shadow: 5px 2px #F26628;
     border-radius: 35px;
     top:200px;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-start;
 }
 
 .logo11{
@@ -100,11 +116,14 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    right: 100px;
+    right: 370px;
     background: #FAFAFA;
     box-shadow: 5px 2px #F26628;
     border-radius: 35px;
-    top:400px;
+    top:100px;
+    display: flex;
+    align-self: flex-end;
+    justify-self: center;
     
 }
 
@@ -120,11 +139,11 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    right: 400px;
+    left: 200px;
     background: #FAFAFA;
     box-shadow: 5px 2px #F26628;
     border-radius: 35px;
-    top: 500px;
+    top: 300px;
 }
 
 .logo13{
@@ -139,11 +158,11 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    right: 500px;
+    left: 300px;
     background: #FAFAFA;
     box-shadow: 5px 2px #F26628;
     border-radius: 35px;
-    top: 90px;
+    top: 200px;
 }
 
 .logo14{
@@ -347,3 +366,7 @@
         display: none;
     }
 }
+
+
+
+

@@ -10,8 +10,9 @@ import { useScroll } from "../UseScroll/useScroll";
 export function Calender() {
   const [element, controls] = useScroll();
 return (
-<div className={`${styles.myBg5}`} id='calender'>
-  <div className={`${styles.ship}`} ref={element}>
+<div className={`${styles.myBg5}`}>
+<div className={`${styles.ship2}`}>
+    <div className={`${styles.ship1}`} ref={element}>
     <motion.div className={`${styles.Awan50}`}
       variants={youtube2Animation}  
       animate={controls}
@@ -35,7 +36,9 @@ return (
     >
     <img src={awan3} alt='pic'/>
     </motion.div>
+    </div>
 
+    <div className={`${styles.ship}`} ref={element}>
     <div className={`${styles.Container}`}>
     <div className={`${styles.Calendar}`}>
     <div className={`${styles.monthIndicator}`}>
@@ -65,13 +68,13 @@ return (
           <div className={`${styles.hari}`}>
             3
           </div>
-        </div>
+      </div>
       </button>
       <button type='button'>
       <div className={`${styles.time}`}>
         <div className={`${styles.hari}`}>
             4
-          </div>
+      </div>
         </div>
       </button>
       <button type='button'>
@@ -159,12 +162,17 @@ return (
     </div>
   </div>
 
-    <div className={`${styles.keterangan}`}>
-       PPSMB KESATRIA 2022
+   
     </div>
-    </div>
-    <BiCheckbox className={`${styles.icon20}`}/>
   </div>
-</div>
+  <div className={`${styles.ship4}`}>
+  <div className={`${styles.keterangan}`}>
+       PPSMB KESATRIA 2022
+  </div>
+    <BiCheckbox className={`${styles.icon20}`}/>
+    </div>
+  </div>
+  </div>
+
   )
 }

@@ -1,7 +1,7 @@
 .Bg2{
     background-image: url("../../../assets/images/homepage/pattern2.png");
     background-size: cover;
-    height: 100vh;
+    height: 125vh;
     background-color: #132B3B ;
     /* position: relative; */
     display: flex;
@@ -76,7 +76,7 @@
 .anthem{
     position: relative;
     width: 100%;
-    height: 90%;
+    height: 100%;
     border-radius: 0px;
     margin-top: -10px;
 }
@@ -130,7 +130,7 @@
     align-self: flex-end;
 } */
 
-@media screen and (min-width: 320px) and (max-width: 400px) {
+/* @media screen and (min-width: 320px) and (max-width: 400px) {
     .Bg2{
         width: auto;
         height: 500px;
@@ -681,4 +681,38 @@
               top:-180px;
              }
             }
-    
+     */
+     @media screen and (min-width: 1000px) and (max-width: 1500px) {
+        .Bg2{
+            width: 117.5%;
+
+        }
+     }
+
+     @media screen and (min-width: 1000px) and (max-width: 1150px) {
+        .Bg2{
+            width: 117.5%;
+
+        }
+
+        .box{
+            width: 100%;
+        }
+
+        .box2{
+            width: 100%;
+        }
+
+        .box3{
+            width: 90%;
+        }
+
+        .box10{
+            width: 100%;
+        }
+
+        .anthem{
+            height: 100%;
+        }
+     }
+

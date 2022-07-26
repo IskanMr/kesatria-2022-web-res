@@ -11,15 +11,19 @@
 .maxwidth{
     width: 100%;
     display: flex;
+    
+    justify-content: center;
+    align-items: center;
 }
 
 
 .kotak{
-    max-width: 100%;
-    height: 800px;
-    position: relative;
-    top: 70px;
-    left: 240px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -27,8 +31,9 @@
     position: absolute;
     width: 254px;
     height: 65px;
-    left: 0;
-    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     background: #F26628;
     border-radius: 0px 45px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -58,27 +63,30 @@
     background: #224860;
     border-radius: 60px;
     box-shadow: 10px 10px  #0C2434;
-    top:100px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    left: 0px;
 }
 
 .kotak3{
     position: relative;
-    width: 1000px;
-    height: 550px;
+    width: 95%;
+    height: 95%;
     padding: auto;
     background-image: url("../../../assets/images/homepage/Bgjjt.png");
     border-radius: 45px;
-    bottom: -22px;
-    justify-content: center;
-    align-items: center;
-    left: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     }
 
+    @media screen and (min-width: 1000px) and (max-width: 1500px) {
+        .Bg4{
+            width: 117.5%;
+        }
+     }
 
-    @media screen and (min-width: 280px) and (max-width: 700px) {
+    /* @media screen and (min-width: 280px) and (max-width: 700px) {
         .Bg4{
             width: auto;
             height: 500px;
@@ -306,4 +314,4 @@
             top: 60px;
         }
     }
-    
+     */
