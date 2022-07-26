@@ -50,7 +50,7 @@ export function TeknikStore() {
             >
                 <GenericPage>
                     <PageTitle title='Teknik Store' />
-                    <div className='flex flex-wrap w-100 justify-items-center overflow-hidden place-content-center md:px-[15%]'>
+                    <div className='flex mt-6 flex-wrap w-100 justify-items-center overflow-hidden place-content-center md:px-[15%]'>
                         {StoreData.map((item) => (
                             <motion.div
                                 initial={{ y: 0, opacity: 0 }}
