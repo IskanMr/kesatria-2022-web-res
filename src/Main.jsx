@@ -52,10 +52,6 @@ function Main() {
                             component={pages.JelajahTeknik}
                         /> */}
                         <Route
-                            path='/jelajah-teknik/ngulik-teknik'
-                            component={pages.NgulikTeknik}
-                        />
-                        <Route
                             path='/jelajah-teknik/jalan-jalan-teknik'
                             component={pages.JalanJalanTeknik}
                         />
