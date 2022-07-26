@@ -61,8 +61,8 @@ export function PageHeader({ className }) {
                     } transition-transform duration-300 md:transform-none md:transition-none`}
                 >
                     <NavLink to='/'>Beranda</NavLink>
-                    <NavLink to='/jelajah-teknik'>Jelajah Teknik</NavLink>
-                    <NavLink to='/dokumentasi'>Dokumentasi</NavLink>
+                    {/* <NavLink to='/jelajah-teknik'>Jelajah Teknik</NavLink>
+                    <NavLink to='/dokumentasi'>Dokumentasi</NavLink> */}
                     <NavLink to='/agenda'>Agenda</NavLink>
                     <NavLink to='/penugasan'>Penugasan</NavLink>
                     <NavLink to='/materi'>Materi</NavLink>

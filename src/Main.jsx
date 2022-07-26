@@ -42,29 +42,31 @@ function Main() {
                 <main className='flex-grow flex flex-col'>
                     <Switch>
                         <Route exact path='/' component={pages.Home} />
-                        <Route
-                            path='/penugasan'
-                            component={pages.Penugasan}
-                        />
-                        <Route
+                        <Route path='/penugasan' component={pages.Penugasan} />
+                        {/* <Route
                             exact
                             path='/jelajah-teknik'
                             component={pages.JelajahTeknik}
+                        /> */}
+                        <Route
+                            path='/jelajah-teknik/ngulik-teknik'
+                            component={pages.NgulikTeknik}
                         />
-                        <Route path='/jelajah-teknik/ngulik-teknik' component={pages.NgulikTeknik} />
-                        <Route path='/jelajah-teknik/jalan-jalan-teknik' component={pages.JalanJalanTeknik} />
+                        <Route
+                            path='/jelajah-teknik/jalan-jalan-teknik'
+                            component={pages.JalanJalanTeknik}
+                        />
                         <Route path='/agenda' component={pages.Agenda} />
                         <Route path='/materi' component={pages.Materi} />
-                        <Route
+                        {/* <Route
                             path='/dokumentasi'
                             component={pages.Dokumentasi}
-                        />
+                        /> */}
                         <Route
                             path='/teknik-store'
                             component={pages.TeknikStore}
                         />
                         <Route path='/pertanyaan-umum' component={pages.QNA} />
-                        
 
                         {/* The 404 page */}
                         <Route component={pages.NotFound} />
