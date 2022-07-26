@@ -171,7 +171,7 @@
     left: 15px;
 }
 
-@media screen and (min-width: 280px) and (max-width: 700px) {
+/* @media screen and (min-width: 280px) and (max-width: 700px) {
    
 
     .kotak4{
@@ -365,7 +365,7 @@
     .kotak9{
         display: none;
     }
-}
+} */
 
 
 

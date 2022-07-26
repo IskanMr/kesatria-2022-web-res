@@ -45,6 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .box2{
@@ -684,14 +685,14 @@
      */
      @media screen and (min-width: 1000px) and (max-width: 1500px) {
         .Bg2{
-            width: 117.5%;
+            width: 100%;
 
         }
      }
 
      @media screen and (min-width: 1000px) and (max-width: 1150px) {
         .Bg2{
-            width: 117.5%;
+            width: 100%;
 
         }
 
@@ -716,3 +717,8 @@
         }
      }
 
+     @media screen and (min-width: 320px) and (max-width: 1000px) {
+        .Awan1{
+            display: none;
+        }
+     }

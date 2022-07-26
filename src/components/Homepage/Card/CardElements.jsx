@@ -174,24 +174,6 @@ export const AgendaCard1 = styled.div`
         top: -50px;
         
      }
-
-     @media screen and (min-width: 1201px) and (max-width: 1280px) {
-        left: 80px;
-     }
-
-     @media screen and (min-width: 1150px) and (max-width: 1200px) {
-        left: 30px;
-     }
-
-     @media screen and (min-width: 1001px) and (max-width: 1149px) {
-        left: -10px;
-        display: flex;
-        align-items: center;
-     }
-
-     @media screen and (min-width: 1280px) and (max-width: 1380px) {
-        left: 110px;
-     }
     
 `
 export const AgendaCard2 = styled.div`

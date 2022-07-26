@@ -170,7 +170,7 @@ return (
        PPSMB KESATRIA 2022
   </div>
     <BiCheckbox className={`${styles.icon20}`}/>
-    </div>
+  </div>
   </div>
   </div>
 

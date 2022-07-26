@@ -9,11 +9,7 @@ width: 150%;
 height: 110vh;
 `
 
-export const Img5 = styled.img`
-max-width: 100%;
-height: 100vh;
-z-index: -99;
-`
+
 
 export const AboutRow = styled.div`
 display: flex;
@@ -74,11 +70,7 @@ top: -20px;
     
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-    width: auto;
-    left: 20px;
-    top: 10px;
-}
+
 
 
 `
@@ -103,11 +95,7 @@ top: -80px;
     left: 40px; 
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1400px) {
-    width: auto;
-    left: 20px;
-    top: 10px;
-}
+
 `
 
 export const Column3 = styled.div`
@@ -191,31 +179,6 @@ top: 60px;
     left: 180px;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-    left:  -150px;
-    top: -30px
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1280px) {
-    left:  -150px;
-    top: -30px
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1400px) {
-    left:  -50px;
-    top: -30px
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1100px) {
-top: -50px;
-left: 90px;
-}
-
-@media screen and (min-width: 1100px) and (max-width: 1200px) {
-    left:  100px;
-    top: -30px
-}
-
 
 `
 
@@ -258,24 +221,8 @@ position:relative;
     left: 50px;
 }
 
-@media screen and (min-width: 1151px) and (max-width: 1400px) {
-    left: -250px;
-    top: -30px;
-}
 
-@media screen and (min-width: 1280px) and (max-width: 1400px) {
-    left: -150px;
-    top: -30px;
-}
 
-@media screen and (min-width: 1001px) and (max-width: 1151px) {
-    top: -30px;
-    left: -250px;
-}
-@media screen and (min-width: 1151px) and (max-width: 1199px) {
-    left:  -250px;
-    top: -30px;
-}
 
 `
 
@@ -307,10 +254,6 @@ text-align: left;
     text-align: center;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-    left: 0px;
-    
-}
 `
 export const Heading = styled.h1`
 margin-bottom: 24px;
@@ -332,10 +275,6 @@ text-align: left;
     text-align: center;
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1199px) {
-    
-    
-}
 
 
 `
@@ -458,11 +397,7 @@ export const ImgDep1 = styled.div`
     @media screen and (min-width: 701px) and (max-width: 1000px) {
         left: 250px;
     }
-    @media screen and (min-width: 1001px) and (max-width: 1100px) {
-        width: 45px;
-        left: 0px;
-        top: 30px;
-    }
+
     
     
 `
@@ -494,11 +429,7 @@ export const ImgDep12 = styled.div`
 @media screen and (min-width: 701px) and (max-width: 1000px) {
     left: 400px;
 }
-@media screen and (min-width: 1001px) and (max-width: 1100px) {
-    width: 45px;
-    left: 90px;
-    top: 30px;
-}
+
 
 
 `
@@ -532,11 +463,7 @@ top: 40px;
         left: 550px;
     }
 
-    @media screen and (min-width: 1001px) and (max-width: 1100px) {
-        width: 45px;
-        left: 170px;
-        top: 30px;
-    }
+ 
 
 
 `
@@ -568,11 +495,7 @@ top: 40px;
     @media screen and (min-width: 701px) and (max-width: 1000px) {
         left: 700px;
     }
-    @media screen and (min-width: 1001px) and (max-width: 1100px) {
-        width: 45px;
-        left: 250px;
-        top: 30px;
-    }
+  
     
 `
 export const ImgDep5 = styled.div`
@@ -604,11 +527,7 @@ top: 40px;
     @media screen and (min-width: 701px) and (max-width: 1000px) {
         left: 850px;
     }
-    @media screen and (min-width: 1001px) and (max-width: 1100px) {
-        width: 40px;
-        left: 330px;
-        top: 30px;
-    }
+ 
 
     
 
@@ -700,36 +619,6 @@ bottom: 40px;
     left: 40px;
     top: 0px
 }
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-    left: -520px;
-    top: -130px
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1300px) {
-    left: -450px;
-    top: -130px
-}
-
-@media screen and (min-width: 1300px) and (max-width: 1400px) {
-    left: -450px;
-    top: -130px
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1280px) {
-    left: -550px;
-    top: -130px
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1100px) {
-    left: -330px;
-    top: -120px;
-    width: 350px;
-}
-
-@media screen and (min-width: 1100px) and (max-width: 1200px) {
-    left:  -300px;
-    top: -120px
-}
 
 `
 export const Img11 = styled.img`
@@ -794,10 +683,6 @@ export const Column4 = styled.div`
     top: 620px;    
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1199px) {
-    left: 900px;
-    top: 500px;
-}
 
 `
 
