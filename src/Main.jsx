@@ -8,6 +8,7 @@ import {
     Route,
     useLocation,
     useHistory,
+    Redirect,
 } from 'react-router-dom';
 
 import './styles/main.scss';
@@ -41,7 +42,9 @@ function Main() {
 
                 <main className='flex-grow flex flex-col'>
                     <Switch>
-                        <Route exact path='/' component={pages.Home} />
+                        <Route exact path='/'>
+                            <Redirect to='/agenda' />
+                        </Route>
                         <Route path='/penugasan' component={pages.Penugasan} />
                         {/* <Route
                             exact
