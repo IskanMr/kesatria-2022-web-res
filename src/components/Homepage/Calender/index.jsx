@@ -1,17 +1,17 @@
 import React from 'react'
-import styles from "../Calender/CalenderElements.css"
+import {BiCheckbox } from "react-icons/bi";
+import { motion } from "framer-motion/dist/es/index";
+import styles from "./CalenderElements.module.css"
 import awan50 from "../../../assets/images/homepage/awan6.png"
-import {VscDebugStackframeDot } from "react-icons/vsc";
 import awan3 from "../../../assets/images/homepage/awan5.png"
-import {youtube1Animation, youtube2Animation } from "../../../animation";
-import { motion } from "framer-motion";
+import {youtube1Animation, youtube2Animation } from "../../../utils/animation";
 import { useScroll } from "../UseScroll/useScroll";
 
-function Calender() {
+export function Calender() {
   const [element, controls] = useScroll();
 return (
-<div class={`${styles.myBg5}`} id='calender'>
-  <div class={`${styles.ship}`} ref={element}>
+<div className={`${styles.myBg5}`} id='calender'>
+  <div className={`${styles.ship}`} ref={element}>
     <motion.div className={`${styles.Awan50}`}
       variants={youtube2Animation}  
       animate={controls}
@@ -21,7 +21,7 @@ return (
       duration: 1.8,
       }}
     >
-    <img src={awan50} />
+    <img src={awan50} alt='pic'/>
     </motion.div>
 
     <motion.div className={`${styles.Awan3}`}
@@ -33,17 +33,17 @@ return (
     duration: 1.8,
     }}
     >
-    <img src={awan3} />
+    <img src={awan3} alt='pic'/>
     </motion.div>
 
     <div className={`${styles.Container}`}>
-    <div class={`${styles.calendar}`}>
-    <div class={`${styles.month-indicator}`}>
+    <div className={`${styles.Calendar}`}>
+    <div className={`${styles.monthIndicator}`}>
       <div className={`${styles.time}`}> Agustus 2022 </div>
     </div>
 
-    <div class={`${styles.myBg6}`}>
-    <div class= {`${styles.day-of-week}`}>
+    <div className={`${styles.myBg6}`}>
+    <div className= {`${styles.dayOfWeek}`}>
       <div>Sen</div>
       <div>Sel</div>
       <div>Rab</div>
@@ -53,107 +53,107 @@ return (
       <div>Min</div>
     </div>
     
-    <div class={`${styles.date-grid}`}>
-      <button>
-        <time>1</time>
+    <div className={`${styles.dateGrid}`}>
+      <button type='button'>
+        <div className={`${styles.time}`}>1</div>
       </button>
-      <button>
-        <time>2</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>2</div>
       </button>
-      <button>
-        <time>
+      <button type='button'>
+      <div className={`${styles.time}`}>
           <div className={`${styles.hari}`}>
             3
           </div>
-        </time>
+        </div>
       </button>
-      <button>
-        <time>
+      <button type='button'>
+      <div className={`${styles.time}`}>
         <div className={`${styles.hari}`}>
             4
           </div>
-        </time>
+        </div>
       </button>
-      <button>
-        <time>5</time>
+      <button type='button'>
+        <div className={`${styles.time}`}>5</div>
       </button>
-      <button>
-        <time>6</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>6</div>
       </button>
-      <button>
-        <time >7</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>7</div>
       </button>
-      <button>
-        <time >8</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>8</div>
       </button>
-      <button>
-        <time >9</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>9</div>
       </button>
-      <button>
-        <time>10</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>10</div>
       </button>
-      <button>
-        <time>11</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>11</div>
       </button>
-      <button>
-        <time>12</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>12</div>
       </button>
-      <button>
-        <time>13</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>13</div>
       </button>
-      <button>
-        <time>14</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>14</div>
       </button>
-      <button>
-        <time>15</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>15</div>
       </button>
-      <button>
-        <time>16</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>16</div>
       </button>
-      <button>
-        <time>17</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>17</div>
       </button>
-      <button>
-        <time>18</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>18</div>
       </button>
-      <button>
-        <time>19</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>19</div>
       </button>
-      <button>
-        <time >20</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>20</div>
       </button>
-      <button>
-        <time>21</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>21</div>
       </button>
-      <button>
-        <time>22</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>22</div>
       </button>
-      <button>
-        <time >23</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>23</div>
       </button>
-      <button>
-        <time>24</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>24</div>
       </button>
-      <button>
-        <time>25</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>25</div>
       </button>
-      <button>
-        <time>26</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>26</div>
       </button>
-      <button>
-        <time>27</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>27</div>
       </button>
-      <button>
-        <time>28</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>28</div>
       </button>
-      <button>
-        <time>29</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>29</div>
       </button>
-      <button>
-        <time>30</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>30</div>
       </button>
-      <button>
-        <time>31</time>
+      <button type='button'>
+      <div className={`${styles.time}`}>31</div>
       </button>
     </div>
     </div>
@@ -163,10 +163,8 @@ return (
        PPSMB KESATRIA 2022
     </div>
     </div>
-    <VscDebugStackframeDot className={`${styles.icon20}`}></VscDebugStackframeDot>
+    <BiCheckbox className={`${styles.icon20}`}/>
   </div>
 </div>
   )
 }
-
-export default Calender

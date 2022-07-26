@@ -1,10 +1,10 @@
 
 import React, {useState} from 'react';
 import {FaChevronUp} from 'react-icons/fa';
-import styles from '../scroll/style.css';
+import styles from './TopElements.module.css';
 
 
-const ScrollArrow = () => {
+export function ScrollArrow  () {
 
   const [showScroll, setShowScroll] = useState(false)
 
@@ -29,4 +29,3 @@ const ScrollArrow = () => {
   );
 }
 
-export default ScrollArrow;

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import { GenericPage } from '../../components/GenericPage';
 import { HtmlHead } from '../../components/HtmlHead';
@@ -43,7 +44,13 @@ export function QNA() {
                     <div className='flex justify-center mt-6'>
                         <div className='flex flex-col w-100 md:w-3/4'>
                             {list.map((item) => (
-                                <Question item={item} />
+                                <motion.div
+                                    initial={{ y: 0, opacity: 0 }}
+                                    animate={{ y: -10, opacity: 1 }}
+                                    transition={{ duration: 1 }}
+                                >
+                                    <Question item={item} />
+                                </motion.div>
                             ))}
                         </div>
                     </div>
