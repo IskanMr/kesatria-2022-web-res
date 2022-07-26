@@ -17,7 +17,7 @@ export function CardContainer({ Children }) {
                             >
                                 <div className={`${styles.cardContainer}`}>
                                     <div
-                                        className={`${styles.carouselItem} md:h-[70vh]`}
+                                        className={`${styles.carouselItem} md:h-[70.5vh]`}
                                     >
                                         {child}
                                     </div>{' '}
