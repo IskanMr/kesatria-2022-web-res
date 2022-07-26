@@ -24,10 +24,10 @@ function SocialItem({
             }
             className='flex items-center font-semilight group my-2 max-w-max'
         >
-            <div className='bg-white group-hover:bg-oranges-default text-black p-1 rounded-full'>
+            <div className='bg-white group-hover:bg-oranges-default text-black p-1 rounded-full transition ease-in-out duration-300'>
                 <IconComponent className='block w-4 h-4 p-0.5 fill-current' />
             </div>
-            <span className='block text-sm md:text-base group-hover:text-oranges-default ml-2'>
+            <span className='block text-sm md:text-base group-hover:text-oranges-default ml-2 transition ease-in-out duration-300'>
                 {children}
             </span>
         </button>
@@ -47,7 +47,7 @@ export function PageFooter({ className }) {
                         PPSMB Kesatria 2022
                     </p>
                     <button
-                        className='mb-2 md:mb-4 text-sm md:text-base hover:text-oranges-default text-left'
+                        className='mb-2 md:mb-4 text-sm md:text-base hover:text-oranges-default text-left transition ease-in-out duration-300'
                         type='button'
                         onClick={() =>
                             openInNewTab(
@@ -65,7 +65,7 @@ export function PageFooter({ className }) {
                     <p>
                         <Link
                             to='/'
-                            className='hover:text-oranges-default text-sm md:text-base'
+                            className='hover:text-oranges-default text-sm md:text-base transition ease-in-out duration-300'
                             title='Go to home page'
                         >
                             https://ppsmb.ft.ugm.ac.id

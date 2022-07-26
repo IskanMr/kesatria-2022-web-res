@@ -16,7 +16,7 @@ import sizeChart from '../../assets/images/teknikStore/sizeChart.png';
 import StoreData from '../../resources/store-items.json';
 
 const button = (type) => {
-    return `w-full md:w-56 py-3 rounded-lg ${
+    return `w-full md:w-56 py-3 rounded-lg transition ease-in-out duration-300 ${
         type === 'primary'
             ? 'text-white bg-oranges-default hover:text-oranges-default hover:bg-white ring-2 ring-oranges-default'
             : 'text-gray-default hover:text-black/75 ring-2 ring-gray-default hover:ring-black/75'
@@ -112,7 +112,7 @@ export function TeknikStore() {
                                         <div>Deskripsi:</div>
                                         {picked.id === '1' && (
                                             <button
-                                                className=' text-gray-default hover:text-black/75 underline'
+                                                className=' text-gray-default hover:text-black/75 underline transition ease-in-out duration-300'
                                                 type='button'
                                                 onClick={() => {
                                                     setUkuranOpen(true);

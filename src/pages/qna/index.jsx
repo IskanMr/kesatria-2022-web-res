@@ -9,6 +9,8 @@ import { Question } from '../../components/QNA/Question';
 import { ReactComponent as Search } from '../../assets/icons/search.svg';
 import background from '../../assets/images/pattern-light.png';
 
+import { openInNewTab } from '../../utils/openInNewTab';
+
 import Questions from '../../resources/questions.json';
 
 export function QNA() {
@@ -56,13 +58,16 @@ export function QNA() {
                     </div>
                     <div className='flex justify-center mt-4 md:mt-8'>
                         Pertanyaan kamu tidak ada di laman ini? Silahkan hubungi
-                        <a
-                            href='mailto:ppsmb-kesatria.ft@ugm.ac.id?subject=FAQ%20Kesatria%202022'
-                            className='ml-1'
+                        <button
+                            type='button'
+                            onClick={() =>
+                                openInNewTab('https://line.me/R/ti/p/@NRB2565A')
+                            }
+                            className='ml-1 text-oranges-default hover:text-oranges-light transition ease-in-out duration-300'
                         >
                             {' '}
                             sini
-                        </a>
+                        </button>
                     </div>
                 </GenericPage>
             </div>
