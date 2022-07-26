@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 import { XIcon } from '@heroicons/react/solid';
 
@@ -51,14 +52,20 @@ export function TeknikStore() {
                     <PageTitle title='Teknik Store' />
                     <div className='flex flex-wrap w-100 justify-items-center overflow-hidden place-content-center md:px-[15%]'>
                         {StoreData.map((item) => (
-                            <button
-                                type='button'
-                                onClick={() => {
-                                    itemClick(item);
-                                }}
+                            <motion.div
+                                initial={{ y: 0, opacity: 0 }}
+                                animate={{ y: -10, opacity: 1 }}
+                                transition={{ duration: 1 }}
                             >
-                                <ItemCard item={item} />
-                            </button>
+                                <button
+                                    type='button'
+                                    onClick={() => {
+                                        itemClick(item);
+                                    }}
+                                >
+                                    <ItemCard item={item} />
+                                </button>
+                            </motion.div>
                         ))}
                     </div>
                 </GenericPage>
