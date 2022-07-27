@@ -63,7 +63,7 @@ export function Youtube() {
 
                     <div className={`${styles.box}`}>
                         <motion.div
-                            className='flex w-100 h-[40%] md:w-[60vw] md:h-[60%] items-center place-content-center justify-items-center border-[14px] border-blue-default rounded-3xl  '
+                            className='flex w-100 h-[320px] md:w-[996px] md:h-[600px] items-center place-content-center justify-items-center border-[14px] border-blue-default rounded-3xl  '
                             variants={youtubeAnimation}
                             animate={controls}
                             transition={{
