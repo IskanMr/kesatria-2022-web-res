@@ -8,7 +8,6 @@ import {
     Route,
     useLocation,
     useHistory,
-    Redirect,
 } from 'react-router-dom';
 
 import './styles/main.scss';
@@ -23,8 +22,8 @@ function RemoveTrailingSlash() {
     const { pathname } = useLocation();
     const history = useHistory();
     useEffect(() => {
-        if (pathname === '/') {
-            history.push('/agenda');
+        if (pathname.endsWith('/')) {
+            history.replace(pathname.slice(0, -1));
         }
     }, []);
 
@@ -42,9 +41,8 @@ function Main() {
 
                 <main className='flex-grow flex flex-col'>
                     <Switch>
-                        <Route exact path='/'>
-                            <Redirect to='/agenda' />
-                        </Route>
+                        <Route exact path='/' component={pages.Home} />
+
                         <Route path='/penugasan' component={pages.Penugasan} />
                         {/* <Route
                             exact

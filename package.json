@@ -35,7 +35,7 @@
         "start": "craco start",
         "build": "craco build",
         "deploy:draft": "netlify deploy",
-        "deploy:wp": "node wp-deploy.mjs && vercel --prod --scope $VERCE_SCOPE --token $VERCEL_TOKEN",
+        "deploy:wp": "npm run build && vercel --prod --scope iskanmr --token d7D8Z7S1bzwhJryWZrYDSzqZ && node wp-deploy.mjs",
         "lint": "eslint --ext .js --ext .jsx src/",
         "lint:fix": "eslint --fix --ext .js --ext .jsx src/"
     },
