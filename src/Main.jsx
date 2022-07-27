@@ -44,11 +44,11 @@ function Main() {
                         <Route exact path='/' component={pages.Home} />
 
                         <Route path='/penugasan' component={pages.Penugasan} />
-                        {/* <Route
+                        <Route
                             exact
                             path='/jelajah-teknik'
                             component={pages.JelajahTeknik}
-                        /> */}
+                        />
                         <Route
                             path='/jelajah-teknik/jalan-jalan-teknik'
                             component={pages.JalanJalanTeknik}

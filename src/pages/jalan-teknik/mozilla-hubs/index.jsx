@@ -14,43 +14,43 @@ export function JalanJalanTeknik() {
             number: 1,
             title: 'Sadewa',
             image: 'sadewaJJT',
-            link: 'https://www.facebook.com/'
+            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
         },
         {
             number: 2,
             title: 'Abimanyu',
             image: 'abimanyuJJT',
-            link: 'https://www.google.com/'
+            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
         },
         {
             number: 3,
             title: 'Subadra',
             image: 'subadraJJT',
-            link: 'https://www.twitter.com/'
+            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
         },
         {
             number: 4,
             title: 'Gatotkaca',
             image: 'gatotkacaJJT',
-            link: 'https://www.linkedin.com/'
+            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
         },
         {
             number: 5,
             title: 'Srikandi',
             image: 'srikandiJJT',
-            link: 'https://www.facebook.com/'
+            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
         },
         {
             number: 6,
             title: 'Batari',
             image: 'batariJJT',
-            link: 'https://www.facebook.com/'
+            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
         },
         {
             number: 7,
             title: 'Abiyasa',
             image: 'abiyasaJJT',
-            link: 'https://www.facebook.com/'
+            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
         },
     ];
 
