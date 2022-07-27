@@ -47,6 +47,7 @@ module.exports = {
                 '320px': { min: '320px', max: '768px' },
                 '1024px': { min: '768px', max: '1024px' },
                 '1280px': { min: '0px', max: '1280px' },
+                '1360px': '1360px',
                 agenda: { min: '0px', max: '768px' },
                 portrait: {
                     raw: '(orientation: portrait)',

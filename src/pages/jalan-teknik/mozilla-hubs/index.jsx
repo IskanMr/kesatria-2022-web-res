@@ -7,15 +7,46 @@ import styles from '../../../styles/JalanTeknik.module.css';
 
 import background from '../../../assets/images/pattern-light.png';
 import cloud from '../../../assets/images/awanGabung.png';
-import sadewa from '../../../assets/images/jalanteknik/sadewaJJT.png';
-import gatotkaca from '../../../assets/images/jalanteknik/gatotkacaJJT.png';
-import abimanyu from '../../../assets/images/jalanteknik/abimanyuJJT.png';
-import subadra from '../../../assets/images/jalanteknik/subadraJJT.png';
-import abiyasa from '../../../assets/images/jalanteknik/abiyasaJJT.png';
-import batari from '../../../assets/images/jalanteknik/batariJJT.png';
-import srikandi from '../../../assets/images/jalanteknik/srikandiJJT.png';
 
 export function JalanJalanTeknik() {
+    const forumArray = [
+        {
+            number: 1,
+            title: 'Sadewa',
+            image: 'sadewaJJT',
+        },
+        {
+            number: 2,
+            title: 'Abimanyu',
+            image: 'abimanyuJJT',
+        },
+        {
+            number: 3,
+            title: 'Subadra',
+            image: 'subadraJJT',
+        },
+        {
+            number: 4,
+            title: 'Gatotkaca',
+            image: 'gatotkacaJJT',
+        },
+        {
+            number: 5,
+            title: 'Srikandi',
+            image: 'srikandiJJT',
+        },
+        {
+            number: 6,
+            title: 'Batari',
+            image: 'batariJJT',
+        },
+        {
+            number: 7,
+            title: 'Abiyasa',
+            image: 'abiyasaJJT',
+        },
+    ];
+
     return (
         <>
             <HtmlHead title='Jalan Jalan Teknik' decription='Yes' />
@@ -39,14 +70,14 @@ export function JalanJalanTeknik() {
                     >
                         <div className='overflow-hidden w-[45vmin] h-[25vmin] flex absolute right-0 top-[10vh] md:top-[15vh] md:right-[0] '>
                             <img
-                                className='w-100 h-100 z-[3] flex absolute scale-[70%] md:scale-[90%] right-[-10vw] lg:right-[-4vw]'
+                                className='w-100 h-100 z-[3] flex absolute scale-[70%] md:scale-[90%] 1360px:scale-[100%] right-[-10vw] lg:right-[-4vw]'
                                 src={cloud}
                                 alt=''
                             />
                         </div>
-                        <div className='overflow-hidden w-[45vmin] h-[25vmin] hidden absolute left-0 lg:bottom-[-7vh] lg:flex'>
+                        <div className='overflow-hidden w-[45vmin] h-[25vmin] hidden absolute left-0 top-[80vmin] 1360px:top-[70vmin] lg:flex'>
                             <img
-                                className='w-100 h-100 z-[3] flex absolute scale-[70%] lg:scale-[90%] lg:left-[0vw]'
+                                className='w-100 h-100 z-[3] flex absolute scale-[90%] 1360px:scale-[100%] left-[-4vw] 1360px:left-[-2vw]'
                                 src={cloud}
                                 alt=''
                             />
@@ -56,137 +87,29 @@ export function JalanJalanTeknik() {
                             animate={{ y: -10, opacity: 1 }}
                             transition={{ duration: 1 }}
                         >
-                            <div className='w-100 flex items-center justify-center z-[2] p-[2rem] py-[2rem]'>
+                            <div className='w-100 flex items-center justify-center z-[2] p-[2rem] py-[2rem] md:pt-[3rem]'>
                                 <div className='flex flex-wrap w-[100%] md:w-[80vw] h-[100%] py-[1rem] pb-[2rem] bg-[#224860] rounded-[5vmin] relative items-center justify-center md:h-auto'>
-                                    <button type='button'>
-                                        <a href='https://www.google.co.id/'>
-                                            <div className='m-3 md:m-4 h-auto w-[215px] md:h-auto md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'>
-                                                <div className='relative items-center justify-center flex pt-[8px]'>
-                                                    <img
-                                                        src={`${sadewa}`}
-                                                        className='w-auto h-auto transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
-                                                        alt=''
-                                                        loading='lazy'
-                                                    />
+                                    {forumArray.map((item) => (
+                                        <button type='button'>
+                                            <a href='https://www.google.co.id/'>
+                                                <div
+                                                    key={item.id}
+                                                    className='m-3 md:m-4 h-auto w-[215px] md:h-auto md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'
+                                                >
+                                                    <div className='relative items-center justify-center flex pt-[8px]'>
+                                                        <img
+                                                            src={`${process.env.PUBLIC_URL}/assets/img/jalanteknik/${item.image}.png`}
+                                                            className='w-auto h-auto transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
+                                                            alt={item.title}
+                                                        />
+                                                    </div>
+                                                    <div className='md:text-[22px] text-center mt-[8px] font-gill font-bold text-[#F26628] text-[18px] mb-[8px] uppercase'>
+                                                        {item.title}
+                                                    </div>
                                                 </div>
-                                                <div className='md:text-[22px] text-center mt-[8px] font-gill font-bold text-[#F26628] text-[18px] mb-[8px]'>
-                                                    SADEWA
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </button>
-                                    <button type='button'>
-                                        <a href='https://www.google.co.id/'>
-                                            <div className='m-3 md:m-4 h-auto w-[215px] md:h-auto md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'>
-                                                <div className='relative items-center justify-center flex pt-[8px]'>
-                                                    <img
-                                                        src={`${abimanyu}`}
-                                                        className='w-auto h-auto transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
-                                                        alt=''
-                                                        loading='lazy'
-                                                    />
-                                                </div>
-                                                <div className='md:text-[22px] text-center mt-[8px] font-gill font-bold text-[#F26628] text-[18px] mb-[8px]'>
-                                                    ABIMANYU
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </button>
-                                    <button type='button'>
-                                        <a href='https://www.google.co.id/'>
-                                            <div className='m-3 md:m-4 h-auto w-[215px] md:h-auto md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'>
-                                                <div className='relative items-center justify-center flex pt-[8px]'>
-                                                    <img
-                                                        src={`${subadra}`}
-                                                        className='w-auto h-auto transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
-                                                        alt=''
-                                                        loading='lazy'
-                                                    />
-                                                </div>
-                                                <div className='md:text-[22px] text-center mt-[8px] font-gill font-bold text-[#F26628] text-[18px] mb-[8px]'>
-                                                    SUBADRA
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </button>
-                                    <button type='button'>
-                                        <a href='https://www.google.co.id/'>
-                                            <div className='m-3 md:m-4 h-auto w-[215px] md:h-auto md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'>
-                                                <div className='relative items-center justify-center flex pt-[8px]'>
-                                                    <img
-                                                        src={`${sadewa}`}
-                                                        className='w-auto h-auto transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
-                                                        alt=''
-                                                        loading='lazy'
-                                                    />
-                                                </div>
-                                                <div className='md:text-[22px] text-center mt-[8px] font-gill font-bold text-[#F26628] text-[18px] mb-[8px]'>
-                                                    GATOTKACA
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </button>
-                                    <button type='button'>
-                                        <a href='https://www.google.co.id/'>
-                                            <div className='m-3 md:m-4 h-auto w-[215px] md:h-auto md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'>
-                                                <div className='relative items-center justify-center flex pt-[8px]'>
-                                                    <img
-                                                        src={`${srikandi}`}
-                                                        className='w-auto h-auto transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
-                                                        alt=''
-                                                        loading='lazy'
-                                                    />
-                                                </div>
-                                                <div className='md:text-[22px] text-center mt-[8px] font-gill font-bold text-[#F26628] text-[18px] mb-[8px]'>
-                                                    SRIKANDI
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </button>
-                                    <button type='button'>
-                                        <a href='https://www.google.co.id/'>
-                                            <div className='m-3 md:m-4 h-auto w-[215px] md:h-auto md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'>
-                                                <div className='relative items-center justify-center flex pt-[8px]'>
-                                                    <img
-                                                        src={`${batari}`}
-                                                        className='w-auto h-auto transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
-                                                        alt=''
-                                                        loading='lazy'
-                                                    />
-                                                </div>
-                                                <div className='md:text-[22px] text-center mt-[8px] font-gill font-bold text-[#F26628] text-[18px] mb-[8px]'>
-                                                    BATARI
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </button>
-                                    <button type='button'>
-                                        <a href='https://www.google.co.id/'>
-                                            <div className='m-3 md:m-4 h-auto w-[215px] md:h-auto md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'>
-                                                <div className='relative items-center justify-center flex pt-[8px]'>
-                                                    <img
-                                                        src={`${abiyasa}`}
-                                                        className='w-auto h-auto transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
-                                                        alt=''
-                                                        loading='lazy'
-                                                    />
-                                                </div>
-                                                <div className='md:text-[22px] text-center mt-[8px] font-gill font-bold text-[#F26628] text-[18px] mb-[8px]'>
-                                                    ABIYASA
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </button>
-                                    {/* <div className='flex flex-wrap justify-items-center overflow-hidden place-content-center md:px-[15%] z-[3]'>
-                                <div className='m-3 md:m-4 h-[156px] w-[156px] md:h-[244px] md:w-[244px] rounded-3xl drop-shadow-blue overflow-hidden bg-[#FFFFFF]'>
-                                    <img
-                                        src={`${sadewa}`}
-                                        className='w-full h-full transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
-                                        alt=''
-                                        loading='lazy'
-                                    />
-                                </div>
-                            </div> */}
+                                            </a>
+                                        </button>
+                                    ))}
                                 </div>
                             </div>
                         </motion.div>
