@@ -75,7 +75,7 @@ export function JalanJalanTeknik() {
                                 alt=''
                             />
                         </div>
-                        <div className='overflow-hidden w-[45vmin] h-[25vmin] hidden absolute left-0 top-[80vmin] 1360px:top-[70vmin] lg:flex'>
+                        <div className='overflow-hidden w-[45vmin] h-[25vmin] hidden absolute left-0 top-[85vmin] 1360px:top-[74vmin] lg:flex'>
                             <img
                                 className='w-100 h-100 z-[3] flex absolute scale-[90%] 1360px:scale-[100%] left-[-4vw] 1360px:left-[-2vw]'
                                 src={cloud}
@@ -94,16 +94,16 @@ export function JalanJalanTeknik() {
                                             <a href='https://www.google.co.id/'>
                                                 <div
                                                     key={item.id}
-                                                    className='m-3 md:m-4 h-auto w-[215px] md:h-auto md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'
+                                                    className='m-3 md:m-4 h-[144px] w-[215px] md:h-[155px] md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'
                                                 >
                                                     <div className='relative items-center justify-center flex pt-[8px]'>
                                                         <img
                                                             src={`${process.env.PUBLIC_URL}/assets/img/jalanteknik/${item.image}.png`}
-                                                            className='w-auto h-auto transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
+                                                            className='w-auto h-[100px] transition ease-in-out duration-300 hover:scale-[1.1] bg-contain bg-center rounded-3xl'
                                                             alt={item.title}
                                                         />
                                                     </div>
-                                                    <div className='md:text-[22px] text-center mt-[8px] font-gill font-bold text-[#F26628] text-[18px] mb-[8px] uppercase'>
+                                                    <div className='md:text-[22px] text-center font-gill font-bold text-[#F26628] text-[18px] py-[6px] md:py-[8px] uppercase'>
                                                         {item.title}
                                                     </div>
                                                 </div>
