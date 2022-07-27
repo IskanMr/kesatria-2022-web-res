@@ -14,36 +14,43 @@ export function JalanJalanTeknik() {
             number: 1,
             title: 'Sadewa',
             image: 'sadewaJJT',
+            link: 'https://www.facebook.com/'
         },
         {
             number: 2,
             title: 'Abimanyu',
             image: 'abimanyuJJT',
+            link: 'https://www.google.com/'
         },
         {
             number: 3,
             title: 'Subadra',
             image: 'subadraJJT',
+            link: 'https://www.twitter.com/'
         },
         {
             number: 4,
             title: 'Gatotkaca',
             image: 'gatotkacaJJT',
+            link: 'https://www.linkedin.com/'
         },
         {
             number: 5,
             title: 'Srikandi',
             image: 'srikandiJJT',
+            link: 'https://www.facebook.com/'
         },
         {
             number: 6,
             title: 'Batari',
             image: 'batariJJT',
+            link: 'https://www.facebook.com/'
         },
         {
             number: 7,
             title: 'Abiyasa',
             image: 'abiyasaJJT',
+            link: 'https://www.facebook.com/'
         },
     ];
 
@@ -90,12 +97,9 @@ export function JalanJalanTeknik() {
                             <div className='w-100 flex items-center justify-center z-[2] p-[2rem] py-[2rem] md:pt-[3rem]'>
                                 <div className='flex flex-wrap w-[100%] md:w-[80vw] h-[100%] py-[1rem] pb-[2rem] bg-[#224860] rounded-[5vmin] relative items-center justify-center md:h-auto'>
                                     {forumArray.map((item) => (
-                                        <button type='button'>
-                                            <a href='https://www.google.co.id/'>
-                                                <div
-                                                    key={item.id}
-                                                    className='m-3 md:m-4 h-[144px] w-[215px] md:h-[155px] md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'
-                                                >
+                                        <button type='button' key={item.id}>
+                                            <a href={`${item.link}`} target="_blank" rel="noopener noreferrer">
+                                                <div className='m-3 md:m-4 h-[144px] w-[215px] md:h-[155px] md:w-[244px] rounded-3xl overflow-hidden bg-white drop-shadow-orange'>
                                                     <div className='relative items-center justify-center flex pt-[8px]'>
                                                         <img
                                                             src={`${process.env.PUBLIC_URL}/assets/img/jalanteknik/${item.image}.png`}
