@@ -3,13 +3,13 @@
     background-size: cover;
     height: 100vh;
     overflow: hidden;
-    background-color: paleturquoise;
+    background-color: #f1f1f1;
 }
 
-@media screen and (min-width: 280px) and (max-width: 450px) {
+@media screen and (min-width: 280px) and (max-width: 500px) {
     .Bg10{
         width: auto;
-        height: 90vh;
+        height: 70vh;
         background-image: url("../../assets/images/homepage/pattern3small.png");
         background-size: cover;
     }
@@ -17,7 +17,7 @@
 
 
 
-@media screen and (min-width: 450px) and (max-width: 1000px) {
+@media screen and (min-width: 500px) and (max-width: 1000px) {
     
     .Bg10{
       width: auto;

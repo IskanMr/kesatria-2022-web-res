@@ -224,18 +224,15 @@
     }
 }
 
-@media screen and (min-width: 450px) and (max-width: 500px) {
-    .kb{
-        top: -10px;
-        left: 25px;
-    }
-}
 
 
-
-@media screen and (min-width: 320px) and (max-width: 450px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
     .kotak9{
     display: none;
+    }
+
+    .kotak18{
+        height: 70%;
     }
     .kotak8{
         display: none;
@@ -252,16 +249,17 @@
 
                     .kotak5{
                         height: 35%;
+                        border-radius: 40px;
                     }
 
                     .kotak7{
-                        width: 70%;
+                        width: 55%;
                         height: 20%;
                     }
 
                     .kb{
                         font-size: 16px;
-                        top: -10px;
+                        top: -20px;
                         left: 25px;
                     }
 
