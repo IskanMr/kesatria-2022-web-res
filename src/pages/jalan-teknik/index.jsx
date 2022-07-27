@@ -44,7 +44,7 @@ export function JelajahTeknik() {
                     </div>
                 </div>
             </div>
-            <div className='card-two w-[35vw] h-auto flex-row items-center justify-center hidden md:flex pr-[2rem]'>
+            <div className='card-two w-[35vw] h-auto flex-row items-center justify-center flex 768px:hidden pr-[2rem]'>
                 <div className='h-auto w-[60vmin]'>
                     <img src={JJT} alt='Foto JJT' />
                 </div>
