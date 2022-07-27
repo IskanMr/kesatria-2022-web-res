@@ -7,16 +7,6 @@
     overflow: hidden;
 }
 
-.kiki {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
 .box {
     position: absolute;
     width: 100%;
@@ -25,77 +15,6 @@
     align-items: center;
     height: 100%;
     overflow: hidden;
-}
-
-.box2 {
-    width: 1050px;
-    height: 600px;
-    background: #224860;
-    box-shadow: 10px 10px #0c2434;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box3 {
-    position: relative;
-    width: 1000px;
-    height: 550px;
-    background: #0c2434;
-    padding: 20px 10px 20px 10px;
-    justify-content: center;
-    align-items: flex-start;
-    display: grid;
-    grid-template-row: 1fr 1fr;
-}
-
-.anthem {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
-    margin-top: -10px;
-}
-
-.teks1 {
-    margin-top: -10px;
-    font-size: 64px;
-    font-weight: 800;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fafafa;
-}
-
-.teks2 {
-    font-size: 32px;
-    margin-top: -20px;
-    font-weight: 500;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fafafa;
-}
-
-.Awan1 {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    right: 0px;
-    top: 0px;
-    /* background-color: black; */
-    z-index: 3;
-    object-fit: cover;
-}
-
-.Awan2 {
-    width: 300px;
-    height: 156px;
-    position: absolute;
-    /* background-color: #0C2434; */
-    z-index: 3;
-    bottom: 0px;
-    left: 0px;
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1500px) {
@@ -111,21 +30,5 @@
 
     .box {
         width: 100%;
-    }
-
-    .box2 {
-        width: 100%;
-    }
-
-    .box3 {
-        width: 90%;
-    }
-
-    .box10 {
-        width: 100%;
-    }
-
-    .anthem {
-        height: 100%;
     }
 }

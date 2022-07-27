@@ -8,14 +8,12 @@ import { GenericPage } from '../../GenericPage';
 
 import awan1 from '../../../assets/images/homepage/awan1.png';
 import awan2 from '../../../assets/images/homepage/awan2.png';
-import awan20 from '../../../assets/images/homepage/awan3.png';
 import {
     youtubeAnimation,
     youtube1Animation,
     youtube2Animation,
 } from '../../../utils/animation';
 import { useScroll } from '../UseScroll/useScroll';
-import anthem1 from '../../../assets/images/homepage/anthem.png';
 
 export function Youtube() {
     // const [Modal, open, close, isOpen] = useModal('root', {
@@ -33,7 +31,7 @@ export function Youtube() {
                 >
                     <div className='flex w-full h-full relative' ref={element}>
                         <motion.div
-                            className='z-10 absolute h-[64px] md:h-auto bottom-36 left-[5vw] md:left-[10vw] md:bottom-28'
+                            className=' absolute h-[64px] md:h-auto bottom-36 left-[5vw] md:left-[7vw] md:bottom-24'
                             variants={youtube1Animation}
                             animate={controls}
                             transition={{
@@ -49,7 +47,7 @@ export function Youtube() {
                             />
                         </motion.div>
                         <motion.div
-                            className='z-10 absolute h-[42px] md:h-auto top-32 right-[7vw] md:right-[15vw] md:top-44'
+                            className=' absolute h-[42px] md:h-auto top-32 right-[7vw] md:right-[12vw] md:top-40'
                             variants={youtube2Animation}
                             animate={controls}
                             transition={{
@@ -79,8 +77,8 @@ export function Youtube() {
                         >
                             <iframe
                                 title='youtube'
-                                className='w-full h-full my-3 rounded-3xl'
-                                src='https://www.youtube.com/embed/watch?v=eR618MSqRRs'
+                                className='w-full h-full my-3 rounded-lg'
+                                src='https://www.youtube.com/embed/eR618MSqRRs'
                             />
                         </motion.div>
                     </div>
