@@ -15,13 +15,13 @@ export function JelajahTeknik() {
     const Children = [
         <>
             <div className='card-one w-[45vw] 768px:w-[65vw] flex-col flex justify-center px-[3rem] font-medium 768px:font-normal 768px:px-[1rem]'>
-                <h3 className='font-gill font-bold text-white text-center text-[30px] 1024px:text-[20px] 768px:text-[4.5vmin] my-[1.5rem]'>
+                <h3 className='font-gill font-bold text-white text-center text-[32px] 1024px:text-[24px] 768px:text-[4.5vmin] my-[1.5rem]'>
                     JALAN-JALAN TEKNIK
                 </h3>
                 <div className='items-center justify-center flex h-100 w-100 mr-auto ml-auto md:hidden'>
                     <img src={JJT} alt='Foto JJT' />
                 </div>
-                <p className='font-gill text-white text-center text-[18px] 1024px:text-[17px] 768px:text-[3vmin] mb-[1.5rem] 768px:my-[1.5rem]'>
+                <p className='font-gill text-white text-center text-[24px] 1024px:text-[18px] 768px:text-[3.5vmin] mb-[1.5rem] 768px:my-[1.5rem]'>
                     Jalan-jalan Teknik menjadi salah satu kegiatan yang ada di
                     PPSMB (Pelatihan Pembelajar Sukses untuk Mahasiswa Baru)
                     KESATRIA 2022. Sebagai mahasiswa teknik, penting bagi kita
@@ -32,9 +32,9 @@ export function JelajahTeknik() {
                     aktivitas perkuliahan.
                 </p>
                 <div className='button-container justify-center items-center flex flex-row'>
-                    <div className=' text-white text-[16px] 1024px:text-[14px] xl:text-[18px] mb-[1.5rem]'>
+                    <div className=' text-white text-[16px] 1024px:text-[14px] xl:text-[20px] mb-[1.5rem]'>
                         <button
-                            className='font-gill font-medium bg-[#F26628] rounded-full p-[0.5rem] px-[1.5rem]'
+                            className='font-gill font-medium bg-oranges-default rounded-2xl p-[0.5rem] px-[1.5rem] text-white hover:text-oranges-default hover:bg-white ring-2 ring-oranges-default transition ease-in-out duration-300'
                             type='button'
                         >
                             <Link to='jelajah-teknik/jalan-jalan-teknik'>
