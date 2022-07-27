@@ -20,13 +20,13 @@ export function JalanJalanTeknik() {
             number: 2,
             title: 'Abimanyu',
             image: 'abimanyuJJT',
-            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
+            link: 'https://hubs.mozilla.com/scenes/PzrQy4Y'
         },
         {
             number: 3,
             title: 'Subadra',
             image: 'subadraJJT',
-            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
+            link: 'https://hubs.mozilla.com/scenes/Lw4eknE'
         },
         {
             number: 4,
@@ -38,13 +38,13 @@ export function JalanJalanTeknik() {
             number: 5,
             title: 'Srikandi',
             image: 'srikandiJJT',
-            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
+            link: 'https://hubs.mozilla.com/scenes/PzrQy4Y'
         },
         {
             number: 6,
             title: 'Batari',
             image: 'batariJJT',
-            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
+            link: 'https://hubs.mozilla.com/scenes/Lw4eknE'
         },
         {
             number: 7,
@@ -77,14 +77,14 @@ export function JalanJalanTeknik() {
                     >
                         <div className='overflow-hidden w-[45vmin] h-[25vmin] flex absolute right-0 top-[10vh] md:top-[15vh] md:right-[0] '>
                             <img
-                                className='w-100 h-100 z-[3] flex absolute scale-[70%] md:scale-[90%] 1360px:scale-[100%] right-[-10vw] lg:right-[-4vw]'
+                                className='w-100 h-100 z-[3] flex absolute scale-[70%] md:scale-[90%] 1360px:scale-[90%] right-[-10vw] lg:right-[-4vw]'
                                 src={cloud}
                                 alt=''
                             />
                         </div>
                         <div className='overflow-hidden w-[45vmin] h-[25vmin] hidden absolute left-0 top-[85vmin] 1360px:top-[74vmin] lg:flex'>
                             <img
-                                className='w-100 h-100 z-[3] flex absolute scale-[90%] 1360px:scale-[100%] left-[-4vw] 1360px:left-[-2vw]'
+                                className='w-100 h-100 z-[3] flex absolute scale-[90%] 1360px:scale-[90%] left-[-4vw] 1360px:left-[-2vw]'
                                 src={cloud}
                                 alt=''
                             />
