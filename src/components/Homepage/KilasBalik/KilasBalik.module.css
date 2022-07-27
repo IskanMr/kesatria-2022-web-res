@@ -4,41 +4,61 @@
 
 
 .kotak15{
-    height: 70%;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.kotak4{
     height: 100%;
     width: 100%;
     position: absolute;
+    /* background-color: palegreen; */
     display: flex;
     align-items: center;
     justify-content: center;
-    align-self: center;
+}
+
+.kotak20{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+      "kot1 kot1 kot2 kot2 kot2 kot2 kot2 kot3 kot3";
+}
+
+.kotak4{
+    grid-area: kot1;
     /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kotak19{
+    grid-area: kot3;
+    /* background-color: palevioletred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kotak18{
+    grid-area: kot2;
+    /* background-color: peru; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .kotak5{
     position: relative;
-    width: 35%;
-    height: 60%;
+    width: 600px;
+    height: 350px;
     background: #224860;
     border-radius: 60px;
     padding: 20px 10px 20px 10px;
     box-shadow: 10px 10px  #0C2434;
     justify-content: center;
     align-items: center;
-
 }
 
 .Awan5{
     position: absolute;
-    width: 389px;
+    width: 100%;
     height: 206px;
     left: -85px;
     top: -20px;
@@ -46,43 +66,46 @@
 
 .kotak7{
     position: absolute;
-    width: 300px;
-    height: 105px;
-    left: 0;
-    top: 0;
+    width: 254px;
+    height: 65px;
+    display: flex;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
     background: #F26628;
     border-radius: 0px 45px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     z-index: 10;
+    left: 0px;
 }
 
 .kb{
-    position: absolute;
+    position: relative;
     width: 222px;
     height: 28px;
-    left: 80px;
-    top: 40px;
     font-family: 'Gill Sans MT';
     font-style: normal;
+    left: 50px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;  
     color: #FFFFFF;
     z-index: 20;
+    display: flex;
+    align-self:center ;
+    justify-self: center;
+    
 }
 
 .kotak8{
     position: absolute;
     width: 90px;
     height: 90px;
-    right: 200px;
     background: #FAFAFA;
     box-shadow: 5px 2px #F26628;
     border-radius: 35px;
     top: 300px;
     display: flex;
-    align-self: flex-end;
-    justify-content: flex-start;
 }
 
 .logo10{
@@ -95,14 +118,10 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    right: 150px;
     background: #FAFAFA;
     box-shadow: 5px 2px #F26628;
     border-radius: 35px;
-    top:200px;
-    display: flex;
-    align-self: flex-end;
-    justify-self: flex-start;
+    top:500px;
 }
 
 .logo11{
@@ -116,14 +135,10 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    right: 370px;
     background: #FAFAFA;
     box-shadow: 5px 2px #F26628;
     border-radius: 35px;
-    top:100px;
-    display: flex;
-    align-self: flex-end;
-    justify-self: center;
+    top:400px;
     
 }
 
@@ -139,11 +154,10 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    left: 200px;
     background: #FAFAFA;
     box-shadow: 5px 2px #F26628;
     border-radius: 35px;
-    top: 300px;
+    top: 200px;
 }
 
 .logo13{
@@ -158,11 +172,10 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    left: 300px;
     background: #FAFAFA;
     box-shadow: 5px 2px #F26628;
     border-radius: 35px;
-    top: 200px;
+    top: 600px;
 }
 
 .logo14{
@@ -171,202 +184,88 @@
     left: 15px;
 }
 
-/* @media screen and (min-width: 280px) and (max-width: 700px) {
-   
 
-    .kotak4{
-        width: 100%;
-        height: 800px;
-        left: 30px;
-        top: 3400px;
-        left: 0px;
-    }
-
-    .kotak5{
-        width: 300px;
-        height: 300px;
-        left: 60px;
-        top: 290px;
-        z-index: 5;
-    }
-    
-    .kotak7{
-        width: 150px;
-    }
-
-    .kb{
-        width: 150px;
-        left: -5px;
-        top: 15px;
-        font-size: 16px;
-    }
-
+@media screen and (min-width: 700px) and (max-width: 1000px) {
     .Awan5{
-        top: 230px;
-        left: -70px;
-        width: 200px;
+        width: 30%;
+        left: -20px;
     }
+}
 
-    .kotak12{
-        display: none;
+@media screen and (min-width: 320px) and (max-width: 700px) {
+    .Awan5{
+        width: 40%;
+        left: -20px;
     }
+    .kotak5{
+        height: 40%;
+    }
+}
 
-    .kotak8{
-        display: none;
-    }
-
-    .kotak11{
-        display: none;
-    }
-    .kotak9{
-        display: none;
-    }
-
-    .kotak13{
-        display: none;
-    }
-  }
-
-  
-@media screen and (min-width: 280px) and (max-width: 400px) {
-    .kotak4{
-        top: 3360px;
-        left: 8px;
-        width: 200px;
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .kotak7{
+        width: 80%;
+        height: 20%;
     }
 
     .kotak5{
+        height: 40%;
+    }
+    .Awan5{
+        top: 50px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .kb{
+        left: 50px;
+        top: -5px;
+
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 500px) {
+    .kb{
+        top: -10px;
         left: 25px;
     }
-
-    .Awan5{
-        left: -80px;
-        top: 200px;
-    }
-}
-
-@media screen and (min-width: 400px) and (max-width: 470px) {
-    .kotak4{
-        top: 3400px;
-        left: 8px;
-        width: 200px;
-    }
-
-    .kotak5{
-        left: 55px;
-    }
-
-    .Awan5{
-        left: -80px;
-        top: 200px;
-    }
-}
-
-@media screen and (min-width: 470px) and (max-width: 550px) {
-    .kotak4{
-        top: 3360px;
-        left: 80px;
-        width: 200px;
-    }
-
-    .kotak5{
-        left: 45px;
-    }
-
-    .Awan5{
-        left: -120px;
-        top: 200px;
-    }
-}
-
-@media screen and (min-width: 550px) and (max-width: 600px) {
-    .kotak4{
-        top: 3360px;
-        left: 80px;
-        width: 200px;
-    }
-
-    .kotak5{
-        left: 65px;
-    }
-
-    .Awan5{
-        left: -120px;
-        top: 200px;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 650px) {
-    .kotak4{
-        top: 3360px;
-        left: 80px;
-        width: 200px;
-    }
-
-    .kotak5{
-        left: 85px;
-    }
-
-    .Awan5{
-        left: -120px;
-        top: 200px;
-    }
-}
-
-@media screen and (min-width: 650px) and (max-width: 700px) {
-    .kotak4{
-        top: 3360px;
-        left: 80px;
-        width: 200px;
-    }
-
-    .kotak5{
-        left: 105px;
-    }
-
-    .Awan5{
-        left: -120px;
-        top: 200px;
-    }
 }
 
 
 
-@media screen and (min-width: 701px) and (max-width: 1000px) {
-    .kotak5{
-        left: 180px;
-        top: 250px;
-    }
-
-    .kotak13{
-        display: none;
-    }
-
-    .Awan5{
-        left: -150px;
-        top: 20px;
-    }
-}
-
-@media screen and (min-width: 701px) and (max-width: 800px) {
-    .kotak5{
-        left: 120px;
-        top: 200px;
-    }
-
-    .Awan5{
-        left: -150px;
-        top: 20px;
-    }
-
-}
-
-@media screen and (min-width: 1001px) and (max-width: 1280px) {
+@media screen and (min-width: 320px) and (max-width: 450px) {
     .kotak9{
-        display: none;
+    display: none;
     }
-} */
+    .kotak8{
+        display: none;
+        }
+        .kotak13{
+            display: none;
+            }
+            .kotak11{
+                display: none;
+                }
+                .kotak12{
+                    display: none;
+                    }
 
+                    .kotak5{
+                        height: 35%;
+                    }
 
+                    .kotak7{
+                        width: 70%;
+                        height: 20%;
+                    }
+
+                    .kb{
+                        font-size: 16px;
+                        top: -10px;
+                        left: 25px;
+                    }
+
+      
+}
 
 

@@ -688,12 +688,63 @@
             width: 100%;
 
         }
+
      }
 
-     @media screen and (min-width: 1000px) and (max-width: 1150px) {
+     @media screen and (min-width: 1000px) and (max-width: 1250px) {
         .Bg2{
             width: 100%;
+            height: 100vh;
 
+        }
+
+        .box{
+            width: 100%;
+            
+        }
+
+        .box2{
+            width: 60%;
+            height: 70%;
+        }
+
+        .box3{
+            width: 95%;
+            height: 95%;
+        }
+
+        .box10{
+            width: 80%;
+            height: 92%;
+           
+        }
+        .Awan1{
+            top:20px;
+        }
+
+        .anthem{
+            height: 100%;
+            top:20px;
+        }
+        .teks1{
+            margin-top: 10px;
+        }
+     }
+
+     
+
+     @media screen and (min-width: 1000px) and (max-width: 1250px) {
+        .Bg2{
+            width: 100%;
+            height: 100vh;
+
+        }
+     }
+
+     @media screen and (min-width: 320px) and (max-width: 700px) {
+        .Bg2{
+            width: 100%;
+            height: 60vh;
         }
 
         .box{
@@ -701,24 +752,146 @@
         }
 
         .box2{
-            width: 100%;
+            width: 60%;
+            height: 40%;
+            z-index: 5;
         }
 
         .box3{
             width: 90%;
+            height: 90%;
         }
 
         .box10{
             width: 100%;
+            height: 50%;
+            
         }
 
         .anthem{
             height: 100%;
+            width: 80%;
+            top: 20px;
+            display: flex;
+            justify-self: center;
+            align-items: flex-start;
         }
-     }
 
-     @media screen and (min-width: 320px) and (max-width: 1000px) {
+        .Awan2{
+            width: 30%;
+            top: 230px;
+            left: 0px;
+        }
+
         .Awan1{
+            width: 20%;
+            top: 20px;
+            right: 70px;
+        }
+        .Awan20{
             display: none;
         }
-     }
+        .teks1{
+            font-size: 24px;
+            position: relative;
+            margin-top: 20px;
+        }
+    
+        .teks2{
+            font-size: 20px;
+        }
+    }
+        @media screen and (min-width: 320px) and (max-width: 500px){
+            .box2{
+                width: 50%;
+                height: 30%;
+            }
+
+            .teks1{
+                margin-top: 10px;
+                font-size: 20px;
+            }
+
+            .anthem{
+                top:20px;
+            }
+        
+            .teks2{
+                font-size: 16px;
+               
+            }
+
+            .box10{
+                width: 90%;
+                /* background-color: aquamarine; */
+            }
+
+            .Awan2{
+                top:220px;
+                left: 20px;
+                z-index: 4;
+            }
+            .Awan1{
+                top:50px;
+                right: 60px;
+                z-index: 4;
+            }
+        
+            .teks2{
+                font-size: 12px;
+            }
+        }
+
+        
+        @media screen and (min-width: 700px) and (max-width: 1000px){
+            .box2{
+                width: 70%;
+                height: 70%;
+                z-index: 5;
+            }
+            .Bg2{
+                width: 100%;
+                height: 100vh
+            }
+            .anthem{
+                top:20px;
+            }
+            .box{
+                width: 90%;
+            }
+            
+            .Awan1{
+                top:70px;
+                right: 70px;
+                z-index: 4;
+                width: 20%;
+            }
+
+            .Awan2{
+                top:530px;
+                left: -10px;
+                z-index: 4;
+                width: 30%;
+            }
+            .box3{
+                width: 90%;
+                height: 90%;
+            }
+            .Awan20{
+                display: none;
+            }
+            .box10{
+                
+                width: 100%;
+                height: 100%;
+            }
+
+            .teks1{
+                margin-top: 20px;
+            }
+        }
+
+        
+     
+        
+     

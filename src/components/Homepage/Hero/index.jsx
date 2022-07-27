@@ -14,7 +14,7 @@ export function HeroSection() {
     <div className={`${styles.Bg1}`} id='home' >
       <div className={`${styles.maxwidth}`}>
       
-      <div className={`${styles.sizing}`}>
+      <div className={`${styles.sizing}`} >
 
       
       <motion.div className={`${styles.mascot}`} 

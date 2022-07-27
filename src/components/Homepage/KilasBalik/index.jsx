@@ -64,6 +64,8 @@ return (
       >
               <img src={awan5} alt='pic'/>
       </motion.div>
+
+      <div className={`${styles.kotak20}`}>
       <div className={`${styles.kotak4}`}>
             <motion.div className={`${styles.kotak8}`} 
             variants={jjtAnimation}  
@@ -91,7 +93,9 @@ return (
               <img src={logo11} alt='pic'/>
             </div>
             </motion.div>
+            </div>
 
+            <div className={`${styles.kotak19}`}>
             <motion.div className={`${styles.kotak13}`} 
             variants={jjtAnimation}  
             animate={controls}
@@ -130,8 +134,9 @@ return (
               <img src={logo14} alt='pic'/>
             </div>
             </motion.div>
+            </div>
             
-
+            <div className={`${styles.kotak18}`}>
             <motion.div className={`${styles.kotak5}`}
             variants={jjtAnimation}  
             animate={controls}
@@ -143,6 +148,7 @@ return (
             <div className={`${styles.kotak7}`}/>
             <div className={`${styles.kb}`}> Kilas Balik </div>
             </motion.div>
+            </div>
     </div>
   </div>
 </div>

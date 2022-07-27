@@ -148,7 +148,7 @@ color: #0C2434;
       }
   }
 
-  /* @media screen and (min-width: 320px) and (max-width: 400px) {
+  @media screen and (min-width: 320px) and (max-width: 400px) {
     .Bg1{
      width: auto;
      height: 550px;
@@ -165,14 +165,14 @@ color: #0C2434;
     .sizing{
      max-width: 100%;
      height: 100%;
-     top: 10px;
-    
+     
     }
  
     .mascot{
-     width: 90%;
-     left: -15px;
-     top: 20px;
+     width: 400px;
+     position: relative;
+     top: -20px;
+     left: -50px;
     }
  
     .logo2{
@@ -189,7 +189,7 @@ color: #0C2434;
      text-align: center;
      width: auto;
      left: 0;
-     top: 415px;
+     top: 305px;
     }
  
     .brand1{
@@ -198,14 +198,14 @@ color: #0C2434;
      text-align: center;
      width: auto;
      left: 0;
-     top: 410px;
+     top: 300px;
     
     }
  
     .iconPosition{
-     top: 460px;
-     width: auto;
-     left: 0px;
+     top: 420px;
+     width: 100px;
+     left: 130px;
     }
  }
 
@@ -232,10 +232,8 @@ color: #0C2434;
 
    .mascot{
     width: 400px;
-    left: 0px;
-    top: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
+    left: -10px;
+    top: 10px;
    }
 
    .logo2{
@@ -253,8 +251,11 @@ color: #0C2434;
     line-height: 30px;
     text-align: center;
     width: auto;
-    left: 0;
-    top: 435px;
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    left: 20px;
+    top: 310px;
    }
 
    .brand1{
@@ -262,72 +263,115 @@ color: #0C2434;
     line-height: 30px;
     text-align: center;
     width: auto;
-    left: 0;
-    top: 425px;
+    left: 20px;
+    top: 305px;
    }
 
    .iconPosition{
     top: 470px;
-    left: 0px;
+    left: 200px;
+    top: 500px;
    }
 }
 
-@media screen and (min-width: 280px) and (max-width: 430px) {
-  .mascot{
-    width: 400px;
-  }
-  .scroll{
-    display: none;
-   }
-}
 
 @media screen and (min-width: 320px) and (max-width: 365px) {
   .mascot{
     width: 400px;
-    left: -25px;
+    left: -20px;
   }
   .scroll{
     display: none;
    }
+   .brand{
+    width: auto;
+    top: 250px;
+   }
+
+   .brand1{
+    width: auto;
+    top: 245px;
+   }
 }
+
 
 @media screen and (min-width: 320px) and (max-width: 340px) {
   .mascot{
-    width: 380px;
-    left: -28px;
+    width: 400px;
+    left: -30px;
   }
   .scroll{
     display: none;
    }
 }
 
-@media screen and (min-width: 380px) and (max-width: 400px) {
+@media screen and (min-width: 365px) and (max-width: 400px) {
   .mascot{
     width: 400px;
-    left: -10px;
+    left: -20px;
   }
   .scroll{
     display: none;
    }
+
+   .brand{
+    width: auto;
+    top: 250px;
+    left: 0px;
+   }
+
+   .brand1{
+    width: auto;
+    top: 245px;
+    left: 0px;
+   }
+
 }
 
-@media screen and (min-width: 425px) and (max-width: 460px) {
+@media screen and (min-width: 400px) and (max-width: 460px) {
   .mascot{
     width: 400px;
-    left: 20px;
+    left: 0px;
   }
   .scroll{
     display: none;
+   }
+   
+   .brand{
+    width: auto;
+    top: 300px;
+    left: 25px;
+   }
+
+   .brand1{
+    width: auto;
+    top: 295px;
+    left: 35px;
    }
 }
 
 @media screen and (min-width: 460px) and (max-width: 510px) {
   .mascot{
     width: 400px;
-    left: 45px;
+    left: 30px;
   }
   .scroll{
     display: none;
+   }
+
+   .brand{
+    width: auto;
+    top: 300px;
+    left: 55px;
+   }
+
+   .brand1{
+    width: auto;
+    top: 295px;
+    left: 55px;
+   }
+   .iconPosition{
+    left: 225px;
    }
 }
 
@@ -364,25 +408,32 @@ color: #0C2434;
 
 @media screen and (min-width: 650px) and (max-width: 700px) {
   .mascot{
-   left: 150px;
+   left: 130px;
   }
 }
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
   
+  
   .brand{
-    font-size: 40px;
-  }
+    width: auto;
+    top: 300px;
+    left: 150px;
+   }
 
-  .brand1{
-    font-size: 40px;
-  }
+   .brand1{
+    width: auto;
+    top: 295px;
+    left: 150px;
+   }
+
+   .iconPosition{}
 
 }
 
 
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 800px) {
   .Bg1{
     width: auto;
     height: 100vh;
@@ -392,90 +443,172 @@ color: #0C2434;
     max-width: 100%;
    }
 
+   .logo2{
+    width: 300px;
+    left: 400px;
+    top: 140px;
+   }
+
    .sizing{
     max-width: 100%;
     height: 100vh;
    }
 
    .mascot{
-    width: 450px;
-    left: 160px;
-    top: 20px;
+    width: 400px;
+    left: 140px;
+    top: 90px;
    }
 
    .brand{
     width: auto;
-    left: 0px;
+    left: 90px;
     font-size: 48px;
-    top: 410px;
+    top: 350px;
    }
 
    .brand1{
       font-size: 48px;
       width: auto;
-      left: 0px;
-      top: 400px;
+      left: 90px;
+      top: 345px;
    }
 
    .scroll{
     left: 0px;
     width: auto;
-    top: 480px;
+    top: 580px;
    }
 
    .iconPosition{
-    left: 0px;
-    top: 480px;
-    width: auto;
+    left: 300px;
+    top: 600px;
    }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1000px) {
-  .mascot{
-    left: 280px;
+  @media screen and (min-width: 900px) and (max-width: 1000px) {
+    .Bg1{
+      width: auto;
+      height: 100vh;
+    }
+  
+    .max-width{
+      max-width: 100%;
+     }
+  
+     .logo2{
+      width: 300px;
+      left: 600px;
+      top: 120px;
+     }
+  
+     .sizing{
+      max-width: 100%;
+      height: 100vh;
+     }
+  
+     .mascot{
+      width: 400px;
+      left: 100px;
+      top: 90px;
+     }
+  
+     .brand{
+      width: auto;
+      left: 240px;
+      font-size: 48px;
+      top: 350px;
+     }
+  
+     .brand1{
+        font-size: 48px;
+        width: auto;
+        left: 240px;
+        top: 345px;
+     }
+  
+     .scroll{
+      left: 0px;
+      width: auto;
+      top: 560px;
+     }
+  
+     .iconPosition{
+      left: 488px;
+      top: 580px;
+     }
   }
-}
 
 
 @media screen and (min-width: 800px) and (max-width: 900px) {
-  .mascot{
-    left: 220px;
-  }
-}
-
-@media screen and (min-width: 700px) and (max-width: 750px) {
-  .mascot{
-    left: 130px;
-  }
-}
-
-@media screen and (min-width: 800px) and (max-width: 850px) {
-  .mascot{
-    left: 190px;
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 950px) {
-  .mascot{
-    left: 240px;
-  }
-} */
-
-/* @media screen and (min-width: 1001px) and (max-width: 1500px) {
-  .Bg1{
-    width: 117.5%;
-    height: 800px;
-  }
+ 
+    .Bg1{
+      width: auto;
+      height: 100vh;
+    }
   
+    .max-width{
+      max-width: 100%;
+     }
+  
+     .logo2{
+      width: 300px;
+      left: 600px;
+      top: 120px;
+     }
+  
+     .sizing{
+      max-width: 100%;
+      height: 100vh;
+     }
+  
+     .mascot{
+      width: 400px;
+      left: 100px;
+      top: 90px;
+     }
+  
+     .brand{
+      width: auto;
+      left: 240px;
+      font-size: 48px;
+      top: 350px;
+     }
+  
+     .brand1{
+        font-size: 48px;
+        width: auto;
+        left: 240px;
+        top: 345px;
+     }
+  
+     .scroll{
+      left: 0px;
+      width: auto;
+      top: 560px;
+     }
+  
+     .iconPosition{
+      left: 475px;
+      top: 580px;
+     }
+  
+}
+
+
+
+
+ @media screen and (min-width: 1000px) and (max-width: 1500px) {
+
   .mascot{
-    width: auto;
+    width: 400px;
     top: 130px;
     left: 20px;
   }
 
   .logo2{
-    width: auto;
-    top: 120px;
+    width: 350px;
+    top: 160px;
     left: 780px;
   }
 
@@ -490,7 +623,7 @@ color: #0C2434;
     left: 680px;
     width: 450px;
     font-size: 50px;
-    top: 400px;
+    top: 390px;
   }
 
   .sizing{
@@ -500,26 +633,23 @@ color: #0C2434;
 
   .scroll{
     left: 0px;
-    top: 500px;
-    width: auto;
+    top: 200px;
+    width: 100%;
   }
 
   .iconPosition{
-    width: auto;
-    top: 500px;
-    left: 700px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    top: 600px;
+    left: 0px;
 
   }
 
   
-} */
-/* 
+} 
+
 @media screen and (min-width: 1080px) and (max-width: 1150px) {
   .mascot{
-    width: 550px;
+    width: 500px;
     left: 20px;
   }
 
@@ -540,9 +670,9 @@ color: #0C2434;
   }
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1080px) {
+@media screen and (min-width: 1000px) and (max-width: 1080px) {
   .mascot{
-    width: 550px;
+    width: 500px;
     left: 20px;
   }
 
@@ -665,7 +795,7 @@ color: #0C2434;
     left: 100px;
   }
 } 
- */
+
 
   
  

@@ -48,7 +48,7 @@ position: relative;
 align-items: center;
 justify-content: center;
 width: 40%;
-top: -20px;
+
 
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
@@ -79,8 +79,10 @@ export const Column2 = styled.div`
 grid-area: col2;
 position: relative;
 width: 760px;
-right: 0px;
+left: 480px;
 top: -80px;
+
+
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
     width: auto;
@@ -661,7 +663,13 @@ position: relative;
 
 `
 export const AwanContainer = styled.div`
- 
+max-width: 100%;
+height: 110vh;
+width: 100%;
+position: absolute;
+display: flex;
+justify-content: flex-end;
+align-self: center;
 `
 
 export const Column4 = styled.div`

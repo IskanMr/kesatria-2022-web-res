@@ -24,9 +24,9 @@ const styles5 = useSpring({
 
     return (
         <AboutContainer>
-            <div className='sizing 10' ref={element}>
+            <div className={`${styles.sizing10}`} ref={element}>
             <motion.div
-                className='AboutWrapper'
+                className={`${styles.AboutWrapper}`}
                 variants={aboutAnimations}
                 animate={controls}
                 transition={{
