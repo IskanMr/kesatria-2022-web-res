@@ -15,7 +15,7 @@ import {
 
 export function HeroSection() {
     return (
-        <div className={`${styles.Bg1}`} id='home'>
+        <div className={`${styles.Bg1} min-h-screen`} id='home'>
             <GenericPage className='flex flex-col w-full h-full items-center place-content-center'>
                 <div className='flex flex-col md:flex-row w-full items-center place-content-center mb-6 md:mb-0'>
                     <motion.div

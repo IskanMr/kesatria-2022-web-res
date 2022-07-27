@@ -23,12 +23,9 @@ export function Youtube() {
 
     const [element, controls] = useScroll();
     return (
-        <div className={`${styles.Bg2}`}>
+        <div className={`${styles.Bg2}`} id='youtube'>
             <GenericPage className='flex w-full h-full justify-items-center place-content-center items-center overflow-hidden'>
-                <div
-                    className='flex w-full h-full justify-items-center place-content-center items-center overflow-hidden'
-                    id='youtube'
-                >
+                <div className='flex w-full h-full justify-items-center place-content-center items-center overflow-hidden'>
                     <div className='flex w-full h-full relative' ref={element}>
                         <motion.div
                             className=' absolute h-[64px] md:h-auto bottom-36 left-[5vw] md:left-[7vw] md:bottom-24'
