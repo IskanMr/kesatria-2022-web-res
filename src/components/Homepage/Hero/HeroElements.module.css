@@ -33,6 +33,17 @@
 
     100% {
         transform: translateY(0px);
+      }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 400px) {
+    .Bg1{
+     width: auto;
+     height: 550px;
+     margin-top: -10px;
+     overflow: hidden;
+     background-image: url("../../../assets/images/homepage/Bgmobile1.png");
+     background-size: cover;
     }
 }
 
@@ -41,19 +52,671 @@
         width: 117.5%;
         height: 800px;
     }
+ 
+    .sizing{
+     max-width: 100%;
+     height: 100%;
+     
+    }
+ 
+    .mascot{
+     width: 400px;
+     position: relative;
+     top: -20px;
+     left: -50px;
+    }
+ 
+    .logo2{
+     display: none;
+    }
+ 
+    .scroll{
+     display: none;
+    }
+ 
+    .brand{
+     font-size: 32px;
+     line-height: 30px;
+     text-align: center;
+     width: auto;
+     left: 0;
+     top: 305px;
+    }
+ 
+    .brand1{
+     font-size: 32px;
+     line-height: 30px;
+     text-align: center;
+     width: auto;
+     left: 0;
+     top: 300px;
+    
+    }
+ 
+    .iconPosition{
+     top: 420px;
+     width: 100px;
+     left: 130px;
+    }
+ }
+
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+   .Bg1{
+    width: auto;
+    height: 600px;
+    margin-top: -10px;
+    overflow: hidden;
+    background-image: url("../../../assets/images/homepage/Bgmobile1.png");
+    background-size: cover;
+   }
+
+   .maxwidth{
+    max-width: 100%;
+   }
+
+   .sizing{
+    max-width: 100%;
+    height: 100%;
+    top: 10px;
+    
+   }
+
+   .mascot{
+    width: 400px;
+    left: -10px;
+    top: 10px;
+   }
+
+   .logo2{
+    display: none;
+   }
+
+   .scroll{
+    top: 500px;
+   }
+
+   
+
+   .brand{
+    font-size: 32px;
+    line-height: 30px;
+    text-align: center;
+    width: auto;
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    left: 20px;
+    top: 310px;
+   }
+
+   .brand1{
+    font-size: 32px;
+    line-height: 30px;
+    text-align: center;
+    width: auto;
+    left: 20px;
+    top: 305px;
+   }
+
+   .iconPosition{
+    top: 470px;
+    left: 200px;
+    top: 500px;
+   }
 }
 
-/* @media screen and (min-width: 1000px) and (max-width: 1300px) {
+
+@media screen and (min-width: 320px) and (max-width: 365px) {
+  .mascot{
+    width: 400px;
+    left: -20px;
+  }
+  .scroll{
+    display: none;
+   }
+   .brand{
+    width: auto;
+    top: 250px;
+   }
+
+   .brand1{
+    width: auto;
+    top: 245px;
+   }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 340px) {
+  .mascot{
+    width: 400px;
+    left: -30px;
+  }
+  .scroll{
+    display: none;
+   }
+}
+
+@media screen and (min-width: 365px) and (max-width: 400px) {
+  .mascot{
+    width: 400px;
+    left: -20px;
+  }
+  .scroll{
+    display: none;
+   }
+
+   .brand{
+    width: auto;
+    top: 250px;
+    left: 0px;
+   }
+
+   .brand1{
+    width: auto;
+    top: 245px;
+    left: 0px;
+   }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 460px) {
+  .mascot{
+    width: 400px;
+    left: 0px;
+  }
+  .scroll{
+    display: none;
+   }
+   
+   .brand{
+    width: auto;
+    top: 300px;
+    left: 25px;
+   }
+
+   .brand1{
+    width: auto;
+    top: 295px;
+    left: 35px;
+   }
+}
+
+@media screen and (min-width: 460px) and (max-width: 510px) {
+  .mascot{
+    width: 400px;
+    left: 30px;
+  }
+  .scroll{
+    display: none;
+   }
+
+   .brand{
+    width: auto;
+    top: 300px;
+    left: 55px;
+   }
+
+   .brand1{
+    width: auto;
+    top: 295px;
+    left: 55px;
+   }
+   .iconPosition{
+    left: 225px;
+   }
+}
+
+@media screen and (min-width: 560px) and (max-width: 600px) {
+  .mascot{
+    width: 400px;
+    left: 100px;
+  }
+
+  .scroll{
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 510px) and (max-width: 540px) {
+  .mascot{
+    width: 400px;
+    left: 60px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 560px) {
+  .mascot{
+    width: 400px;
+    left: 80px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  .mascot{
+   left: 120px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+  .mascot{
+   left: 130px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  
+  
+  .brand{
+    width: auto;
+    top: 300px;
+    left: 150px;
+   }
+
+   .brand1{
+    width: auto;
+    top: 295px;
+    left: 150px;
+   }
+
+   .iconPosition{}
+
+}
+
+
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .Bg1{
+    width: auto;
+    height: 100vh;
+  }
+
+  .max-width{
+    max-width: 100%;
+   }
+
+   .logo2{
+    width: 300px;
+    left: 400px;
+    top: 140px;
+   }
+
+   .sizing{
+    max-width: 100%;
+    height: 100vh;
+   }
+
+   .mascot{
+    width: 400px;
+    left: 140px;
+    top: 90px;
+   }
+
+   .brand{
+    width: auto;
+    left: 90px;
+    font-size: 48px;
+    top: 350px;
+   }
+
+   .brand1{
+      font-size: 48px;
+      width: auto;
+      left: 90px;
+      top: 345px;
+   }
+
+   .scroll{
+    left: 0px;
+    width: auto;
+    top: 580px;
+   }
+
+   .iconPosition{
+    left: 300px;
+    top: 600px;
+   }
+}
+
+  @media screen and (min-width: 900px) and (max-width: 1000px) {
     .Bg1{
-      width: 117.5%;
+      width: auto;
+      height: 100vh;
+    }
+  
+    .max-width{
+      max-width: 100%;
+     }
+  
+     .logo2{
+      width: 300px;
+      left: 600px;
+      top: 120px;
+     }
+  
+     .sizing{
+      max-width: 100%;
+      height: 100vh;
+     }
+  
+     .mascot{
+      width: 400px;
+      left: 100px;
+      top: 90px;
+     }
+  
+     .brand{
+      width: auto;
+      left: 240px;
+      font-size: 48px;
+      top: 350px;
+     }
+  
+     .brand1{
+        font-size: 48px;
+        width: auto;
+        left: 240px;
+        top: 345px;
+     }
+  
+     .scroll{
+      left: 0px;
+      width: auto;
+      top: 560px;
+     }
+  
+     .iconPosition{
+      left: 488px;
+      top: 580px;
+     }
+  }
+
+
+@media screen and (min-width: 800px) and (max-width: 900px) {
+ 
+    .Bg1{
+      width: auto;
+      height: 100vh;
+    }
+  
+    .max-width{
+      max-width: 100%;
+     }
+  
+     .logo2{
+      width: 300px;
+      left: 600px;
+      top: 120px;
+     }
+  
+     .sizing{
+      max-width: 100%;
+      height: 100vh;
+     }
+  
+     .mascot{
+      width: 400px;
+      left: 100px;
+      top: 90px;
+     }
+  
+     .brand{
+      width: auto;
+      left: 240px;
+      font-size: 48px;
+      top: 350px;
+     }
+  
+     .brand1{
+        font-size: 48px;
+        width: auto;
+        left: 240px;
+        top: 345px;
+     }
+  
+     .scroll{
+      left: 0px;
+      width: auto;
+      top: 560px;
+     }
+  
+     .iconPosition{
+      left: 475px;
+      top: 580px;
+     }
+  
+}
+
+
+
+
+ @media screen and (min-width: 1000px) and (max-width: 1500px) {
+
+  .mascot{
+    width: 400px;
+    top: 130px;
+    left: 20px;
+  }
+
+  .logo2{
+    width: 350px;
+    top: 160px;
+    left: 780px;
+  }
+
+  .brand{
+    left: 680px;
+    width: 450px;
+    font-size: 50px;
+    top: 400px;
+  }
+
+  .brand1{
+    left: 680px;
+    width: 450px;
+    font-size: 50px;
+    top: 390px;
+  }
+
+  .sizing{
+    width: 100%;
+    height: 100%;
+  }
+
+  .scroll{
+    left: 0px;
+    top: 200px;
+    width: 100%;
+  }
+
+  .iconPosition{
+    width: 100%;
+    top: 600px;
+    left: 0px;
+
+  }
+
+  
+} 
+
+@media screen and (min-width: 1080px) and (max-width: 1150px) {
+  .mascot{
+    width: 500px;
+    left: 20px;
+  }
+
+  .logo2{
+    left: 710px;
+  }
+
+  .brand{
+    left: 610px;
+  }
+
+  .brand1{
+    left: 610px;
+  }
+
+  .scroll{
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1080px) {
+  .mascot{
+    width: 500px;
+    left: 20px;
+  }
+
+  .logo2{
+    left: 670px;
+  }
+
+  .brand{
+    left: 570px;
+  }
+
+  .brand1{
+    left: 570px;
+  }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1250px) {
+  .mascot{
+    width: 550px;
+    left: 40px;
+  }
+
+  .logo2{
+    left: 770px;
+  }
+
+  .brand{
+    left: 670px;
+  }
+
+  .brand1{
+    left: 670px;
+  }
+
+  .scroll{
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1280px) {
+  .logo2{
+    left: 830px;
+  }
+
+  .brand{
+    left: 730px;
+  }
+  .brand1{
+    left: 730px;
+  }
+  .mascot{
+    width: 550px;
+    left: 40px;
+  }
+}
+
+
+
+@media screen and (min-width: 1280px) and (max-width: 1350px) {
+  .logo2{
+    left: 880px;
+  }
+
+  .brand{
+    left: 780px;
+  }
+  .brand1{
+    left: 780px;
+  }
+  .mascot{
+    width: 550px;
+    left: 70px;
+  }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1400px) {
+  .logo2{
+    left: 900px;
+  }
+  .brand{
+    left: 800px;
+  }
+  .brand1{
+    left: 800px;
+  }
+  .mascot{
+    width: 550px;
+    left: 100px;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1450px) {
+  .logo2{
+    left: 950px;
+  }
+  .brand{
+    left: 850px;
+  }
+  .brand1{
+    left: 850px;
+  }
+  .mascot{
+    width: 550px;
+    left: 100px;
+  }
+}
+
+@media screen and (min-width: 1450px) and (max-width: 1500px) {
+  .logo2{
+    left: 1000px;
+  }
+  .brand{
+    left: 900px;
+  }
+  .brand1{
+    left: 900px;
+  }
+  .mascot{
+    width: 550px;
+    left: 100px;
+  }
+} 
+
+
+  
+ 
+  @media screen and (min-width: 1300px) and (max-width: 1500px) {
+    .Bg1{
+      width: 100%;
       height: 800px;
     }
 
-  } */
+    
+  }
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-    .Bg1 {
-        width: 100%;
-        height: 800px;
+ 
+
+
+  @media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .Bg1{
+      width: 100%;
+      height: 800px;
     }
-}
+  }
+
+  @media screen and (min-width: 1000px) and (max-width: 1500px) {
+    .sizing{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mascot{
+
+    }
+  } 

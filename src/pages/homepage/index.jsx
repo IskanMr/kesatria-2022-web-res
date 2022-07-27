@@ -27,7 +27,7 @@ export function HomePage () {
         <Calender />
         <Kartu />
         <KilasFooter />
-        <ScrollArrow />
+        {/* <ScrollArrow /> */}
    </motion.div>
    </React.StrictMode>
   )

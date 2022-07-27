@@ -20,6 +20,13 @@
     background-size: cover;
 }
 }
+@media screen and (min-width: 470px) and (max-width: 700px) {
+    .Bg21{ 
+     height: 150vh;
+     background-image: url("../../assets/images/homepage/pattern3small.png");
+     background-size: cover;
+ }
+}
 
 @media screen and (min-width: 701px) and (max-width: 1000px) {
     .Bg21{
