@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { HeroSection } from '../../components/Homepage/Hero/index';
 import { Youtube } from '../../components/Homepage/Youtube/index';
+import { AboutSection } from '../../components/Homepage/About';
 import { Jjt } from '../../components/Homepage/JJT/index';
-import { KilasFooter } from './kilasfooter';
+import { Kilas } from '../../components/Homepage/KilasBalik';
 import { Calender } from '../../components/Homepage/Calender/index';
 import { Kartu } from './kartu';
-import { Mengenai } from './mengenai';
-import { ScrollArrow } from '../../components/Homepage/scrollToTop/index';
 
 export function HomePage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,12 +20,11 @@ export function HomePage() {
             <motion.div initial='hidden' animate='show'>
                 <HeroSection />
                 <Youtube />
-                <Mengenai />
+                <AboutSection />
                 <Jjt />
                 <Calender />
                 <Kartu />
-                {/* <KilasFooter /> */}
-                {/* <ScrollArrow /> */}
+                <Kilas />
             </motion.div>
         </React.StrictMode>
     );

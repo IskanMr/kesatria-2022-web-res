@@ -24,7 +24,7 @@ export function Youtube() {
     const [element, controls] = useScroll();
     return (
         <div className={`${styles.Bg2}`} id='youtube'>
-            <GenericPage className='flex w-full h-full justify-items-center place-content-center items-center overflow-hidden'>
+            <GenericPage className='flex relative w-full h-full justify-items-center place-content-center items-center overflow-hidden'>
                 <div className='flex w-full h-full justify-items-center place-content-center items-center overflow-hidden'>
                     <div className='flex w-full h-full relative' ref={element}>
                         <motion.div
@@ -63,7 +63,7 @@ export function Youtube() {
 
                     <div className={`${styles.box}`}>
                         <motion.div
-                            className='flex w-100 h-[320px] md:w-[996px] md:h-[600px] items-center place-content-center justify-items-center border-[14px] border-blue-default rounded-3xl  '
+                            className='flex w-96 h-[320px] md:w-[996px] md:h-[600px] '
                             variants={youtubeAnimation}
                             animate={controls}
                             transition={{
@@ -74,7 +74,7 @@ export function Youtube() {
                         >
                             <iframe
                                 title='youtube'
-                                className='w-full h-full my-3 rounded-lg'
+                                className='w-full h-full ring-[16px] md:ring-[24px] ring-blue-default rounded-3xl drop-shadow-container'
                                 src='https://www.youtube.com/embed/eR618MSqRRs'
                             />
                         </motion.div>

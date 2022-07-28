@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useSpring } from 'react-spring';
 
+import styles from './About.module.css';
+
 import { useScroll } from '../UseScroll/useScroll';
 import { aboutAnimations } from '../../../utils/animation';
 import img from '../../../assets/images/homepage/logo_2.png';
@@ -11,6 +13,7 @@ import img4 from '../../../assets/images/homepage/logo_6.png';
 import img5 from '../../../assets/images/homepage/logo_7.png';
 import img6 from '../../../assets/images/homepage/logo_8.png';
 import img8 from '../../../assets/images/homepage/awan4.png';
+
 import { GenericPage } from '../../GenericPage';
 
 export function AboutSection() {
@@ -22,9 +25,12 @@ export function AboutSection() {
         config: { duration: 3500 },
     });
 
+    const logoCon =
+        'flex w-14 h-14 md:w-20 md:h-20 p-2 rounded-xl justify-items-center place-content-center bg-white shadow-lg';
+
     return (
         <div
-            className='flex justify-items-center place-content-center w-full h-screen md:py-[5vh] md:h-auto -mt-32'
+            className={` ${styles.Bg21} flex justify-items-center place-content-center w-full h-screen md:py-14 md:h-auto relative`}
             ref={element}
         >
             <GenericPage>
@@ -64,35 +70,35 @@ export function AboutSection() {
                         </div>
 
                         <div className='flex flex-row w-full gap-4 z-10 justify-items-center place-content-center items-center'>
-                            <div className='flex w-14 h-14 md:w-20 md:h-20 p-2 rounded-md justify-items-center place-content-center bg-white shadow-lg'>
+                            <div className={logoCon}>
                                 <img
                                     className='w-full h-full'
                                     src={img2}
                                     alt='img2'
                                 />
                             </div>
-                            <div className='flex w-14 h-14 md:w-20 md:h-20 p-2 rounded-md justify-items-center place-content-center bg-white shadow-lg'>
+                            <div className={logoCon}>
                                 <img
                                     className=' h-full'
                                     src={img3}
                                     alt='img3'
                                 />
                             </div>
-                            <div className='flex w-14 h-14 md:w-20 md:h-20 p-2 rounded-md justify-items-center place-content-center bg-white shadow-lg'>
+                            <div className={logoCon}>
                                 <img
                                     className=' h-full'
                                     src={img4}
                                     alt='img4'
                                 />
                             </div>
-                            <div className='flex w-14 h-14 md:w-20 md:h-20 p-2 rounded-md justify-items-center place-content-center bg-white shadow-lg'>
+                            <div className={logoCon}>
                                 <img
                                     className=' h-full'
                                     src={img5}
                                     alt='img5'
                                 />
                             </div>
-                            <div className='flex w-14 h-14 md:w-20 md:h-20 p-2 rounded-md justify-items-center place-content-center bg-white shadow-lg'>
+                            <div className={logoCon}>
                                 <img className='h-full' src={img6} alt='img6' />
                             </div>
                         </div>

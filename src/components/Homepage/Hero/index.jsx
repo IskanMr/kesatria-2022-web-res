@@ -83,7 +83,7 @@ export function HeroSection() {
                         </span>
                         <span className='flex justify-items-center place-content-center items-center'>
                             <FaAngleDown
-                                className={`${styles.iconPosition} h-12 group-hover:text-oranges-default transition ease-in-out duration-300`}
+                                className={`${styles.iconPosition} w-8 h-8 md:w-12 md:h-12 group-hover:text-oranges-default transition ease-in-out duration-300`}
                             />
                         </span>
                     </motion.div>

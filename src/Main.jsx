@@ -14,9 +14,9 @@ import './styles/main.scss';
 
 import { PageHeader } from './components/PageHeader';
 import { PageFooter } from './components/PageFooter';
+import { ScrollToTop } from './components/scrollToTop';
 
 import * as pages from './pages/_listing';
-import { ScrollToTop } from './utils/ScrollToTop';
 
 function RemoveTrailingSlash() {
     const { pathname } = useLocation();

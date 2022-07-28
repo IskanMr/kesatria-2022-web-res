@@ -95,3 +95,12 @@ html {
     text-shadow: -1px -1px 0 #f26628, 1px -1px 0 #f26628, -1px 1px 0 #f26628,
         1px 1px 0 #f26628;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
