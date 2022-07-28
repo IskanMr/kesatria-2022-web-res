@@ -211,20 +211,23 @@ export function Material5() {
                     <div>
                         <h1 className='text-black text-4xl font-gill font-bold mb-3'>Jalan-Jalan Teknik</h1>
                     </div>
-                    {/* VIDEO PLAYER */}
-                    {/* <div className=''>
-                        <div className='player-wrapper md:px-96'>
-                            <ReactPlayer
-                            className='react-player'
-                            url='https://youtu.be/Rq5SEhs9lws'
-                            width='100%'
-                            height='100%'
-                            />
-                        </div>
-                    </div> */}
                     <div className=''>
                         <p>COMING SOON</p>
                     </div>
+                  
+                    {/* <div className=''>
+                        <div className='xl:h-xl lg:h-xl md:h-xl sm:h-lg 320px:h-md'>
+                            <iframe
+                                src='https://drive.google.com/file/d/1W8fv1y3p_Iq3ws96hFEwwwXSNqMBwYSc/preview'
+                                className='w-full overflow-hidden h-full'
+                                allow='autoplay'
+                                title='Personal Branding' 
+                                height="100%" width="100%"
+                            />
+
+                        </div>
+                    </div> */}
+                    
         </>
     );
 }
@@ -236,20 +239,21 @@ export function Material6() {
                     <div>
                         <h1 className='text-black text-4xl font-gill font-bold mb-3'>Sejarah Teknik</h1>
                     </div>
-                    <p>COMIMG SOON</p>
-                    {/* <div className=''>
+                    <div className=''>
                         <p>Fakultas Teknik memiliki sejarah yang sangat panjang. Melalui materi Sejarah Teknik, Kesatria Muda akan diajak untuk menonton video animasi yang akan memaparkan tentang perjalanan sejarah Fakultas Teknik dari awal dibentuk hingga menjadi fakultas terbesar di Universitas Gadjah Mada seperti saat ini.</p>
                     </div>
-                    <div className='bg-blue-default rounded-xl'>
-                        <div className='player-wrapper 2xl:h-lg lg:h-md sm:h-md min-sm:h-[200px]'>
-                            <ReactPlayer
-                            className='react-player'
-                            url='https://drive.google.com/file/d/1lFN7b87IDdRsLN5a82H0uvL64EIJ_Td3/preview'
-                            width='100%'
-                            height='100%'
+                    {/* VIDEO PLAYER */}
+          
+                        <div className='h-md 360px:h-sm'>
+                            <iframe
+                                src='https://www.youtube.com/embed/oZoNAmPZx1I'
+                                className='w-full overflow-hidden h-full'
+                                allow='autoplay'
+                                title='Personal Branding' 
+                                height="100%" width="100%"
                             />
+
                         </div>
-                    </div> */}
         </>
     );
 }
