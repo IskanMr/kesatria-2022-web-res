@@ -190,7 +190,7 @@ export function Materi() {
                                     >
                                         Jalan-Jalan Teknik
                                     </NavLink>
-                                    <NavLink
+                                    {/* <NavLink
                                         to={`${path}/Sejarah-Teknik`}
                                         className={(isActive) =>
                                             isActive
@@ -203,7 +203,7 @@ export function Materi() {
                                         }
                                     >
                                         Sejarah Teknik
-                                    </NavLink>
+                                    </NavLink> */}
                                     <NavLink
                                         to={`${path}/Swakarya-Kampus`}
                                         className={(isActive) =>
@@ -270,7 +270,7 @@ export function Materi() {
                                         Karya Aplikatif
                                     </button>
                                 </NavLink>
-                                <NavLink
+                                {/* <NavLink
                                     to={`${path}/Jalan-Jalan-Teknik`}
                                     className={(isActive) =>
                                         isActive ? buttonActive : buttonStyle
@@ -280,7 +280,7 @@ export function Materi() {
                                     <button type='submit' className='font-bold'>
                                         Jalan-Jalan Teknik
                                     </button>
-                                </NavLink>
+                                </NavLink> */}
                                 <NavLink
                                     to={`${path}/Sejarah-Teknik`}
                                     className={(isActive) =>
