@@ -46,7 +46,7 @@ export function PageHeader({ className }) {
                     alt='logo'
                     className='h-10 w-10 md:h-14 md:w-14'
                 />
-                <div className='text-black ml-2 text-xl md:text-2xl group-hover:text-oranges-default transition-colors'>
+                <div className='text-black ml-2 text-xl md:text-2xl group-hover:text-oranges-default transition ease-in-out duration-300'>
                     ppsmb kesatria 2022
                 </div>
             </NavLinkStock>
@@ -62,13 +62,12 @@ export function PageHeader({ className }) {
                 >
                     <NavLink to='/'>Beranda</NavLink>
                     <NavLink to='/jelajah-teknik'>Jelajah Teknik</NavLink>
-                    <NavLink to='/dokumentasi'>Dokumentasi</NavLink>
+                    {/* <NavLink to='/dokumentasi'>Dokumentasi</NavLink> */}
                     <NavLink to='/agenda'>Agenda</NavLink>
                     <NavLink to='/penugasan'>Penugasan</NavLink>
                     <NavLink to='/materi'>Materi</NavLink>
                     <NavLink to='/teknik-store'>Teknik Store</NavLink>
                     <NavLink to='/pertanyaan-umum'>FAQ</NavLink>
-                    
                 </nav>
                 <button
                     type='button'

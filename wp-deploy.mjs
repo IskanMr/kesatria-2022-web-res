@@ -1,5 +1,7 @@
 import { JSDOM } from 'jsdom';
 import puppeteer from 'puppeteer';
+import dotenv from 'dotenv';
+dotenv.config();
 
 //#region Collect stylesheet and script tags from resulting build file
 const sourceDom = await JSDOM.fromFile('build/index.html');
@@ -25,7 +27,7 @@ if (!process.env.WP_USERNAME || !process.env.WP_PASSWORD) {
     throw new ReferenceError();
 }
 
-const headlessBrowser = await puppeteer.launch();
+const headlessBrowser = await puppeteer.launch({ headless: false });
 
 // Modify browser permissions so that copying works
 await headlessBrowser

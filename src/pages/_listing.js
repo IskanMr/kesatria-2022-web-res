@@ -3,7 +3,6 @@ export * from './index';
 export * from './agenda';
 export * from './penugasan';
 export * from './jalan-teknik';
-export * from './jalan-teknik/ngulik-teknik';
 export * from './jalan-teknik/mozilla-hubs';
 export * from './dokumentasi';
 export * from './teknik-store';

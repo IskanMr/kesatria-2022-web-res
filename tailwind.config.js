@@ -47,6 +47,7 @@ module.exports = {
                 '320px': { min: '320px', max: '768px' },
                 '1024px': { min: '768px', max: '1024px' },
                 '1280px': { min: '0px', max: '1280px' },
+                '1360px': '1360px',
                 agenda: { min: '0px', max: '768px' },
                 portrait: {
                     raw: '(orientation: portrait)',
@@ -71,6 +72,10 @@ module.exports = {
             },
             dropShadow: {
                 blue: '0 8px 0 #224860',
+                orange: '0 10px 0 #F26628',
+                container: '8px 8px 0 #0C2434',
+                conSmall: '6px 6px 0 #F26628',
+                conSmallMb: '3px 3px 0 #F26628',
             },
             fontWeight: {
                 semilight: 350,
@@ -84,18 +89,20 @@ module.exports = {
                 xl: '1080px',
                 lg: '720px',
                 md: '480px',
+                750: '750px',
+                400: '400px',
+                600: '600px',
             },
-            height: {
-                750 : '750px',
-                400 : '400px',
-                600 : '600px' 
-            },
-            margin : {
-                '200px' : '200px',
+            margin: {
+                '200px': '200px',
             },
 
             borderWidth: {
                 6: '6px',
+            },
+            flexBasis: {
+                1: '33.33333%',
+                2: '66.66666%',
             },
         },
     },

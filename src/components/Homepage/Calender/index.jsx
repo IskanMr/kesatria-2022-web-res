@@ -2,16 +2,19 @@ import React from 'react'
 import {BiCheckbox } from "react-icons/bi";
 import { motion } from "framer-motion/dist/es/index";
 import styles from "./CalenderElements.module.css"
-import awan50 from "../../../assets/images/homepage/awan6.png"
-import awan3 from "../../../assets/images/homepage/awan5.png"
+import awan50 from "../../../assets/images/homepage/awan2.png"
+import awan3 from "../../../assets/images/homepage/awan1.png"
 import {youtube1Animation, youtube2Animation } from "../../../utils/animation";
 import { useScroll } from "../UseScroll/useScroll";
 
 export function Calender() {
   const [element, controls] = useScroll();
 return (
-<div className={`${styles.myBg5}`} id='calender'>
-  <div className={`${styles.ship}`} ref={element}>
+<div className={`${styles.myBg5}`}>
+
+    <div className={`${styles.ship1}`} ref={element}>
+
+    <div className={`${styles.ship2}`}>
     <motion.div className={`${styles.Awan50}`}
       variants={youtube2Animation}  
       animate={controls}
@@ -35,7 +38,9 @@ return (
     >
     <img src={awan3} alt='pic'/>
     </motion.div>
+    </div>
 
+    <div className={`${styles.ship3}`}>
     <div className={`${styles.Container}`}>
     <div className={`${styles.Calendar}`}>
     <div className={`${styles.monthIndicator}`}>
@@ -65,13 +70,13 @@ return (
           <div className={`${styles.hari}`}>
             3
           </div>
-        </div>
+      </div>
       </button>
       <button type='button'>
       <div className={`${styles.time}`}>
         <div className={`${styles.hari}`}>
             4
-          </div>
+      </div>
         </div>
       </button>
       <button type='button'>
@@ -158,13 +163,17 @@ return (
     </div>
     </div>
   </div>
-
-    <div className={`${styles.keterangan}`}>
+  </div>
+  </div>
+  
+  <div className={`${styles.ship4}`}>
+  <div className={`${styles.keterangan}`}>
        PPSMB KESATRIA 2022
-    </div>
-    </div>
+  </div>
     <BiCheckbox className={`${styles.icon20}`}/>
   </div>
-</div>
+  </div>
+  </div>
+
   )
 }

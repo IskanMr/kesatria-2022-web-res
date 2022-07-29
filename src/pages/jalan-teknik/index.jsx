@@ -1,140 +1,40 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 
 import { Link } from 'react-router-dom';
 import { HtmlHead } from '../../components/HtmlHead';
 import { PageTitle } from '../../components/PageTitle';
-import { SliderContainer } from '../../components/SliderContainer';
+import { CardContainer } from '../../components/CardContainer';
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import '../../styles/_fonts.scss';
 
 import background from '../../assets/images/pattern-light.png';
 import cloud from '../../assets/images/awanGabung.png';
+import JJT from '../../assets/images/jalanteknik/fotoJJT.png';
 
 export function JelajahTeknik() {
     const Children = [
         <>
-            <div className='card-one w-[45vw] 768px:w-[65vw] flex-col flex justify-center px-[3rem] 768px:px-[1rem]'>
-                <div className='w-[45vmin] h-[25vmin] z-3 block absolute right-[-15vw] top-[-8vw] lg:top-[-5vw] lg:right-[-11vw] '>
-                    <img
-                        className='scale-[70%] lg:scale-[78%]'
-                        src={cloud}
-                        alt=''
-                        style={{
-                            width: '100%',
-                            height: '100%',
-                            zIndex: '3',
-                            display: 'flex',
-                            position: 'absolute',
-                        }}
-                    />
-                </div>
-                <h3 className='font-gill font-bold text-white text-center text-[4vmin] 1024px:text-[3.5vmin] 768px:text-[6.5vmin] my-[1.5rem]'>
-                    NGULIK TEKNIK
-                </h3>
-                <div className='md:hidden'>
-                    <img
-                        style={{
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            display: 'flex',
-                            height: '100%',
-                            width: '100%',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                        }}
-                        src='https://media-exp1.licdn.com/dms/image/C5603AQEDk8-4kGrnZw/profile-displayphoto-shrink_200_200/0/1630935435708?e=1660176000&v=beta&t=PNfAzjZMoa-mMuT_yxhGUAOsVXCjjeFlwio9D2s-3t4'
-                        alt=''
-                    />
-                </div>
-                <p className='font-gill font-bold text-white text-center text-[3vmin] 1024px:text-[2.5vmin] 768px:text-[4vmin] mb-[1.5rem] 768px:my-[1.5rem]'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quas, possimus neque molestias nam exercitationem natus
-                    voluptatum quos unde sint impedit esse aliquid eaque rem
-                    quaerat. Sequi, eveniet ipsum ex cupiditate vero at!
-                </p>
-                <div className='button-container justify-center items-center flex flex-row'>
-                    <div className=' text-white text-[3.5vmin] md:text-[3vmin] mb-[1.5rem]'>
-                        <button
-                            className='font-gill font-bold bg-[#F26628] rounded-full p-[0.5rem] px-[1rem]'
-                            type='button'
-                        >
-                            <Link to='jelajah-teknik/ngulik-teknik'>
-                                JELAJAHI LEBIH LANJUT
-                            </Link>
-                        </button>
-                    </div>
-                </div>
-                <div className='w-[45vmin] h-[25vmin] z-3 block absolute left-[-15vw] bottom-[-7vw] lg:bottom-[-5vw] lg:left-[-12vw] '>
-                    <img
-                        className='scale-[70%] lg:scale-[78%]'
-                        src={cloud}
-                        alt=''
-                        style={{
-                            width: '100%',
-                            height: '100%',
-                            zIndex: '3',
-                            display: 'flex',
-                            position: 'absolute',
-                        }}
-                    />
-                </div>
-            </div>
-            <div className='card-two w-[35vw] flex-row items-center justify-center hidden pr-[2rem] md:flex'>
-                <div className='h-[55vmin] w-[55vmin]'>
-                    <img
-                        style={{ height: '100%', width: '100%' }}
-                        src='https://media-exp1.licdn.com/dms/image/C5603AQEDk8-4kGrnZw/profile-displayphoto-shrink_200_200/0/1630935435708?e=1660176000&v=beta&t=PNfAzjZMoa-mMuT_yxhGUAOsVXCjjeFlwio9D2s-3t4'
-                        alt=''
-                    />
-                </div>
-            </div>
-        </>,
-        <>
-            <div className='card-one w-[45vw] 768px:w-[65vw] flex-col flex justify-center px-[3rem] 768px:px-[1rem]'>
-                <div className='w-[45vmin] h-[25vmin] z-3 block absolute right-[-15vw] top-[-8vw] lg:top-[-5vw] lg:right-[-11vw] '>
-                    <img
-                        className='scale-[70%] lg:scale-[78%]'
-                        src={cloud}
-                        alt=''
-                        style={{
-                            width: '100%',
-                            height: '100%',
-                            zIndex: '3',
-                            display: 'flex',
-                            position: 'absolute',
-                        }}
-                    />
-                </div>
-                <h3 className='font-gill font-bold text-white text-center text-[4vmin] 1024px:text-[3.5vmin] 768px:text-[6.5vmin] my-[1.5rem]'>
+            <div className='card-one w-[45vw] 768px:w-[65vw] flex-col flex justify-center px-[3rem] font-medium 768px:font-normal 768px:px-[1rem]'>
+                <h3 className='font-gill font-bold text-white text-center text-[32px] 1024px:text-[24px] 768px:text-[4.5vmin] my-[1.5rem]'>
                     JALAN-JALAN TEKNIK
                 </h3>
-                <div className='md:hidden'>
-                    <img
-                        style={{
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            display: 'flex',
-                            height: '100%',
-                            width: '100%',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                        }}
-                        src='https://media-exp1.licdn.com/dms/image/C5603AQEDk8-4kGrnZw/profile-displayphoto-shrink_200_200/0/1630935435708?e=1660176000&v=beta&t=PNfAzjZMoa-mMuT_yxhGUAOsVXCjjeFlwio9D2s-3t4'
-                        alt=''
-                    />
+                <div className='items-center justify-center flex h-100 w-100 mr-auto ml-auto md:hidden'>
+                    <img src={JJT} alt='Foto JJT' />
                 </div>
-                <p className='font-gill font-bold text-white text-center text-[3vmin] 1024px:text-[2.5vmin] 768px:text-[4vmin] mb-[1.5rem] 768px:my-[1.5rem]'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quas, possimus neque molestias nam exercitationem natus
-                    voluptatum quos unde sint impedit esse aliquid eaque rem
-                    quaerat. Sequi, eveniet ipsum ex cupiditate vero at!
+                <p className='font-gill text-white text-center text-[24px] 1024px:text-[18px] 768px:text-[3.5vmin] mb-[1.5rem] 768px:my-[1.5rem]'>
+                    Jalan-jalan Teknik menjadi salah satu kegiatan yang ada di
+                    PPSMB (Pelatihan Pembelajar Sukses untuk Mahasiswa Baru)
+                    KESATRIA 2022. Sebagai mahasiswa teknik, penting bagi kita
+                    untuk mengetahui letak hingga penjelasan dari masing-masing
+                    departemen yang ada di Fakultas Teknik dimana terdapat total
+                    8 Departemen. Tak hanya itu, kita juga dapat mengetahui
+                    fasilitas-fasilitas Fakultas Teknik yang tentunya menunjang
+                    aktivitas perkuliahan.
                 </p>
                 <div className='button-container justify-center items-center flex flex-row'>
-                    <div className=' text-white text-[3.5vmin] md:text-[3vmin] mb-[1.5rem]'>
+                    <div className=' text-white text-[16px] 1024px:text-[14px] xl:text-[20px] mb-[1.5rem]'>
                         <button
-                            className='font-gill font-bold bg-[#F26628] rounded-full p-[0.5rem] px-[1rem]'
+                            className='font-gill font-medium bg-oranges-default rounded-2xl p-[0.5rem] px-[1.5rem] text-white hover:text-oranges-default hover:bg-white ring-2 ring-oranges-default transition ease-in-out duration-300'
                             type='button'
                         >
                             <Link to='jelajah-teknik/jalan-jalan-teknik'>
@@ -143,28 +43,10 @@ export function JelajahTeknik() {
                         </button>
                     </div>
                 </div>
-                <div className='w-[45vmin] h-[25vmin] z-3 block absolute left-[-15vw] bottom-[-7vw] lg:bottom-[-5vw] lg:left-[-12vw] '>
-                    <img
-                        className='scale-[70%] lg:scale-[78%]'
-                        src={cloud}
-                        alt=''
-                        style={{
-                            width: '100%',
-                            height: '100%',
-                            zIndex: '3',
-                            display: 'flex',
-                            position: 'absolute',
-                        }}
-                    />
-                </div>
             </div>
-            <div className='card-two w-[35vw] flex-row items-center justify-center hidden pr-[2rem] md:flex'>
-                <div className='h-[55vmin] w-[55vmin]'>
-                    <img
-                        style={{ height: '100%', width: '100%' }}
-                        src='https://media-exp1.licdn.com/dms/image/C5603AQEDk8-4kGrnZw/profile-displayphoto-shrink_200_200/0/1630935435708?e=1660176000&v=beta&t=PNfAzjZMoa-mMuT_yxhGUAOsVXCjjeFlwio9D2s-3t4'
-                        alt=''
-                    />
+            <div className='card-two w-[35vw] h-auto flex-row items-center justify-center flex 768px:hidden pr-[2rem]'>
+                <div className='h-auto w-[60vmin]'>
+                    <img src={JJT} alt='Foto JJT' />
                 </div>
             </div>
         </>,
@@ -179,7 +61,31 @@ export function JelajahTeknik() {
                 <div className='py-8 min-h-screen overflow-hidden'>
                     <PageTitle title='Jelajah Teknik' />
                     <div className='mt-[-4rem]'>
-                        <SliderContainer Children={Children} />
+                        <motion.div
+                            initial={{ opacity: 0, scale: 1 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 1 }}
+                        >
+                            <div className='relative'>
+                                <div className='w-[45vmin] h-[25vmin] z-3 block absolute right-[2vw] top-[5vh] lg:top-[3.5vh] lg:right-[0vw] '>
+                                    <img
+                                        className='w-100 h-100 z-[3] flex absolute scale-[70%] lg:scale-[78%]'
+                                        src={cloud}
+                                        alt=''
+                                    />
+                                </div>
+                            </div>
+                            <div className='relative'>
+                                <div className='w-[45vmin] h-[25vmin] z-3 block absolute left-[0vw] bottom-[-190vmin] md:bottom-[-95vmin] md:left-[0vw] '>
+                                    <img
+                                        className='w-100 h-100 z-[3] flex absolute scale-[70%] lg:scale-[78%]'
+                                        src={cloud}
+                                        alt=''
+                                    />
+                                </div>
+                            </div>
+                            <CardContainer Children={Children} />
+                        </motion.div>
                     </div>
                 </div>
             </div>

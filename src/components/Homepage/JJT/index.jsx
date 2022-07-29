@@ -1,35 +1,36 @@
-import React from 'react'
-import { motion } from "framer-motion";
-import { jjtAnimation } from "../../../utils/animation";
-import { useScroll } from "../UseScroll/useScroll";
-import styles from "./JjtElements.module.css"
+import React from 'react';
+import { motion } from 'framer-motion';
+import { jjtAnimation } from '../../../utils/animation';
+import { useScroll } from '../UseScroll/useScroll';
+import styles from './JjtElements.module.css';
 
 export function Jjt() {
+    const [element, controls] = useScroll();
 
-  const [element, controls] = useScroll();
-  
-  return (
-    <div className={`${styles.Bg4}`} id='jelajahteknik'>
-      <motion.div className={`${styles.maxwidth}`} ref={element}
-            variants={jjtAnimation}  
-            animate={controls}
-               transition={{
-                 delay: 0.3,
-                 type: "tween",
-                 duration: 1.8
-               }}
-            > 
-       <div className={`${styles.kotak}`}>
-                <div className={`${styles.kotak2}`}>
-                <div className={`${styles.kotak3}`}>
-                <div className={`${styles.kotak1}`}/>
-                <div className={`${styles.jjt1}`}> Jalan-Jalan Teknik </div>
+    return (
+        <div
+            className={`${styles.Bg4} py-48 px-4 sm:px-8 md:min-h-screen flex w-full h-full justify-items-center place-content-center items-center`}
+            id='jelajahteknik'
+            ref={element}
+        >
+            <motion.div
+                className='flex w-96 h-[320px] md:w-[996px] md:h-[600px] '
+                variants={jjtAnimation}
+                animate={controls}
+                transition={{
+                    delay: 0.3,
+                    type: 'tween',
+                    duration: 1,
+                }}
+            >
+                <div
+                    className={`${styles.jjtImg} relative w-full h-full ring-[16px] md:ring-[24px] ring-blue-default rounded-3xl drop-shadow-container`}
+                >
+                    <div className='absolute top-0 left-0 bg-oranges-default px-4 py-2 md:px-8 md:py-4 rounded-tl-3xl rounded-br-3xl text-white font-bold md:text-2xl'>
+                        Jalan-Jalan Teknik
+                    </div>
                 </div>
-                </div>
-        </div>        
             </motion.div>
-        
         </div>
     );
 }
-

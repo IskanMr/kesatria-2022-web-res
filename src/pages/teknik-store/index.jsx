@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 import { XIcon } from '@heroicons/react/solid';
 
@@ -15,7 +16,7 @@ import sizeChart from '../../assets/images/teknikStore/sizeChart.png';
 import StoreData from '../../resources/store-items.json';
 
 const button = (type) => {
-    return `w-full md:w-56 py-3 rounded-lg ${
+    return `w-full md:w-56 py-3 rounded-lg transition ease-in-out duration-300 ${
         type === 'primary'
             ? 'text-white bg-oranges-default hover:text-oranges-default hover:bg-white ring-2 ring-oranges-default'
             : 'text-gray-default hover:text-black/75 ring-2 ring-gray-default hover:ring-black/75'
@@ -49,16 +50,22 @@ export function TeknikStore() {
             >
                 <GenericPage>
                     <PageTitle title='Teknik Store' />
-                    <div className='flex flex-wrap w-100 justify-items-center overflow-hidden place-content-center md:px-[15%]'>
+                    <div className='flex mt-6 flex-wrap w-100 justify-items-center overflow-hidden place-content-center md:px-[15%]'>
                         {StoreData.map((item) => (
-                            <button
-                                type='button'
-                                onClick={() => {
-                                    itemClick(item);
-                                }}
+                            <motion.div
+                                initial={{ y: 0, opacity: 0 }}
+                                animate={{ y: -10, opacity: 1 }}
+                                transition={{ duration: 1 }}
                             >
-                                <ItemCard item={item} />
-                            </button>
+                                <button
+                                    type='button'
+                                    onClick={() => {
+                                        itemClick(item);
+                                    }}
+                                >
+                                    <ItemCard item={item} />
+                                </button>
+                            </motion.div>
                         ))}
                     </div>
                 </GenericPage>
@@ -105,7 +112,7 @@ export function TeknikStore() {
                                         <div>Deskripsi:</div>
                                         {picked.id === '1' && (
                                             <button
-                                                className=' text-gray-default hover:text-black/75 underline'
+                                                className=' text-gray-default hover:text-black/75 underline transition ease-in-out duration-300'
                                                 type='button'
                                                 onClick={() => {
                                                     setUkuranOpen(true);
@@ -120,9 +127,11 @@ export function TeknikStore() {
                                 </div>
                             </div>
 
-                            <div className='hidden md:flex justify-between text-xl'>
+                            <div className='flex justify-between text-xl'>
                                 <button
-                                    className={`${button('secondary')}`}
+                                    className={`${button(
+                                        'secondary'
+                                    )} hidden md:block`}
                                     type='button'
                                     onClick={() => setIsOpen(false)}
                                 >
@@ -131,19 +140,10 @@ export function TeknikStore() {
 
                                 <button
                                     onClick={() => openInNewTab(picked.link)}
-                                    className={`${button('primary')}`}
+                                    className={`${button('primary')} w-100`}
                                     type='button'
                                 >
                                     Beli
-                                </button>
-                            </div>
-                            <div className='md:hidden w-100'>
-                                <button
-                                    onClick={() => openInNewTab(picked.link)}
-                                    className={`${button('primary')}`}
-                                    type='button'
-                                >
-                                    Beli Sekarang
                                 </button>
                             </div>
                         </div>
