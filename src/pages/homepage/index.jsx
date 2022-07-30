@@ -6,7 +6,7 @@ import { AboutSection } from '../../components/Homepage/About';
 import { Jjt } from '../../components/Homepage/JJT/index';
 import { Kilas } from '../../components/Homepage/KilasBalik';
 import { Calender } from '../../components/Homepage/Calender/index';
-import { Kartu } from './kartu';
+import { Cards } from '../../components/Homepage/Card';
 
 export function HomePage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,13 +17,17 @@ export function HomePage() {
 
     return (
         <React.StrictMode>
-            <motion.div initial='hidden' animate='show'>
+            <motion.div
+                className='overflow-hidden'
+                initial='hidden'
+                animate='show'
+            >
                 <HeroSection />
                 <Youtube />
                 <AboutSection />
                 <Jjt />
                 <Calender />
-                <Kartu />
+                <Cards />
                 <Kilas />
             </motion.div>
         </React.StrictMode>

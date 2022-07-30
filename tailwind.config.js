@@ -19,6 +19,7 @@ module.exports = {
                     light: '#305D7A',
                     default: '#224860',
                     dark: '#132B3B',
+                    darkest: '#0C2434',
                 },
                 white_bone: '#F1F1F1', // sebelumnya milih white, diubah menjadi milik white_bone
                 white: '#FFFFFF',
@@ -74,6 +75,8 @@ module.exports = {
                 blue: '0 8px 0 #224860',
                 orange: '0 10px 0 #F26628',
                 container: '8px 8px 0 #0C2434',
+                containerBlueX: '5px 5px 0 #224860',
+                containerBlueO: '10px 10px 0 #224860',
                 conSmall: '6px 6px 0 #F26628',
                 conSmallMb: '3px 3px 0 #F26628',
             },

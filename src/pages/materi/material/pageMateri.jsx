@@ -205,6 +205,7 @@ export function Material3() {
                             <div className='xl:h-xl lg:h-xl md:h-xl sm:h-lg 320px:h-md'>
                                 <iframe
                                     src={item}
+                                    allowFullScreen
                                     className='w-full overflow-hidden h-full'
                                     allow='autoplay'
                                     title='Personal Branding'
@@ -270,28 +271,24 @@ export function Material6() {
     return (
         <>
             <div className={titleClass}>Sejarah Teknik</div>
-            {/* <div className={descClass}>COMIMG SOON</div> */}
+            <div className={descClass}>
+                <p>
+                    Fakultas Teknik memiliki sejarah yang sangat panjang.
+                    Melalui materi Sejarah Teknik, Kesatria Muda akan diajak
+                    untuk menonton video animasi yang akan memaparkan tentang
+                    perjalanan sejarah Fakultas Teknik dari awal dibentuk hingga
+                    menjadi fakultas terbesar di Universitas Gadjah Mada seperti
+                    saat ini.
+                </p>
+            </div>
             <div className='w-full h-[55vh]'>
                 <iframe
+                    allowFullScreen
                     className='w-full h-full'
                     title='sejarah-teknik'
                     src='https://www.youtube.com/embed/oZoNAmPZx1I'
                 />
             </div>
-
-            {/* <div className=''>
-                        <p>Fakultas Teknik memiliki sejarah yang sangat panjang. Melalui materi Sejarah Teknik, Kesatria Muda akan diajak untuk menonton video animasi yang akan memaparkan tentang perjalanan sejarah Fakultas Teknik dari awal dibentuk hingga menjadi fakultas terbesar di Universitas Gadjah Mada seperti saat ini.</p>
-                    </div>
-                    <div className='bg-blue-default rounded-xl'>
-                        <div className='player-wrapper 2xl:h-lg lg:h-md sm:h-md min-sm:h-[200px]'>
-                            <ReactPlayer
-                            className='react-player'
-                            url='https://drive.google.com/file/d/1lFN7b87IDdRsLN5a82H0uvL64EIJ_Td3/preview'
-                            width='100%'
-                            height='100%'
-                            />
-                        </div>
-                    </div> */}
         </>
     );
 }

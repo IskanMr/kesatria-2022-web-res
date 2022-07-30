@@ -1,15 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+
 import { jjtAnimation } from '../../../utils/animation';
 import { useScroll } from '../UseScroll/useScroll';
+
 import styles from './JjtElements.module.css';
+import background from '../../../styles/backgrounds.module.css';
 
 export function Jjt() {
     const [element, controls] = useScroll();
 
     return (
         <div
-            className={`${styles.Bg4} py-48 px-4 sm:px-8 md:min-h-screen flex w-full h-full justify-items-center place-content-center items-center`}
+            className={`${background.dark} overflow-y-visible py-48 px-4 sm:px-8 md:min-h-screen flex w-full h-full justify-items-center place-content-center items-center relative`}
             id='jelajahteknik'
             ref={element}
         >

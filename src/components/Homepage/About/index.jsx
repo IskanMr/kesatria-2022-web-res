@@ -2,17 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useSpring } from 'react-spring';
 
-import styles from './About.module.css';
+import background from '../../../styles/backgrounds.module.css';
 
 import { useScroll } from '../UseScroll/useScroll';
-import { aboutAnimations } from '../../../utils/animation';
+import { aboutAnimations, youtube1Animation } from '../../../utils/animation';
+
 import img from '../../../assets/images/homepage/logo_2.png';
 import img2 from '../../../assets/images/homepage/logo_4.png';
 import img3 from '../../../assets/images/homepage/logo_5.png';
 import img4 from '../../../assets/images/homepage/logo_6.png';
 import img5 from '../../../assets/images/homepage/logo_7.png';
 import img6 from '../../../assets/images/homepage/logo_8.png';
-import img8 from '../../../assets/images/homepage/awan4.png';
+import awan2 from '../../../assets/images/homepage/awan2.png';
 
 import { GenericPage } from '../../GenericPage';
 
@@ -30,10 +31,22 @@ export function AboutSection() {
 
     return (
         <div
-            className={` ${styles.Bg21} flex justify-items-center place-content-center w-full h-screen md:py-14 md:h-auto relative`}
+            className={` ${background.light} flex w-full h-screen md:py-14 md:h-auto overflow-visible relative justify-items-center place-content-center items-center`}
             ref={element}
         >
-            <GenericPage>
+            <motion.div
+                className=' absolute h-32 md:h-52 -bottom-16 md:-bottom-24 -right-12 z-10'
+                variants={youtube1Animation}
+                animate={controls}
+                transition={{
+                    delay: 0.3,
+                    type: 'tween',
+                    duration: 1.8,
+                }}
+            >
+                <img className='h-full ' src={awan2} alt='cloud' />
+            </motion.div>
+            <GenericPage className='flex h-full w-full justify-items-center place-content-center items-center'>
                 <motion.div
                     className='flex w-full h-full flex-col-reverse gap-8 md:gap-0  md:flex-row justify-items-center place-content-center items-center'
                     variants={aboutAnimations}

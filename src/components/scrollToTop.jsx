@@ -23,7 +23,7 @@ export function ScrollToTop() {
         <button
             type='button'
             onClick={scrollTop}
-            className='fixed z-50 flex right-[5%] bottom-[3%] md:right-[3%] md:bottom-[7%] w-12 h-12 md:w-16 md:h-16 md:opacity-50 hover:opacity-100 hover:shadow-xl transition ease-in-out duration-300 bg-white rounded-xl md:rounded-[20px] justify-items-center place-content-center items-center'
+            className='fixed z-50 flex right-[5%] bottom-[3%] md:right-[3%] md:bottom-[7%] w-12 h-12 md:w-16 md:h-16 md:opacity-50 hover:opacity-100 hover:drop-shadow-containerBlueX transition ease-in-out duration-300 bg-white rounded-xl md:rounded-[20px] justify-items-center place-content-center items-center'
             style={{
                 display: showScroll ? 'flex' : 'none',
                 animation: 'fadeIn 0.5s ease-in-out',

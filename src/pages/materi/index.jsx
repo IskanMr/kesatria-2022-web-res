@@ -176,7 +176,7 @@ export function Materi() {
                                     >
                                         Karya Aplikatif
                                     </NavLink>
-                                    <NavLink
+                                    {/* <NavLink
                                         to={`${path}/Jalan-Jalan-Teknik`}
                                         className={(isActive) =>
                                             isActive
@@ -189,8 +189,8 @@ export function Materi() {
                                         }
                                     >
                                         Jalan-Jalan Teknik
-                                    </NavLink>
-                                    {/* <NavLink
+                                    </NavLink> */}
+                                    <NavLink
                                         to={`${path}/Sejarah-Teknik`}
                                         className={(isActive) =>
                                             isActive
@@ -203,7 +203,7 @@ export function Materi() {
                                         }
                                     >
                                         Sejarah Teknik
-                                    </NavLink> */}
+                                    </NavLink>
                                     <NavLink
                                         to={`${path}/Swakarya-Kampus`}
                                         className={(isActive) =>

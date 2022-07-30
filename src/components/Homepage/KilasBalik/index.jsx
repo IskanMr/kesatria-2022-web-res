@@ -1,18 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import styles from './KilasBalik.module.css';
+import background from '../../../styles/backgrounds.module.css';
+
 import awan5 from '../../../assets/images/homepage/awan6.png';
 import logo10 from '../../../assets/images/homepage/logo_10.png';
 import logo11 from '../../../assets/images/homepage/logo_11.png';
 import logo12 from '../../../assets/images/homepage/logo_12.png';
 import logo13 from '../../../assets/images/homepage/logo_13.png';
 import logo14 from '../../../assets/images/homepage/logo_14.png';
-import {
-    youtubeAnimation,
-    youtube1Animation,
-    jjtAnimation,
-} from '../../../utils/animation';
+import { youtube1Animation, jjtAnimation } from '../../../utils/animation';
 import { useScroll } from '../UseScroll/useScroll';
 
 export function Kilas() {
@@ -22,12 +19,12 @@ export function Kilas() {
         'flex bg-white h-10 w-10 md:h-24 md:w-24 p-1 md:p-3 rounded-md md:rounded-[32px] drop-shadow-conSmallMb md:drop-shadow-conSmall justify-items-center place-content-center items-center';
     return (
         <div
-            className={`${styles.Bg10} flex relative w-full py-48 justify-items-center place-content-center items-center `}
+            className={`${background.light} flex relative w-full py-48 justify-items-center place-content-center items-center `}
             id='kilasbalik'
             ref={element}
         >
             <motion.div
-                className='absolute -top-12 -left-24 h-36 md:h-52'
+                className='absolute -top-12 -left-24 h-32 md:h-52'
                 variants={youtube1Animation}
                 animate={controls}
                 transition={{
@@ -51,6 +48,7 @@ export function Kilas() {
                 >
                     <iframe
                         title='youtube'
+                        allowFullScreen
                         className='w-full h-full ring-[16px] md:ring-[24px] ring-blue-default rounded-3xl drop-shadow-container'
                         src='https://www.youtube.com/embed/H38zGL5Iscs'
                     />
