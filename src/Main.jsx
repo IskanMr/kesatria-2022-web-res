@@ -55,10 +55,10 @@ function Main() {
                         />
                         <Route path='/agenda' component={pages.Agenda} />
                         <Route path='/materi' component={pages.Materi} />
-                        {/* <Route
+                        <Route
                             path='/dokumentasi'
                             component={pages.Dokumentasi}
-                        /> */}
+                        />
                         <Route
                             path='/teknik-store'
                             component={pages.TeknikStore}
