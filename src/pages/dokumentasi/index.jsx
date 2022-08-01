@@ -99,7 +99,7 @@ export function Dokumentasi() {
     >
         
             <div
-                className='bg-white_bone overflow-x-hidden'
+                className='bg-white_bone overflow-hidden'
                 style={{ backgroundImage: `url(${background})` }}
             >
                 

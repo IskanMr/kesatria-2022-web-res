@@ -14,43 +14,43 @@ export function JalanJalanTeknik() {
             number: 1,
             title: 'Sadewa',
             image: 'sadewaJJT',
-            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
+            link: 'https://hub.link/TpVSXop'
         },
         {
             number: 2,
             title: 'Abimanyu',
             image: 'abimanyuJJT',
-            link: 'https://hubs.mozilla.com/scenes/PzrQy4Y'
+            link: 'https://hub.link/3jPzx32'
         },
         {
             number: 3,
             title: 'Subadra',
             image: 'subadraJJT',
-            link: 'https://hubs.mozilla.com/scenes/Lw4eknE'
+            link: 'https://hub.link/JYTRGg5'
         },
         {
             number: 4,
             title: 'Gatotkaca',
             image: 'gatotkacaJJT',
-            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
+            link: 'https://hub.link/JYTRGg5'
         },
         {
             number: 5,
             title: 'Srikandi',
             image: 'srikandiJJT',
-            link: 'https://hubs.mozilla.com/scenes/PzrQy4Y'
+            link: 'https://hub.link/TpVSXop'
         },
         {
             number: 6,
             title: 'Batari',
             image: 'batariJJT',
-            link: 'https://hubs.mozilla.com/scenes/Lw4eknE'
+            link: 'https://hub.link/TpVSXop'
         },
         {
             number: 7,
             title: 'Abiyasa',
             image: 'abiyasaJJT',
-            link: 'https://hubs.mozilla.com/scenes/StDFW6p'
+            link: 'https://hub.link/3jPzx32'
         },
     ];
 
@@ -82,7 +82,7 @@ export function JalanJalanTeknik() {
                                 alt=''
                             />
                         </div>
-                        <div className='overflow-hidden w-[45vmin] h-[25vmin] hidden absolute left-0 top-[85vmin] 1360px:top-[74vmin] lg:flex'>
+                        <div className='overflow-hidden w-[45vmin] h-[25vmin] hidden absolute left-0 top-[85vmin] 1360px:top-[71vmin] lghide:flex'>
                             <img
                                 className='w-100 h-100 z-[3] flex absolute scale-[90%] 1360px:scale-[90%] left-[-4vw] 1360px:left-[-2vw]'
                                 src={cloud}
