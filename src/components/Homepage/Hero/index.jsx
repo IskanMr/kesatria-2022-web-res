@@ -39,7 +39,7 @@ export function HeroSection() {
                                 type: 'tween',
                             }}
                         >
-                            <img src={logo2} alt='logo' />
+                            <img className='h-full' src={logo2} alt='logo' />
                         </motion.div>
 
                         <motion.div

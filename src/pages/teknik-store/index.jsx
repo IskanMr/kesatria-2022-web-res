@@ -78,7 +78,7 @@ export function TeknikStore() {
                 >
                     <button
                         type='button'
-                        className='flex fixed w-screen h-screen left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-items-center place-content-center bg-black/20'
+                        className='flex fixed w-screen h-screen left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-items-center place-content-center bg-black/20 backdrop-blur-sm'
                         style={{ zIndex: '10000' }}
                         onClick={() => setIsOpen(false)}
                     >
@@ -154,14 +154,14 @@ export function TeknikStore() {
                 <div className='overflow-hidden'>
                     <button
                         type='button'
-                        className='flex absolute w-screen h-screen left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-items-center place-content-center bg-black/20'
+                        className='flex absolute w-screen h-screen left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-items-center place-content-center bg-black/20 backdrop-blur-sm'
                         style={{ zIndex: '10002' }}
                         onClick={() => setUkuranOpen(false)}
                     >
                         {' '}
                     </button>
                     <div
-                        className='flex absolute bg-white left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-auto md:w-auto md:h-[460px] md:rounded-xl '
+                        className='flex fixed bg-white left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-auto md:w-auto md:h-[460px] md:rounded-xl '
                         style={{ zIndex: '10003' }}
                     >
                         <button
